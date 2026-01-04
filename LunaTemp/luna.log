@@ -1,0 +1,272 @@
+report@config:load 39.91
+Authorized using stored user info.
+report@account:authorize 10.10
+stderr: 'rm' is not recognized as an internal or external command,
+operable program or batch file.
+
+Exporting assets from Unity..........
+
+[ Stage1 ] Assets exported from Unity and staged for further processing
+report@unity:export 7076.64
+report@config:load 23.66
+Using D:/Unity/playable ads/projects/Playable Ads 2D/Assets/TextMesh Pro/Fonts/LiberationSans.ttf file to generate an atlas for LiberationSans[28984] font
+  Using alphabet  §1234567890-=qwertyuiop[]asdfghjkl;'\`zxcvbnm,./±!@#$%^&*()_+QWERTYUIOP{}ASDFGHJKL:"|~ZXCVBNM<>?
+Combined 97 glyphs into bitmap texture at D:/Unity/playable ads/projects/Playable Ads 2D/LunaTemp/stage1/tmp/fonts/LiberationSans-28984/output_0.png (56kb)
+Found custom rules for texture Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+  {"maxWidth":512,"maxHeight":512,"format":"png32","compression":"none","quality":65,"script":"","ext":"","name":"Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset","isOverride":true}
+Found custom rules for texture Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset
+  {"maxWidth":512,"maxHeight":512,"format":"png32","compression":"none","quality":65,"script":"","ext":"","name":"Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset","isOverride":true}
+Found custom rules for texture Assets/GUIPackCartoon/Fonts/LilitaOne - Regular SDF.asset
+  {"maxWidth":512,"maxHeight":512,"format":"png32","compression":"none","quality":65,"script":"","ext":"","name":"Assets/GUIPackCartoon/Fonts/LilitaOne - Regular SDF.asset","isOverride":true}
+Resources:
+{}
+report@assets:stage2 3850.88
+report@assets:stage3 251.87
+[ Stage2 ] Assets postprocessed and bundled successfully
+report@config:unity 0.24
+report@config:load 64.82
+report@config:unity 0.33
+report@code:compose 219.75
+Authorized using stored user info.
+report@account:authorize 6.28
+MSBuild version 17.14.23+b0019275e for .NET Framework
+
+Build started 1/4/2026 9:15:07 PM.
+
+
+
+Project "D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj" on node 1 (Rebuild target(s)).
+
+CoreClean:
+  Deleting file "D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityScriptsCompiler.dll".
+
+  Deleting file "D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityScriptsCompiler.pdb".
+
+  Deleting file "D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.dll".
+
+  Deleting file "D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.Html5.dll".
+
+  Deleting file "D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.WebGL.dll".
+
+  Deleting file "D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\DOTween.dll".
+
+  Deleting file "D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\JetBrains.dll".
+
+  Deleting file "D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Newtonsoft.Json.dll".
+
+  Deleting file "D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.Core.dll".
+
+  Deleting file "D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.dom.dll".
+
+  Deleting file "D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.es5.dll".
+
+  Deleting file "D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.scripthost.dll".
+
+  Deleting file "D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\TextMeshPro.dll".
+
+  Deleting file "D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityEngine.dll".
+
+  Deleting file "D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityEngine.UI.dll".
+
+  Deleting file "D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityEngine.UniversalRenderPipeline.dll".
+
+  Deleting file "D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.xml".
+
+  Deleting file "D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.Html5.xml".
+
+  Deleting file "D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.WebGL.xml".
+
+  Deleting file "D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Newtonsoft.Json.xml".
+
+  Deleting file "D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.Core.xml".
+
+  Deleting file "D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.dom.xml".
+
+  Deleting file "D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.es5.xml".
+
+  Deleting file "D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.scripthost.xml".
+
+  Deleting file "D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\obj\Debug\Scripts.csproj.AssemblyReference.cache".
+
+  Deleting file "D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\obj\Debug\Scripts.csproj.CoreCompileInputs.cache".
+
+  Deleting file "D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\obj\Debug\Scripts.csproj.Up2Date".
+
+  Deleting file "D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\obj\Debug\UnityScriptsCompiler.dll".
+
+  Deleting file "D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\obj\Debug\UnityScriptsCompiler.pdb".
+
+GenerateTargetFrameworkMonikerAttribute:
+Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+
+CoreCompile:
+  C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\Roslyn\csc.exe /noconfig /nowarn:CS0626,1701,1702 /fullpaths /nostdlib+ /errorreport:prompt /warn:4 /define:UNITY_LUNA;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_2022;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2022_1_OR_NEWER;UNITY_2022_2_OR_NEWER;UNITY_2022_3_OR_NEWER;UNITY_2022_3;UNITY_2022_3_62 /highentropyva+ /reference:"D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\packages\Bridge.Core.17.9.42-luna\lib\net40\Bridge.dll" /reference:"D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\packages\Bridge.Html5.17.9.0\lib\net40\Bridge.Html5.dll" /reference:"D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\packages\Bridge.WebGL.1.22.0\lib\net40\Bridge.WebGL.dll" /reference:"D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\packages\DOTween.1.2.705\lib\net40\DOTween.dll" /reference:"D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\packages\com.unity.ide.rider\3.0.0\JetBrains.dll" /reference:"D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\packages\Bridge.Newtonsoft.Json.1.16.0\lib\net40\Newtonsoft.Json.dll" /reference:"D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\packages\Retyped.Core.1.6.6733\lib\net40\Retyped.Core.dll" /reference:"D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\packages\Retyped.dom.2.8.6733\lib\net40\Retyped.dom.dll" /reference:"D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\packages\Retyped.es5.2.8.6733\lib\net40\Retyped.es5.dll" /reference:"D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\packages\Retyped.scripthost.2.8.6733\lib\net40\Retyped.scripthost.dll" /reference:"D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\packages\com.unity.textmeshpro\3.0.6\TextMeshPro.dll" /reference:"D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\Vendor\UnityEngine.dll" /reference:"D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\packages\com.unity.ui\1.2.1\UnityEngine.UI.dll" /reference:"D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\packages\com.unity.urp\7.6\UnityEngine.UniversalRenderPipeline.dll" /debug+ /debug:full /optimize- /out:obj\Debug\UnityScriptsCompiler.dll /subsystemversion:6.00 /target:library /warnaserror- /utf8output /langversion:8 "D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\DOTween_1_2_705\DOTween\Modules\DOTweenModuleAudio.cs" "D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\DOTween_1_2_705\DOTween\Modules\DOTweenModuleEPOOutline.cs" "D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\DOTween_1_2_705\DOTween\Modules\DOTweenModulePhysics.cs" "D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\DOTween_1_2_705\DOTween\Modules\DOTweenModulePhysics2D.cs" "D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\DOTween_1_2_705\DOTween\Modules\DOTweenModuleSprite.cs" "D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\DOTween_1_2_705\DOTween\Modules\DOTweenModuleUI.cs" "D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\DOTween_1_2_705\DOTween\Modules\DOTweenModuleUnityVersion.cs" "D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\DOTween_1_2_705\DOTween\Modules\DOTweenModuleUtils.cs" "D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\Scripts\AnimateSliderConfigSO.cs" "D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\Scripts\Attributes\ReadonlyAttribute.cs" "D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\Scripts\Character.cs" "D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\Scripts\EventBus\AbstractEventChannelListener.cs" "D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\Scripts\EventBus\Bus.cs" "D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\Scripts\EventBus\GenericEventChannelSO.cs" "D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\Scripts\Game.cs" "D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\Scripts\SliderAnimator.cs" "D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\Scripts\SOSEventChannel.cs" "D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\Scripts\SOSEventChannelListener.cs" "D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\Scripts\UnitA.cs" "D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\Scripts\UnitB.cs" "D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\Scripts\UnitC.cs" "D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\Scripts\VPopup\AnimatorPopupAnimationHandler.cs" "D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\Scripts\VPopup\IPopupAnimationHandler.cs" "D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\Scripts\VPopup\Tween Animation Handler\AbstractPopupTweenConfig.cs" "D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\Scripts\VPopup\Tween Animation Handler\PopupTweenAnimationHandler.cs" "D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\Scripts\VPopup\Tween Animation Handler\ScreenEdgeEnum.cs" "D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\Scripts\VPopup\Tween Animation Handler\SimpleTweenAnimationHandler.cs" "D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\Scripts\VPopup\Tween Animation Handler\Tween Animation Scripts\FadeFromTweenConfig.cs" "D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\Scripts\VPopup\Tween Animation Handler\Tween Animation Scripts\FadeToTweenConfig.cs" "D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\Scripts\VPopup\Tween Animation Handler\Tween Animation Scripts\JoinTweenConfig.cs" "D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\Scripts\VPopup\Tween Animation Handler\Tween Animation Scripts\MoveFromEdgeTweenConfig.cs" "D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\Scripts\VPopup\Tween Animation Handler\Tween Animation Scripts\MoveToEdgeTweenConfig.cs" "D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\Scripts\VPopup\Tween Animation Handler\Tween Animation Scripts\ScaleFromTweenConfig.cs" "D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\Scripts\VPopup\Tween Animation Handler\Tween Animation Scripts\ScaleToTweenConfig.cs" "D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\Scripts\VPopup\VCanvas.cs" "D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\Scripts\VPopup\VPopup.cs" Properties/AssemblyInfo.cs Sources/OtherDummyScript.cs "obj\Debug\.NETFramework,Version=v4.7.AssemblyAttributes.cs"
+
+D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\Scripts\VPopup\Tween Animation Handler\Tween Animation Scripts\ScaleToTweenConfig.cs(23,13): warning CS0162: Unreachable code detected [D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\Scripts\VPopup\Tween Animation Handler\Tween Animation Scripts\FadeFromTweenConfig.cs(10,53): warning CS0649: Field 'FadeFromTweenConfig.fadeFrom' is never assigned to, and will always have its default value 0 [D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\Scripts\VPopup\VPopup.cs(29,50): warning CS0649: Field 'VPopup.contentInitialAlpha' is never assigned to, and will always have its default value 0 [D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\Scripts\SliderAnimator.cs(9,44): warning CS0169: The field 'SliderAnimator.handle' is never used [D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\Scripts\VPopup\Tween Animation Handler\Tween Animation Scripts\FadeToTweenConfig.cs(10,53): warning CS0649: Field 'FadeToTweenConfig.fadeTo' is never assigned to, and will always have its default value 0 [D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\Scripts\VPopup\Tween Animation Handler\PopupTweenAnimationHandler.cs(15,45): warning CS0649: Field 'PopupTweenAnimationHandler.onShowAnimationEndedEvent' is never assigned to, and will always have its default value null [D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\Scripts\VPopup\Tween Animation Handler\SimpleTweenAnimationHandler.cs(10,36): warning CS0169: The field 'SimpleTweenAnimationHandler.overlay' is never used [D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\Scripts\VPopup\Tween Animation Handler\Tween Animation Scripts\ScaleFromTweenConfig.cs(10,42): warning CS0649: Field 'ScaleFromTweenConfig.scaleFrom' is never assigned to, and will always have its default value [D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\Scripts\VPopup\Tween Animation Handler\Tween Animation Scripts\ScaleToTweenConfig.cs(10,42): warning CS0649: Field 'ScaleToTweenConfig.scaleTo' is never assigned to, and will always have its default value [D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\Scripts\VPopup\Tween Animation Handler\PopupTweenAnimationHandler.cs(11,51): warning CS0649: Field 'PopupTweenAnimationHandler.tweenHideAnimationConfig' is never assigned to, and will always have its default value null [D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\Scripts\Game.cs(16,40): warning CS0169: The field 'Game.character' is never used [D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\Scripts\SliderAnimator.cs(11,52): warning CS0649: Field 'SliderAnimator.animationConfig' is never assigned to, and will always have its default value null [D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\Scripts\VPopup\VPopup.cs(28,52): warning CS0649: Field 'VPopup.contentInitialScale' is never assigned to, and will always have its default value [D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\Scripts\VPopup\Tween Animation Handler\PopupTweenAnimationHandler.cs(10,81): warning CS0649: Field 'PopupTweenAnimationHandler.tweenShowAnimationConfig' is never assigned to, and will always have its default value null [D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\Scripts\VPopup\Tween Animation Handler\Tween Animation Scripts\MoveToEdgeTweenConfig.cs(13,42): warning CS0649: Field 'MoveToEdgeTweenConfig.additionalFromOffset' is never assigned to, and will always have its default value [D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\Scripts\VPopup\Tween Animation Handler\Tween Animation Scripts\JoinTweenConfig.cs(10,53): warning CS0649: Field 'JoinTweenConfig.tweenList' is never assigned to, and will always have its default value null [D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\Scripts\VPopup\Tween Animation Handler\SimpleTweenAnimationHandler.cs(9,44): warning CS0649: Field 'SimpleTweenAnimationHandler.root' is never assigned to, and will always have its default value null [D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\Scripts\SliderAnimator.cs(86,19): warning CS0169: The field 'SliderAnimator._t' is never used [D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\Scripts\VPopup\Tween Animation Handler\PopupTweenAnimationHandler.cs(16,45): warning CS0649: Field 'PopupTweenAnimationHandler.onHideAnimationBeganEvent' is never assigned to, and will always have its default value null [D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\Scripts\SliderAnimator.cs(10,44): warning CS0649: Field 'SliderAnimator.reward' is never assigned to, and will always have its default value null [D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\Scripts\VPopup\Tween Animation Handler\PopupTweenAnimationHandler.cs(17,45): warning CS0649: Field 'PopupTweenAnimationHandler.onHideAnimationEndedEvent' is never assigned to, and will always have its default value null [D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\Scripts\VPopup\VPopup.cs(30,56): warning CS0649: Field 'VPopup.contentCanvasGroup' is never assigned to, and will always have its default value null [D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\Scripts\VPopup\Tween Animation Handler\PopupTweenAnimationHandler.cs(14,45): warning CS0649: Field 'PopupTweenAnimationHandler.onShowAnimationBeganEvent' is never assigned to, and will always have its default value null [D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\Scripts\VPopup\Tween Animation Handler\Tween Animation Scripts\MoveFromEdgeTweenConfig.cs(13,42): warning CS0649: Field 'MoveFromEdgeTweenConfig.additionalFromOffset' is never assigned to, and will always have its default value [D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\Scripts\VPopup\VCanvas.cs(7,48): warning CS0649: Field 'VCanvas.rectTransform' is never assigned to, and will always have its default value null [D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\Scripts\SliderAnimator.cs(8,55): warning CS0649: Field 'SliderAnimator.slider' is never assigned to, and will always have its default value null [D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\Scripts\VPopup\Tween Animation Handler\PopupTweenAnimationHandler.cs(19,68): warning CS0414: The field 'PopupTweenAnimationHandler.overlayEase' is assigned but its value is never used [D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+  CompilerServer: server - server processed compilation - Scripts
+
+_CopyFilesMarkedCopyLocal:
+  Copying file from "D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\packages\Bridge.Html5.17.9.0\lib\net40\Bridge.Html5.dll" to "D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.Html5.dll".
+
+  Copying file from "D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\packages\Bridge.Core.17.9.42-luna\lib\net40\Bridge.dll" to "D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.dll".
+
+  Copying file from "D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\packages\Bridge.WebGL.1.22.0\lib\net40\Bridge.WebGL.dll" to "D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.WebGL.dll".
+
+  Copying file from "D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\packages\DOTween.1.2.705\lib\net40\DOTween.dll" to "D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\DOTween.dll".
+
+  Copying file from "D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\packages\com.unity.ide.rider\3.0.0\JetBrains.dll" to "D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\JetBrains.dll".
+
+  Copying file from "D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\packages\Bridge.Newtonsoft.Json.1.16.0\lib\net40\Newtonsoft.Json.dll" to "D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Newtonsoft.Json.dll".
+
+  Copying file from "D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\packages\Retyped.Core.1.6.6733\lib\net40\Retyped.Core.dll" to "D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.Core.dll".
+
+  Copying file from "D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\packages\Retyped.dom.2.8.6733\lib\net40\Retyped.dom.dll" to "D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.dom.dll".
+  Copying file from "D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\packages\Retyped.es5.2.8.6733\lib\net40\Retyped.es5.dll" to "D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.es5.dll".
+
+  Copying file from "D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\packages\Retyped.scripthost.2.8.6733\lib\net40\Retyped.scripthost.dll" to "D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.scripthost.dll".
+
+  Copying file from "D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\packages\com.unity.textmeshpro\3.0.6\TextMeshPro.dll" to "D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\TextMeshPro.dll".
+
+  Copying file from "D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\Vendor\UnityEngine.dll" to "D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityEngine.dll".
+
+  Copying file from "D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\packages\com.unity.urp\7.6\UnityEngine.UniversalRenderPipeline.dll" to "D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityEngine.UniversalRenderPipeline.dll".
+
+  Copying file from "D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\packages\com.unity.ui\1.2.1\UnityEngine.UI.dll" to "D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityEngine.UI.dll".
+
+  Copying file from "D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\packages\Bridge.Core.17.9.42-luna\lib\net40\Bridge.xml" to "D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.xml".
+
+  Copying file from "D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\packages\Bridge.Html5.17.9.0\lib\net40\Bridge.Html5.xml" to "D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.Html5.xml".
+
+  Copying file from "D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\packages\Bridge.WebGL.1.22.0\lib\net40\Bridge.WebGL.xml" to "D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.WebGL.xml".
+
+  Copying file from "D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\packages\Bridge.Newtonsoft.Json.1.16.0\lib\net40\Newtonsoft.Json.xml" to "D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Newtonsoft.Json.xml".
+
+  Copying file from "D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\packages\Retyped.Core.1.6.6733\lib\net40\Retyped.Core.xml" to "D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.Core.xml".
+
+  Copying file from "D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\packages\Retyped.dom.2.8.6733\lib\net40\Retyped.dom.xml" to "D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.dom.xml".
+  Copying file from "D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\packages\Retyped.es5.2.8.6733\lib\net40\Retyped.es5.xml" to "D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.es5.xml".
+
+  Copying file from "D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\packages\Retyped.scripthost.2.8.6733\lib\net40\Retyped.scripthost.xml" to "D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.scripthost.xml".
+
+  Creating "D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\obj\Debug\Scripts.csproj.Up2Date" because "AlwaysCreate" was specified.
+
+  Touching "D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\obj\Debug\Scripts.csproj.Up2Date".
+
+CopyFilesToOutputDirectory:
+  Copying file from "D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\obj\Debug\UnityScriptsCompiler.dll" to "D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityScriptsCompiler.dll".
+
+  Scripts -> D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityScriptsCompiler.dll
+
+  Copying file from "D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\obj\Debug\UnityScriptsCompiler.pdb" to "D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityScriptsCompiler.pdb".
+
+BridgeNetCompilerTask:
+  Bridge started
+
+      To enable detailed logging, configure "logging" in bridge.json.
+      https://github.com/bridgedotnet/Bridge/wiki/global-configuration#logging
+
+  Bridge done
+
+Done Building Project "D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj" (Rebuild target(s)).
+
+
+Build succeeded.
+
+
+"D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj" (Rebuild target) (1) ->
+(CoreCompile target) -> 
+  D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\Scripts\VPopup\Tween Animation Handler\Tween Animation Scripts\ScaleToTweenConfig.cs(23,13): warning CS0162: Unreachable code detected [D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\Scripts\VPopup\Tween Animation Handler\Tween Animation Scripts\FadeFromTweenConfig.cs(10,53): warning CS0649: Field 'FadeFromTweenConfig.fadeFrom' is never assigned to, and will always have its default value 0 [D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\Scripts\VPopup\VPopup.cs(29,50): warning CS0649: Field 'VPopup.contentInitialAlpha' is never assigned to, and will always have its default value 0 [D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\Scripts\SliderAnimator.cs(9,44): warning CS0169: The field 'SliderAnimator.handle' is never used [D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\
+Scripts.csproj]
+  D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\Scripts\VPopup\Tween Animation Handler\Tween Animation Scripts\FadeToTweenConfig.cs(10,53): warning CS0649: Field 'FadeToTweenConfig.fadeTo' is never assigned to, and will always have its default value 0 [D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\Scripts\VPopup\Tween Animation Handler\PopupTweenAnimationHandler.cs(15,45): warning CS0649: Field 'PopupTweenAnimationHandler.onShowAnimationEndedEvent' is never assigned to, and will always have its default value null [D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\Scripts\VPopup\Tween Animation Handler\SimpleTweenAnimationHandler.cs(10,36): warning CS0169: The field 'SimpleTweenAnimationHandler.overlay' is never used [D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\Scripts\VPopup\Tween Animation Handler\Tween Animation Scripts\ScaleFromTweenConfig.cs(10,42): warning CS0649: Field 'ScaleFromTweenConfig.scaleFrom' is never assigned to, and will always have its default value [D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\Scripts\VPopup\Tween Animation Handler\Tween Animation Scripts\ScaleToTweenConfig.cs(10,42): warning CS0649: Field 'ScaleToTweenConfig.scaleTo' is never assigned to, and will always have its default value [D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\Scripts\VPopup\Tween Animation Handler\PopupTweenAnimationHandler.cs(11,51): warning CS0649: Field 'PopupTweenAnimationHandler.tweenHideAnimationConfig' is never assigned to, and will always have its default value null [D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\Scripts\Game.cs(16,40): warning CS0169: The field 'Game.character' is never used [D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\Scripts\SliderAnimator.cs(11,52): warning CS0649: Field 'SliderAnimator.animationConfig' is never assigned to, and will always have its default value null [D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\Scripts\VPopup\VPopup.cs(28,52): warning CS0649: Field 'VPopup.contentInitialScale' is never assigned to, and will always have its default value [D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\Scripts\VPopup\Tween Animation Handler\PopupTweenAnimationHandler.cs(10,81): warning CS0649: Field 'PopupTweenAnimationHandler.tweenShowAnimationConfig' is never assigned to, and will always have its default value null [D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\Scripts\VPopup\Tween Animation Handler\Tween Animation Scripts\MoveToEdgeTweenConfig.cs(13,42): warning CS0649: Field 'MoveToEdgeTweenConfig.additionalFromOffset' is never assigned to, and will always have its default value [D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\Scripts\VPopup\Tween Animation Handler\Tween Animation Scripts\JoinTweenConfig.cs(10,53): warning CS0649: Field 'JoinTweenConfig.tweenList' is never assigned to, and will always have its default value null [D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\Scripts\VPopup\Tween Animation Handler\SimpleTweenAnimationHandler.cs(9,44): warning CS0649: Field 'SimpleTweenAnimationHandler.root' is never assigned to, and will a
+lways have its default value null [D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\Scripts\SliderAnimator.cs(86,19): warning CS0169: The field 'SliderAnimator._t' is never used [D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\Scripts\VPopup\Tween Animation Handler\PopupTweenAnimationHandler.cs(16,45): warning CS0649: Field 'PopupTweenAnimationHandler.onHideAnimationBeganEvent' is never assigned to, and will always have its default value null [D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\Scripts\SliderAnimator.cs(10,44): warning CS0649: Field 'SliderAnimator.reward' is never assigned to, and will always have its default value null [D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\Scripts\VPopup\Tween Animation Handler\PopupTweenAnimationHandler.cs(17,45): warning CS0649: Field 'PopupTweenAnimationHandler.onHideAnimationEndedEvent' is never assigned to, and will always have its default value null [D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\Scripts\VPopup\VPopup.cs(30,56): warning CS0649: Field 'VPopup.contentCanvasGroup' is never assigned to, and will always have its default value null [D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\Scripts\VPopup\Tween Animation Handler\PopupTweenAnimationHandler.cs(14,45): warning CS0649: Field 'PopupTweenAnimationHandler.onShowAnimationBeganEvent' is never assigned to, and will always have its default value null [D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\Scripts\VPopup\Tween Animation Handler\Tween Animation Scripts\MoveFromEdgeTweenConfig.cs(13,42): warning CS0649: Field 'MoveFromEdgeTweenConfig.additionalFromOffset' is never assigned to, and will always have its default value [D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\Scripts\VPopup\VCanvas.cs(7,48): warning CS0649: Field 'VCanvas.rectTransform' is never assigned to, and will always have its default value null [D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\Scripts\SliderAnimator.cs(8,55): warning CS0649: Field 'SliderAnimator.slider' is never assigned to, and will always have its default value null [D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Unity\playable ads\projects\Playable Ads 2D\LunaTemp\stage3\processed-scripts\Assets\Scripts\VPopup\Tween Animation Handler\PopupTweenAnimationHandler.cs(19,68): warning CS0414: The field 'PopupTweenAnimationHandler.overlayEase' is assigned but its value is never used [D:\Unity\playable ads\7.0.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+    27 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:12.78
+
+Source code compiled successfully!
+﻿
+[ error ] $﻿
+PHC: LP error code not found in JSON: 3015, JSON file might be outdated. Error message: Sequence contains no matching element
+
+Diagnostics gathered successfully
+report@code:build 20207.74
+report@diagnostics:verify 0.64
+report@diagnostics:upload 2234.83
+report@code:stage 10484.40
+[ Stage3 ] Code compiled and bundled successfully.
+report@code:bundle 33223.12
+report@package:stage 1276.22
+[ Stage4 ] Target platform: develop
+[ Stage4 ] Package bundled successfully
+report@assets:stats 0.27

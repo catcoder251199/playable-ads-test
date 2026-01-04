@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Handle - Zoom
+  m_Controller: {fileID: 9100000, guid: f6275495efdc9654f8c436308776028e, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 2363578734327848780, guid: f6275495efdc9654f8c436308776028e, type: 2}
+    m_OverrideClip: {fileID: 2363578734327848780, guid: f6275495efdc9654f8c436308776028e, type: 2}
+  - m_OriginalClip: {fileID: 5154792822984109987, guid: f6275495efdc9654f8c436308776028e, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: ec6b021ded9941f4fa5164e2a812f7b5, type: 2}
+  - m_OriginalClip: {fileID: 3191953595243188881, guid: f6275495efdc9654f8c436308776028e, type: 2}
+    m_OverrideClip: {fileID: 3191953595243188881, guid: f6275495efdc9654f8c436308776028e, type: 2}
+  - m_OriginalClip: {fileID: -3449609236606219217, guid: f6275495efdc9654f8c436308776028e, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 7ebf84f40f5e6194aa336d9c33ea7f2e, type: 2}
+  - m_OriginalClip: {fileID: 1033423823908679702, guid: f6275495efdc9654f8c436308776028e, type: 2}
+    m_OverrideClip: {fileID: 1033423823908679702, guid: f6275495efdc9654f8c436308776028e, type: 2}

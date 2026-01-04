@@ -1,0 +1,162 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be58cf772899b9c42a8e46620f624086, type: 3}
+  m_Name: new Slider Animation Config
+  m_EditorClassIdentifier: 
+  moveDuration: 0.6
+  moveRewardDuration: 0.6
+  scaleRewardDuration: 0.5
+  rotateRewardDuration: 0.3
+  rotateRewardStartTime: 0.8
+  rewardRotateCycle: 2
+  scaleRewardValue: 2
+  moveCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  rewardMoveCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: -0.9551887
+      outSlope: -0.9551887
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.24680187
+    - serializedVersion: 3
+      time: 0.06595555
+      value: -0.06958005
+      inSlope: -0.69451195
+      outSlope: -0.69451195
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.12566617
+    - serializedVersion: 3
+      time: 0.67525345
+      value: 1.1697464
+      inSlope: -0.0038481348
+      outSlope: -0.0038481348
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.6553983
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: -0.005433134
+      outSlope: -0.005433134
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.6393764
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  rewardScaleCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: -0.06417716
+      outSlope: -0.06417716
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 1
+    - serializedVersion: 3
+      time: 0.3741246
+      value: 1.1023939
+      inSlope: -0.023308484
+      outSlope: -0.023308484
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.5713333
+    - serializedVersion: 3
+      time: 0.733008
+      value: 0.9036094
+      inSlope: 0.059256844
+      outSlope: 0.059256844
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.71004486
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  rewardRotateCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.45112094
+      value: 0.8751401
+      inSlope: 0.7644248
+      outSlope: 0.7644248
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4

@@ -1,0 +1,9 @@
+namespace DefaultNamespace.GameState
+{
+    public interface IGameState
+    {
+        void Enter();
+        void Exit();
+        void Tick();
+    }
+}
