@@ -1,0 +1,597 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d63d92f2d0e40dc8770102441af2343, type: 3}
+  m_Name: Level Data
+  m_EditorClassIdentifier: 
+  levelData:
+  - id: 0
+    note: 97
+    time: 2.476192
+    delta: 0.190476
+    duration: 0.285715
+    volume: 32
+    lane: 1
+  - id: 8
+    note: 98
+    time: 2.666669
+    delta: 0.190477
+    duration: 0.285715
+    volume: 32
+    lane: 2
+  - id: 9
+    note: 99
+    time: 2.857145
+    delta: 0.190476
+    duration: 0.285715
+    volume: 32
+    lane: 3
+  - id: 10
+    note: 96
+    time: 3.238098
+    delta: 0.380953
+    duration: 0.285715
+    volume: 32
+    lane: 0
+  - id: 11
+    note: 99
+    time: 3.428574
+    delta: 0.190476
+    duration: 0.285715
+    volume: 32
+    lane: 3
+  - id: 12
+    note: 96
+    time: 4.571432
+    delta: 1.142858
+    duration: 0.285715
+    volume: 32
+    lane: 0
+  - id: 13
+    note: 98
+    time: 4.952385
+    delta: 0.380953
+    duration: 0.285715
+    volume: 32
+    lane: 2
+  - id: 14
+    note: 96
+    time: 5.142861
+    delta: 0.190476
+    duration: 0.285715
+    volume: 32
+    lane: 0
+  - id: 15
+    note: 99
+    time: 5.476195
+    delta: 0.333334
+    duration: 0.285715
+    volume: 32
+    lane: 3
+  - id: 16
+    note: 97
+    time: 5.71429
+    delta: 0.238095
+    duration: 0.285715
+    volume: 32
+    lane: 1
+  - id: 17
+    note: 98
+    time: 6.095243
+    delta: 0.380953
+    duration: 0.285715
+    volume: 32
+    lane: 2
+  - id: 18
+    note: 96
+    time: 6.285719
+    delta: 0.190476
+    duration: 0.285715
+    volume: 32
+    lane: 0
+  - id: 19
+    note: 99
+    time: 6.666672
+    delta: 0.380953
+    duration: 0.285715
+    volume: 32
+    lane: 3
+  - id: 20
+    note: 97
+    time: 6.857148
+    delta: 0.190476
+    duration: 0.285715
+    volume: 32
+    lane: 1
+  - id: 21
+    note: 99
+    time: 7.428577
+    delta: 0.571429
+    duration: 0.285715
+    volume: 32
+    lane: 3
+  - id: 22
+    note: 97
+    time: 7.428577
+    delta: 0
+    duration: 0.285715
+    volume: 32
+    lane: 1
+  - id: 23
+    note: 98
+    time: 8.000006
+    delta: 0.571429
+    duration: 1.142858
+    volume: 32
+    lane: 2
+  - id: 24
+    note: 96
+    time: 8.000006
+    delta: 0
+    duration: 1.142858
+    volume: 32
+    lane: 0
+  - id: 25
+    note: 99
+    time: 9.142864
+    delta: 1.142858
+    duration: 0.285715
+    volume: 32
+    lane: 3
+  - id: 26
+    note: 98
+    time: 9.33334
+    delta: 0.190476
+    duration: 0.285715
+    volume: 32
+    lane: 2
+  - id: 27
+    note: 97
+    time: 9.523817
+    delta: 0.190477
+    duration: 0.285715
+    volume: 32
+    lane: 1
+  - id: 28
+    note: 96
+    time: 9.714293
+    delta: 0.190476
+    duration: 0.285715
+    volume: 32
+    lane: 0
+  - id: 29
+    note: 99
+    time: 10.095246
+    delta: 0.380953
+    duration: 0.285715
+    volume: 32
+    lane: 3
+  - id: 30
+    note: 96
+    time: 10.285722
+    delta: 0.190476
+    duration: 0.285715
+    volume: 32
+    lane: 0
+  - id: 31
+    note: 99
+    time: 10.857151
+    delta: 0.571429
+    duration: 0.285715
+    volume: 32
+    lane: 3
+  - id: 32
+    note: 96
+    time: 10.857151
+    delta: 0
+    duration: 0.285715
+    volume: 32
+    lane: 0
+  - id: 33
+    note: 96
+    time: 11.42858
+    delta: 0.571429
+    duration: 0.285715
+    volume: 32
+    lane: 0
+  - id: 34
+    note: 97
+    time: 11.619056
+    delta: 0.190476
+    duration: 0.285715
+    volume: 32
+    lane: 1
+  - id: 35
+    note: 98
+    time: 11.809533
+    delta: 0.190477
+    duration: 0.285715
+    volume: 32
+    lane: 2
+  - id: 36
+    note: 99
+    time: 12.000009
+    delta: 0.190476
+    duration: 0.285715
+    volume: 32
+    lane: 3
+  - id: 37
+    note: 96
+    time: 12.380962
+    delta: 0.380953
+    duration: 0.285715
+    volume: 32
+    lane: 0
+  - id: 38
+    note: 99
+    time: 12.571438
+    delta: 0.190476
+    duration: 0.285715
+    volume: 32
+    lane: 3
+  - id: 39
+    note: 99
+    time: 13.142867
+    delta: 0.571429
+    duration: 0.285715
+    volume: 32
+    lane: 3
+  - id: 40
+    note: 96
+    time: 13.142867
+    delta: 0
+    duration: 0.285715
+    volume: 32
+    lane: 0
+  - id: 41
+    note: 99
+    time: 13.714296
+    delta: 0.571429
+    duration: 0.285715
+    volume: 32
+    lane: 3
+  - id: 42
+    note: 98
+    time: 14.095249
+    delta: 0.380953
+    duration: 0.285715
+    volume: 32
+    lane: 2
+  - id: 43
+    note: 96
+    time: 14.095249
+    delta: 0
+    duration: 0.285715
+    volume: 32
+    lane: 0
+  - id: 44
+    note: 99
+    time: 14.285725
+    delta: 0.190476
+    duration: 0.285715
+    volume: 32
+    lane: 3
+  - id: 45
+    note: 98
+    time: 14.666678
+    delta: 0.380953
+    duration: 0.285715
+    volume: 32
+    lane: 2
+  - id: 46
+    note: 96
+    time: 14.666678
+    delta: 0
+    duration: 0.285715
+    volume: 32
+    lane: 0
+  - id: 47
+    note: 97
+    time: 14.857154
+    delta: 0.190476
+    duration: 0.285715
+    volume: 32
+    lane: 1
+  - id: 48
+    note: 98
+    time: 15.238107
+    delta: 0.380953
+    duration: 0.285715
+    volume: 32
+    lane: 2
+  - id: 49
+    note: 97
+    time: 15.428583
+    delta: 0.190476
+    duration: 0.285715
+    volume: 32
+    lane: 1
+  - id: 50
+    note: 99
+    time: 15.809536
+    delta: 0.380953
+    duration: 0.285715
+    volume: 32
+    lane: 3
+  - id: 51
+    note: 96
+    time: 16.000011
+    delta: 0.190476
+    duration: 0.285715
+    volume: 32
+    lane: 0
+  - id: 52
+    note: 98
+    time: 16.380964
+    delta: 0.380953
+    duration: 0.285715
+    volume: 32
+    lane: 2
+  - id: 53
+    note: 97
+    time: 16.571442
+    delta: 0.190476
+    duration: 0.285715
+    volume: 32
+    lane: 1
+  - id: 54
+    note: 99
+    time: 16.952394
+    delta: 0.380953
+    duration: 0.285715
+    volume: 32
+    lane: 3
+  - id: 55
+    note: 96
+    time: 17.14287
+    delta: 0.190476
+    duration: 0.285715
+    volume: 32
+    lane: 0
+  - id: 56
+    note: 96
+    time: 18.285728
+    delta: 1.142858
+    duration: 0.285715
+    volume: 32
+    lane: 0
+  - id: 57
+    note: 97
+    time: 18.476204
+    delta: 0.190476
+    duration: 0.285715
+    volume: 32
+    lane: 1
+  - id: 58
+    note: 98
+    time: 18.666681
+    delta: 0.190477
+    duration: 0.285715
+    volume: 32
+    lane: 2
+  - id: 59
+    note: 99
+    time: 18.857157
+    delta: 0.190476
+    duration: 0.285715
+    volume: 32
+    lane: 3
+  - id: 60
+    note: 96
+    time: 19.23811
+    delta: 0.380953
+    duration: 0.285715
+    volume: 32
+    lane: 0
+  - id: 61
+    note: 99
+    time: 19.428585
+    delta: 0.190476
+    duration: 0.285715
+    volume: 32
+    lane: 3
+  - id: 62
+    note: 99
+    time: 20.000015
+    delta: 0.571429
+    duration: 0.285715
+    volume: 32
+    lane: 3
+  - id: 63
+    note: 96
+    time: 20.000015
+    delta: 0
+    duration: 0.285715
+    volume: 32
+    lane: 0
+  - id: 64
+    note: 99
+    time: 20.571444
+    delta: 0.571429
+    duration: 0.285715
+    volume: 32
+    lane: 3
+  - id: 65
+    note: 98
+    time: 20.76192
+    delta: 0.190476
+    duration: 0.285715
+    volume: 32
+    lane: 2
+  - id: 66
+    note: 97
+    time: 20.952396
+    delta: 0.190477
+    duration: 0.285715
+    volume: 32
+    lane: 1
+  - id: 67
+    note: 96
+    time: 21.142874
+    delta: 0.190476
+    duration: 0.285715
+    volume: 32
+    lane: 0
+  - id: 68
+    note: 99
+    time: 21.523827
+    delta: 0.380953
+    duration: 0.285715
+    volume: 32
+    lane: 3
+  - id: 69
+    note: 96
+    time: 21.714302
+    delta: 0.190476
+    duration: 0.285715
+    volume: 32
+    lane: 0
+  - id: 70
+    note: 99
+    time: 22.28573
+    delta: 0.571429
+    duration: 0.285715
+    volume: 32
+    lane: 3
+  - id: 71
+    note: 96
+    time: 22.28573
+    delta: 0
+    duration: 0.285715
+    volume: 32
+    lane: 0
+  - id: 72
+    note: 97
+    time: 22.85716
+    delta: 0.571429
+    duration: 0.285715
+    volume: 32
+    lane: 1
+  - id: 73
+    note: 98
+    time: 23.238113
+    delta: 0.380953
+    duration: 0.285715
+    volume: 32
+    lane: 2
+  - id: 74
+    note: 96
+    time: 23.238113
+    delta: 0
+    duration: 0.285715
+    volume: 32
+    lane: 0
+  - id: 75
+    note: 99
+    time: 23.428589
+    delta: 0.190476
+    duration: 0.285715
+    volume: 32
+    lane: 3
+  - id: 76
+    note: 99
+    time: 23.809542
+    delta: 0.380953
+    duration: 0.285715
+    volume: 32
+    lane: 3
+  - id: 77
+    note: 97
+    time: 23.809542
+    delta: 0
+    duration: 0.285715
+    volume: 32
+    lane: 1
+  - id: 78
+    note: 96
+    time: 24.000017
+    delta: 0.190476
+    duration: 0.285715
+    volume: 32
+    lane: 0
+  - id: 79
+    note: 98
+    time: 24.380972
+    delta: 0.380953
+    duration: 0.285715
+    volume: 32
+    lane: 2
+  - id: 80
+    note: 96
+    time: 24.380972
+    delta: 0
+    duration: 0.285715
+    volume: 32
+    lane: 0
+  - id: 81
+    note: 99
+    time: 24.571447
+    delta: 0.190476
+    duration: 0.285715
+    volume: 32
+    lane: 3
+  - id: 82
+    note: 98
+    time: 24.9524
+    delta: 0.380953
+    duration: 0.285715
+    volume: 32
+    lane: 2
+  - id: 83
+    note: 96
+    time: 24.9524
+    delta: 0
+    duration: 0.285715
+    volume: 32
+    lane: 0
+  - id: 84
+    note: 99
+    time: 25.142876
+    delta: 0.190476
+    duration: 0.285715
+    volume: 32
+    lane: 3
+  - id: 85
+    note: 97
+    time: 25.142876
+    delta: 0
+    duration: 0.285715
+    volume: 32
+    lane: 1
+  - id: 86
+    note: 98
+    time: 25.714306
+    delta: 0.571429
+    duration: 0.285715
+    volume: 32
+    lane: 2
+  - id: 87
+    note: 96
+    time: 25.714306
+    delta: 0
+    duration: 0.285715
+    volume: 32
+    lane: 0
+  - id: 88
+    note: 99
+    time: 26.285734
+    delta: 0.571429
+    duration: 0.285715
+    volume: 32
+    lane: 3
+  - id: 89
+    note: 97
+    time: 26.285734
+    delta: 0
+    duration: 0.285715
+    volume: 32
+    lane: 1
+  midiString: n:97-ta:2.476192-ts:0.190476-d:0.285715-v:32-pid:1,id:8-n:98-ta:2.666669-ts:0.190477-d:0.285715-v:32-pid:2,id:9-n:99-ta:2.857145-ts:0.190476-d:0.285715-v:32-pid:3,id:10-n:96-ta:3.238098-ts:0.380953-d:0.285715-v:32-pid:0,id:11-n:99-ta:3.428574-ts:0.190476-d:0.285715-v:32-pid:3,id:12-n:96-ta:4.571432-ts:1.142858-d:0.285715-v:32-pid:0,id:13-n:98-ta:4.952385-ts:0.380953-d:0.285715-v:32-pid:2,id:14-n:96-ta:5.142861-ts:0.190476-d:0.285715-v:32-pid:0,id:15-n:99-ta:5.476195-ts:0.333334-d:0.285715-v:32-pid:3,id:16-n:97-ta:5.71429-ts:0.238095-d:0.285715-v:32-pid:1,id:17-n:98-ta:6.095243-ts:0.380953-d:0.285715-v:32-pid:2,id:18-n:96-ta:6.285719-ts:0.190475999999999-d:0.285715-v:32-pid:0,id:19-n:99-ta:6.666672-ts:0.380953-d:0.285715-v:32-pid:3,id:20-n:97-ta:6.857148-ts:0.190476-d:0.285715-v:32-pid:1,id:21-n:99-ta:7.428577-ts:0.571429-d:0.285715-v:32-pid:3,id:22-n:97-ta:7.428577-ts:0-d:0.285715-v:32-pid:1,id:23-n:98-ta:8.000006-ts:0.571428999999999-d:1.142858-v:32-pid:2,id:24-n:96-ta:8.000006-ts:0-d:1.142858-v:32-pid:0,id:25-n:99-ta:9.142864-ts:1.142858-d:0.285715-v:32-pid:3,id:26-n:98-ta:9.33334-ts:0.190476-d:0.285715-v:32-pid:2,id:27-n:97-ta:9.523817-ts:0.190477-d:0.285715-v:32-pid:1,id:28-n:96-ta:9.714293-ts:0.190476-d:0.285715-v:32-pid:0,id:29-n:99-ta:10.095246-ts:0.380953-d:0.285715-v:32-pid:3,id:30-n:96-ta:10.285722-ts:0.190476-d:0.285715-v:32-pid:0,id:31-n:99-ta:10.857151-ts:0.571429-d:0.285715-v:32-pid:3,id:32-n:96-ta:10.857151-ts:0-d:0.285715-v:32-pid:0,id:33-n:96-ta:11.42858-ts:0.571429-d:0.285715-v:32-pid:0,id:34-n:97-ta:11.619056-ts:0.190475999999999-d:0.285715-v:32-pid:1,id:35-n:98-ta:11.809533-ts:0.190477000000001-d:0.285715-v:32-pid:2,id:36-n:99-ta:12.000009-ts:0.190475999999999-d:0.285715-v:32-pid:3,id:37-n:96-ta:12.380962-ts:0.380953000000002-d:0.285715-v:32-pid:0,id:38-n:99-ta:12.571438-ts:0.190475999999999-d:0.285715-v:32-pid:3,id:39-n:99-ta:13.142867-ts:0.571429-d:0.285715-v:32-pid:3,id:40-n:96-ta:13.142867-ts:0-d:0.285715-v:32-pid:0,id:41-n:99-ta:13.714296-ts:0.571429-d:0.285715-v:32-pid:3,id:42-n:98-ta:14.095249-ts:0.380953-d:0.285715-v:32-pid:2,id:43-n:96-ta:14.095249-ts:0-d:0.285715-v:32-pid:0,id:44-n:99-ta:14.285725-ts:0.190476-d:0.285715-v:32-pid:3,id:45-n:98-ta:14.666678-ts:0.380953-d:0.285715-v:32-pid:2,id:46-n:96-ta:14.666678-ts:0-d:0.285715-v:32-pid:0,id:47-n:97-ta:14.857154-ts:0.190476-d:0.285715-v:32-pid:1,id:48-n:98-ta:15.238107-ts:0.380953-d:0.285715-v:32-pid:2,id:49-n:97-ta:15.428583-ts:0.190476-d:0.285715-v:32-pid:1,id:50-n:99-ta:15.809536-ts:0.380953-d:0.285715-v:32-pid:3,id:51-n:96-ta:16.000012-ts:0.190475999999999-d:0.285715-v:32-pid:0,id:52-n:98-ta:16.380965-ts:0.380953000000002-d:0.285715-v:32-pid:2,id:53-n:97-ta:16.571441-ts:0.190476-d:0.285715-v:32-pid:1,id:54-n:99-ta:16.952394-ts:0.380952999999998-d:0.285715-v:32-pid:3,id:55-n:96-ta:17.14287-ts:0.190476-d:0.285715-v:32-pid:0,id:56-n:96-ta:18.285728-ts:1.142858-d:0.285715-v:32-pid:0,id:57-n:97-ta:18.476204-ts:0.190476-d:0.285715-v:32-pid:1,id:58-n:98-ta:18.666681-ts:0.190477000000001-d:0.285715-v:32-pid:2,id:59-n:99-ta:18.857157-ts:0.190476-d:0.285715-v:32-pid:3,id:60-n:96-ta:19.23811-ts:0.380952999999998-d:0.285715-v:32-pid:0,id:61-n:99-ta:19.428586-ts:0.190476-d:0.285715-v:32-pid:3,id:62-n:99-ta:20.000015-ts:0.571428999999998-d:0.285715-v:32-pid:3,id:63-n:96-ta:20.000015-ts:0-d:0.285715-v:32-pid:0,id:64-n:99-ta:20.571444-ts:0.571429000000002-d:0.285715-v:32-pid:3,id:65-n:98-ta:20.76192-ts:0.190476-d:0.285715-v:32-pid:2,id:66-n:97-ta:20.952397-ts:0.190476999999998-d:0.285715-v:32-pid:1,id:67-n:96-ta:21.142873-ts:0.190476-d:0.285715-v:32-pid:0,id:68-n:99-ta:21.523826-ts:0.380953000000002-d:0.285715-v:32-pid:3,id:69-n:96-ta:21.714302-ts:0.190476-d:0.285715-v:32-pid:0,id:70-n:99-ta:22.285731-ts:0.571428999999998-d:0.285715-v:32-pid:3,id:71-n:96-ta:22.285731-ts:0-d:0.285715-v:32-pid:0,id:72-n:97-ta:22.85716-ts:0.571429000000002-d:0.285715-v:32-pid:1,id:73-n:98-ta:23.238113-ts:0.380952999999998-d:0.285715-v:32-pid:2,id:74-n:96-ta:23.238113-ts:0-d:0.285715-v:32-pid:0,id:75-n:99-ta:23.428589-ts:0.190476-d:0.285715-v:32-pid:3,id:76-n:99-ta:23.809542-ts:0.380953000000002-d:0.285715-v:32-pid:3,id:77-n:97-ta:23.809542-ts:0-d:0.285715-v:32-pid:1,id:78-n:96-ta:24.000018-ts:0.190475999999997-d:0.285715-v:32-pid:0,id:79-n:98-ta:24.380971-ts:0.380953000000002-d:0.285715-v:32-pid:2,id:80-n:96-ta:24.380971-ts:0-d:0.285715-v:32-pid:0,id:81-n:99-ta:24.571447-ts:0.190476-d:0.285715-v:32-pid:3,id:82-n:98-ta:24.9524-ts:0.380952999999998-d:0.285715-v:32-pid:2,id:83-n:96-ta:24.9524-ts:0-d:0.285715-v:32-pid:0,id:84-n:99-ta:25.142876-ts:0.190476-d:0.285715-v:32-pid:3,id:85-n:97-ta:25.142876-ts:0-d:0.285715-v:32-pid:1,id:86-n:98-ta:25.714305-ts:0.571429000000002-d:0.285715-v:32-pid:2,id:87-n:96-ta:25.714305-ts:0-d:0.285715-v:32-pid:0,id:88-n:99-ta:26.285734-ts:0.571428999999998-d:0.285715-v:32-pid:3,id:89-n:97-ta:26.285734-ts:0-d:0.285715-v:32-pid:1,
