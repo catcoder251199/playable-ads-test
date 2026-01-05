@@ -6,7 +6,7 @@ namespace DefaultNamespace.Pooling
 {
     public class PoolManager : GenericMonoSingleton<PoolManager>
     {
-        readonly Dictionary<Type, IPool> pools = new();
+        readonly Dictionary<Type, IPool> pools = new Dictionary<Type, IPool>();
 
         public IPool<T> GetOrCreatePool<T>(
             T prefab,

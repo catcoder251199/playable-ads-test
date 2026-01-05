@@ -16,8 +16,8 @@ namespace DefaultNamespace.AudioManager
         {
             Luna.Unity.Playable.InstallFullGame();
             
-            sfxMap = new();
-            bgmMap = new();
+            sfxMap = new Dictionary<string, AudioClip>();
+            bgmMap = new Dictionary<string, AudioClip>();
 
             foreach (var e in sfx)
                 if (!sfxMap.ContainsKey(e.id))
