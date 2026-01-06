@@ -9,6 +9,8 @@ namespace DefaultNamespace.Game
     {
         [SerializeField] protected NoteData noteData;
         [SerializeField, ReadOnly] protected Lane laneTarget;
+        [SerializeField, ReadOnly] protected TilePage pageTarget;
+        
         [SerializeField] protected RectTransform rectTransform;
         [SerializeField] protected float minWidth;
         [SerializeField] protected float maxWidth;
@@ -21,32 +23,78 @@ namespace DefaultNamespace.Game
 
         public void SetLaneTarget(Lane target)
         {
-            if (laneTarget)
-                laneTarget.OnLaneWidthChangedEventChannel.OnEventRaised -= OnLaneWidthChangedEventHandler;
+            // if (laneTarget)
+            //     laneTarget.OnLaneWidthChangedEventChannel.OnEventRaised -= OnLaneWidthChangedEventHandler;
+            //
+            // laneTarget = target;
+            //
+            // if (laneTarget)
+            // {
+            //     laneTarget.OnLaneWidthChangedEventChannel.OnEventRaised += OnLaneWidthChangedEventHandler;
+            //     SetWidth(laneTarget.RectTransform.rect.width);
+            //     SetPositionX(laneTarget.RectTransform.anchoredPosition.x);
+            // }
+        }
+
+        public void SetPageTarget(TilePage target)
+        {
+            if (pageTarget)
+                pageTarget.OnPageWidthChangedEventChannel.OnEventRaised -= OnLaneWidthChangedEventHandler;
             
-            laneTarget = target;
+            pageTarget = target;
             
-            if (laneTarget)
+            if (pageTarget)
             {
-                laneTarget.OnLaneWidthChangedEventChannel.OnEventRaised += OnLaneWidthChangedEventHandler;
-                SetWidth(laneTarget.RectTransform.rect.width);
-                SetPositionX(laneTarget.RectTransform.anchoredPosition.x);
+                pageTarget.OnPageWidthChangedEventChannel.OnEventRaised += OnLaneWidthChangedEventHandler;
+                //SetWidth(pageTarget.RectTransform.rect.width);
+                //SetPositionX(pageTarget.RectTransform.anchoredPosition.x);
+                RecalculateWidth();
+                RecalculateX();
             }
+        }
+
+        private void RecalculateX()
+        {
+            int laneIndex = noteData.lane;
+            var pageRectSize = pageTarget.RectTransform.rect.size;
+            float pageWidth = pageRectSize.x;
+            float laneWidth = pageRectSize.x / 4;
+
+            float x_i = -pageWidth / 2 + laneWidth / 2 + laneIndex * laneWidth;
+            rectTransform.anchoredPosition = new Vector2(x_i, rectTransform.anchoredPosition.y);
+        }
+        
+        private void RecalculateWidth()
+        {
+            var pageRectSize = pageTarget.RectTransform.rect.size;
+            float pageWidth = pageRectSize.x;
+            float laneWidth = pageRectSize.x / 4;
+            laneWidth = Mathf.Max(minWidth, Mathf.Min(laneWidth, maxWidth));
+            rectTransform.SetSizeWithCurrentAnchors(
+                RectTransform.Axis.Horizontal,
+                laneWidth
+            );
         }
 
         public void OnDisable()
         {
-            if (laneTarget)
-                laneTarget.OnLaneWidthChangedEventChannel.OnEventRaised -= OnLaneWidthChangedEventHandler;
+            // if (laneTarget)
+            //     laneTarget.OnLaneWidthChangedEventChannel.OnEventRaised -= OnLaneWidthChangedEventHandler;
         }
 
         private void SetPositionX(float x)
         {
-            var rect = rectTransform.anchoredPosition;
-            rectTransform.anchoredPosition = new Vector2(x, rect.y);
+            //var rect = rectTransform.anchoredPosition;
+            //rectTransform.anchoredPosition = new Vector2(x, rect.y);
+        }
+
+        private void SetLocalPositionX(float x)
+        {
+            Vector2 localPos;
+            
         }
         
-        private void SetWidth(float width)
+        public void SetWidth(float width)
         {
             width = Mathf.Max(minWidth, Mathf.Min(width, maxWidth));
             ;
@@ -56,18 +104,32 @@ namespace DefaultNamespace.Game
             );
         }
         
-        protected virtual void OnLaneWidthChangedEventHandler(OnValueChangedFromToEventArgs<Lane, float> eventArgs)
+        public void SetHeight(float height)
         {
-            if (laneTarget == null)
+            rectTransform.SetSizeWithCurrentAnchors(
+                RectTransform.Axis.Vertical,
+                height
+            );
+        }
+        
+        protected virtual void OnLaneWidthChangedEventHandler(OnValueChangedFromToEventArgs<TilePage, float> eventArgs)
+        {
+            if (pageTarget == null)
                 return;
             
             var broadcaster = eventArgs.BroadCaster;
-            if (broadcaster != laneTarget)
+            if (broadcaster != pageTarget)
                 return;
             
-            SetWidth(eventArgs.To); // Change tile width
-            var x = broadcaster.RectTransform.anchoredPosition.x;
-            SetPositionX(broadcaster.RectTransform.anchoredPosition.x); // Change tile x
+            //SetWidth(eventArgs.To); // Change tile width
+            //var x = broadcaster.RectTransform.anchoredPosition.x;
+            //SetPositionX(broadcaster.RectTransform.anchoredPosition.x); // Change tile x
+            
+            if (pageTarget == eventArgs.BroadCaster)
+            {
+                RecalculateWidth();
+                RecalculateX();
+            }
         }
 
         public abstract void ResetUI();

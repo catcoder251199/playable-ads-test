@@ -10,12 +10,14 @@ namespace DefaultNamespace.Game
     public class TileSpawner : MonoBehaviour
     {
         [SerializeField] private LevelDataSO levelDataSO;
+        [SerializeField] private Camera uiCamera;
         [SerializeField] private OnTilePageRecycledEventChannel onTilePageRecycledEventChannel;
         [SerializeField] private TilePage[] pages;
         [SerializeField] private RectTransform poolParent;
         [SerializeField] private Tile tapTilePrefab;
         [SerializeField] private Tile holdTilePrefab;
         [SerializeField] private Tile startTilePrefab;
+        [SerializeField] private int totalLanes = 4;
         
         [SerializeField] private int preloadInPool = 10;
         [SerializeField] private Lane[] lanes;
@@ -32,7 +34,7 @@ namespace DefaultNamespace.Game
             _currentIndex = 0;
             tapTilePool = new GenericGameObjectPool<Tile>(tapTilePrefab, preloadInPool, poolParent);
             holdTilePool = new GenericGameObjectPool<Tile>(holdTilePrefab, preloadInPool, poolParent);
-            startTilePool = new GenericGameObjectPool<Tile>(startTilePrefab, preloadInPool, poolParent);
+            startTilePool = new GenericGameObjectPool<Tile>(startTilePrefab, 1, poolParent);
             
             SpawnTiles();
         }
@@ -49,10 +51,6 @@ namespace DefaultNamespace.Game
 
         private Tile GetTileFromPool(NoteData noteData)
         {
-            if (noteData.id == 0)
-            {
-                 return startTilePool.Spawn();
-            }
             if (noteData.duration <= levelDataSO.TapDurationThreshold) // tap tile
             {
                  return tapTilePool.Spawn();
@@ -64,7 +62,12 @@ namespace DefaultNamespace.Game
 
             return null;
         }
-
+        
+        private Tile GetStartTileFromPool()
+        {
+            return startTilePool.Spawn();
+        }
+        
         private void MoveTileToPool(Tile tile)
         {
             
@@ -75,29 +78,63 @@ namespace DefaultNamespace.Game
             var noteList = levelDataSO.LevelData.AsReadOnly();
             var pageParent = pages[0];
             var n = noteList.Count;
-            n = 5;
+            n = 1;
             while (_currentIndex < n)
             {
                 var noteData = noteList[_currentIndex];
                 Tile tile = null;
-                tile = GetTileFromPool(noteData);
+                tile = _currentIndex == 0 ? GetStartTile() : GetTileFromPool(noteData);
 
                 if (!tile)
                     Debug.LogError($"nameof{nameof(TileSpawner)} spawn a NULL tile!");
                 else
                 {
-                    tile.RectTransform.SetParent(pageParent.RectTransform);
+                    AttachToTileParent(tile.RectTransform, pageParent.RectTransform);
+                    
                     tile.UpdateUIWithData(noteData); // Update Visual
-                    tile.SetLaneTarget(lanes[noteData.lane]);
-                    var distanceYFromHitLine = levelDataSO.DistanceFromHitLine(_currentIndex);
+                    //tile.SetLaneTarget(lanes[noteData.lane]);
+                    tile.SetPageTarget(pageParent);
+                    var distanceYFromHitLine = _currentIndex == 0 ? 0 : levelDataSO.DistanceFromHitLine(_currentIndex);
                     var tilePosition = tile.RectTransform.anchoredPosition;
-                    tile.RectTransform.anchoredPosition = new Vector2(tilePosition.x, distanceYFromHitLine);
 
+                    var x = CalculateX(pageParent.RectTransform, lanes[noteData.lane], tile);
+                    x = lanes[noteData.lane].RectTransform.transform.localPosition.x;
+
+                    var tileHeight = levelDataSO.TileHeight(_currentIndex);
+                    tile.SetHeight(tileHeight);
+                    
                     pageParent.AddTile(tile);
                 }
 
                 _currentIndex++;
             }
+        }
+        
+        private void AttachToTileParent(RectTransform child, RectTransform parent)
+        {
+            child.SetParent(parent, false);
+
+            child.localScale = Vector3.one;
+            child.localRotation = Quaternion.identity;
+            child.anchoredPosition3D = Vector3.zero;
+        }
+
+        private float CalculateX(RectTransform tileContainerRect, Lane lane, Tile tile)
+        {
+            Vector3 screenPos =
+                RectTransformUtility.WorldToScreenPoint(
+                    uiCamera,
+                    lane.RectTransform.position
+                );
+            
+            Vector2 localPos;
+            RectTransformUtility.ScreenPointToLocalPointInRectangle(
+                tileContainerRect,
+                screenPos,
+                uiCamera,
+                out localPos
+            );
+            return localPos.x;
         }
         
         private void ResetBackToInitial()

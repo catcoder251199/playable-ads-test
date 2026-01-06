@@ -4,7 +4,7 @@ using UnityEngine.Serialization;
 namespace DefaultNamespace.Game
 {
     [Serializable]
-    public struct NoteData
+    public class NoteData
     {
         public int id;
         public int note;        // n

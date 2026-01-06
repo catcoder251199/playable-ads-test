@@ -8,9 +8,12 @@ namespace DefaultNamespace.Game
     [CreateAssetMenu(fileName = "new Level Data", menuName = "Game/ Level Data")]
     public class LevelDataSO: ScriptableObject
     {
+        [SerializeField] private int startTileAtLane = 2;
+        [SerializeField] private float offsetFromStart = 0.3f;
         [SerializeField] private int distanceFromHitLine = 100; // px
         [SerializeField] private float offsetDurationForTap = 0.02f;
         [SerializeField, ReadOnly] private float minTileDuration = 0.3f;
+        [SerializeField] private float heightForTap = 240; // px
         [SerializeField] private List<NoteData> levelData;
         
         public List<NoteData> LevelData => levelData;
@@ -19,6 +22,14 @@ namespace DefaultNamespace.Game
         public float DistanceFromHitLine(int noteIndex) => levelData[noteIndex].time * TilesVelocity;
         public float TapDurationThreshold => minTileDuration + offsetDurationForTap; // note has duration < TapDurationThreshold -> tap tile
 
+        public float TileHeight(int noteIndex)
+        {
+            if (levelData[noteIndex].duration <= 0)
+                return heightForTap;
+            return Mathf.Max(heightForTap / minTileDuration * levelData[noteIndex].duration, heightForTap);
+        }
+        public float HeightForTap => heightForTap;
+
 #if UNITY_EDITOR
         [ContextMenu("Find min tile duration")]
         private void FindMinTileDurationInEditor()
@@ -26,6 +37,9 @@ namespace DefaultNamespace.Game
             var min = float.MaxValue;
             foreach (var noteData in levelData)
             {
+                if (noteData.duration <= 0)
+                    continue;
+                
                 if (noteData.duration < min)
                 {
                     min = noteData.duration;
@@ -48,6 +62,9 @@ namespace DefaultNamespace.Game
         private List<NoteData> ParseMidiString(string raw)
         {
             var result = new List<NoteData>();
+            var startNoteData = new NoteData();
+            startNoteData.lane = startTileAtLane;
+            result.Add(startNoteData);
 
             var noteChunks = raw.Split(',', StringSplitOptions.RemoveEmptyEntries);
 
@@ -68,7 +85,7 @@ namespace DefaultNamespace.Game
                     switch (key)
                     {
                         case "id":
-                            note.id = int.Parse(value);
+                            note.id = int.Parse(value) + 1; // we always auto insert start tile at index 0
                             break;
                         case "n":
                             note.note = int.Parse(value);
