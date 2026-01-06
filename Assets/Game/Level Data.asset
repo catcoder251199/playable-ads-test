@@ -14,10 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startTileAtLane: 2
   offsetFromStart: 0.3
-  distanceFromHitLine: 100
+  distanceFromHitLine: 600
   offsetDurationForTap: 0.02
   minTileDuration: 0.285715
   heightForTap: 240
+  delayFromStart: 1
+  scaleHoldTileLengthFactor: 0.6
   levelData:
   - id: 0
     note: 0

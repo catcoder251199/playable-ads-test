@@ -7,9 +7,9 @@ namespace DefaultNamespace.Game
 {
     public class TilePage : MonoBehaviour
     {
+        [SerializeField] private int pageIndex = 0;
         [SerializeField] private OnPageWidthChangedEventChannel onPageWidthChangedEventChannel;
         [SerializeField] private OnTilePageRecycledEventChannel onTilePageRecycledEventChannel;
-        [SerializeField] private float speed = 300f;
         [SerializeField] private float y;
         [SerializeField] private float yDest;
         [SerializeField] private float clampedFrameDeltaTime = 0.02f;
@@ -23,7 +23,7 @@ namespace DefaultNamespace.Game
 
         public RectTransform RectTransform => rectTransform;
         public OnPageWidthChangedEventChannel OnPageWidthChangedEventChannel => onPageWidthChangedEventChannel;
-
+        public int PageIndex => pageIndex;
         
         [SerializeField, ReadOnly] private float lastWidth;
         
@@ -47,15 +47,19 @@ namespace DefaultNamespace.Game
         void Update()
         {
             CheckWidth();
-            
+        }
+
+        public void UpdateY(float velocity)
+        {
             if (Time.deltaTime > clampedFrameDeltaTime) // if the last frame stuck then the tiles should stop moving
                 return;
             
-            rectTransform.anchoredPosition += Vector2.down * (speed * Time.deltaTime);
+            rectTransform.anchoredPosition += Vector2.down * (velocity * Time.deltaTime);
 
             y = rectTransform.anchoredPosition.y;
             var rectSizeY = rectTransform.rect.size.y;
-            yDest = -rectSizeY;
+            var pageCount = 3;
+            yDest = -rectSizeY * (pageCount - 1);
             
             if (rectTransform.anchoredPosition.y <= yDest)
             {

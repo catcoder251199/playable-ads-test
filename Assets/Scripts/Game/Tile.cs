@@ -10,8 +10,8 @@ namespace DefaultNamespace.Game
         [SerializeField] protected NoteData noteData;
         [SerializeField, ReadOnly] protected Lane laneTarget;
         [SerializeField, ReadOnly] protected TilePage pageTarget;
-        
         [SerializeField] protected RectTransform rectTransform;
+        [SerializeField] protected RectTransform visualRectTransform;
         [SerializeField] protected float minWidth;
         [SerializeField] protected float maxWidth;
         public RectTransform RectTransform => rectTransform;
@@ -70,7 +70,7 @@ namespace DefaultNamespace.Game
             float pageWidth = pageRectSize.x;
             float laneWidth = pageRectSize.x / 4;
             laneWidth = Mathf.Max(minWidth, Mathf.Min(laneWidth, maxWidth));
-            rectTransform.SetSizeWithCurrentAnchors(
+            visualRectTransform.SetSizeWithCurrentAnchors(
                 RectTransform.Axis.Horizontal,
                 laneWidth
             );
@@ -98,7 +98,7 @@ namespace DefaultNamespace.Game
         {
             width = Mathf.Max(minWidth, Mathf.Min(width, maxWidth));
             ;
-            rectTransform.SetSizeWithCurrentAnchors(
+            visualRectTransform.SetSizeWithCurrentAnchors(
                 RectTransform.Axis.Horizontal,
                 width
             );
@@ -106,7 +106,7 @@ namespace DefaultNamespace.Game
         
         public void SetHeight(float height)
         {
-            rectTransform.SetSizeWithCurrentAnchors(
+            visualRectTransform.SetSizeWithCurrentAnchors(
                 RectTransform.Axis.Vertical,
                 height
             );

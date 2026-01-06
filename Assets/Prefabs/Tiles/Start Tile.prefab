@@ -165,11 +165,11 @@ RectTransform:
   - {fileID: 8646962835396065641}
   m_Father: {fileID: 170415163321055937}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_SizeDelta: {x: 150, y: 240}
+  m_Pivot: {x: 0.5, y: 0}
 --- !u!1 &7206718662690989477
 GameObject:
   m_ObjectHideFlags: 0
@@ -291,10 +291,10 @@ RectTransform:
   - {fileID: 1445463341991275045}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 150, y: 240}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 312}
+  m_SizeDelta: {x: 1, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &6644887106639009008
 MonoBehaviour:
@@ -317,6 +317,8 @@ MonoBehaviour:
     volume: 0
     lane: 0
   laneTarget: {fileID: 0}
+  pageTarget: {fileID: 0}
   rectTransform: {fileID: 170415163321055937}
+  visualRectTransform: {fileID: 1445463341991275045}
   minWidth: 100
   maxWidth: 300
