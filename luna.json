@@ -126,6 +126,7 @@
             ],
             "includes": [
                 "Assets/Art/UI Atlas.spriteatlasv2",
+                "Assets/Game/Events/On Game Area Changed Event Channel.asset",
                 "Assets/Resources/DOTweenSettings.asset",
                 "Assets/TextMesh Pro/Resources/TMP Settings.asset"
             ]
@@ -1559,10 +1560,6 @@
                 "excluded": true
             },
             {
-                "name": "UnityEngine.ContextMenu",
-                "excluded": true
-            },
-            {
                 "name": "UnityEngine.ControllerColliderHit",
                 "excluded": true
             },
@@ -1795,10 +1792,6 @@
                 "excluded": true
             },
             {
-                "name": "UnityEngine.Serialization.FormerlySerializedAsAttribute",
-                "excluded": true
-            },
-            {
                 "name": "UnityEngine.SleepTimeout",
                 "excluded": true
             },
@@ -1835,19 +1828,11 @@
                 "excluded": true
             },
             {
-                "name": "UnityEngine.TextCore.LowLevel.FontEngine",
-                "excluded": true
-            },
-            {
                 "name": "UnityEngine.TextCore.LowLevel.FontEngineUtilities",
                 "excluded": true
             },
             {
                 "name": "UnityEngine.TextCore.LowLevel.GlyphAdjustmentRecord",
-                "excluded": true
-            },
-            {
-                "name": "UnityEngine.TextCore.LowLevel.GlyphMarshallingStruct",
                 "excluded": true
             },
             {
@@ -4720,7 +4705,7 @@
             },
             {
                 "name": "UnityEngine.RectTransform.Axis",
-                "excluded": true
+                "excluded": false
             },
             {
                 "name": "UnityEngine.RectTransform.Edge",
@@ -5296,7 +5281,7 @@
             },
             {
                 "name": "UnityEngine.TextCore.LowLevel.FontEngineError",
-                "excluded": true
+                "excluded": false
             },
             {
                 "name": "UnityEngine.TextCore.LowLevel.FontFeatureLookupFlags",
@@ -6403,10 +6388,6 @@
                 "excluded": true
             },
             {
-                "name": "UnityEngine.UI.ClipperRegistry",
-                "excluded": true
-            },
-            {
                 "name": "UnityEngine.UI.Clipping",
                 "excluded": true
             },
@@ -6432,10 +6413,6 @@
             },
             {
                 "name": "UnityEngine.UI.Misc",
-                "excluded": true
-            },
-            {
-                "name": "UnityEngine.UI.RectangularVertexClipper",
                 "excluded": true
             },
             {
@@ -8471,16 +8448,8 @@
                 "excluded": true
             },
             {
-                "name": "DefaultNamespace.Game.LevelDataSO",
-                "excluded": true
-            },
-            {
                 "name": "DefaultNamespace.Game.NoteData",
-                "excluded": true
-            },
-            {
-                "name": "DefaultNamespace.Game.TileSpawner",
-                "excluded": true
+                "excluded": false
             },
             {
                 "name": "ServiceLocator",
@@ -8532,7 +8501,7 @@
             },
             {
                 "name": "EventBus.Events.OnTilePageRecycledEventChannel",
-                "excluded": true
+                "excluded": false
             },
             {
                 "name": "DefaultNamespace.SOSEventChannelListener",
@@ -8559,15 +8528,95 @@
                 "excluded": false
             },
             {
-                "name": "DefaultNamespace.Game.Tile",
-                "excluded": false
-            },
-            {
                 "name": "DefaultNamespace.Pooling.IPool$1",
                 "excluded": false
             },
             {
                 "name": "SOSEventChannel",
+                "excluded": false
+            },
+            {
+                "name": "VPopup.VCanvas",
+                "excluded": true
+            },
+            {
+                "name": "VPopup.VPopup",
+                "excluded": true
+            },
+            {
+                "name": "SimpleTweenAnimationHandler",
+                "excluded": true
+            },
+            {
+                "name": "VPopup.AnimatorPopupAnimationHandler",
+                "excluded": true
+            },
+            {
+                "name": "VPopup.Tween_Animation_Handler.FadeFromTweenConfig",
+                "excluded": true
+            },
+            {
+                "name": "VPopup.Tween_Animation_Handler.FadeToTweenConfig",
+                "excluded": true
+            },
+            {
+                "name": "VPopup.Tween_Animation_Handler.JoinTweenConfig",
+                "excluded": true
+            },
+            {
+                "name": "VPopup.Tween_Animation_Handler.MoveFromEdgeTweenConfig",
+                "excluded": true
+            },
+            {
+                "name": "VPopup.Tween_Animation_Handler.MoveToEdgeTweenConfig",
+                "excluded": true
+            },
+            {
+                "name": "VPopup.Tween_Animation_Handler.PopupTweenAnimationHandler",
+                "excluded": true
+            },
+            {
+                "name": "VPopup.Tween_Animation_Handler.ScaleFromTweenConfig",
+                "excluded": true
+            },
+            {
+                "name": "VPopup.Tween_Animation_Handler.ScaleToTweenConfig",
+                "excluded": true
+            },
+            {
+                "name": "ReadOnlyAttribute",
+                "excluded": false
+            },
+            {
+                "name": "VPopup.IPopupAnimationHandler",
+                "excluded": true
+            },
+            {
+                "name": "VPopup.Tween_Animation_Handler.AbstractPopupTweenConfig",
+                "excluded": true
+            },
+            {
+                "name": "VPopup.Tween_Animation_Handler.ScreenEdge",
+                "excluded": true
+            },
+            {
+                "name": "EventBus.Listeners.OnWidthChangedListener",
+                "excluded": true
+            },
+            {
+                "name": "EventBus.Events.OnWidthValueChangedEventChannel$1",
+                "excluded": false
+            },
+            {
+                "name": "EventBus.Events.OnLaneWidthChangedEventChannel",
+                "excluded": false
+            },
+            {
+                "name": "EventBus.Events.OnPageWidthChangedEventChannel",
+                "excluded": false
+            },
+            {
+                "name": "EventBus.Events.OnSizeWidthChangedEventChannel",
                 "excluded": false
             }
         ],
@@ -12218,7 +12267,7 @@
                     },
                     {
                         "name": "remove",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "GetEnumerator",
@@ -12982,7 +13031,7 @@
                     },
                     {
                         "name": "Count#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "System$Collections$ICollection$IsSynchronized#get",
@@ -13010,11 +13059,11 @@
                     },
                     {
                         "name": "ctor",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "getItem",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "System$Collections$Generic$IList$1$getItem",
@@ -17668,11 +17717,11 @@
                     },
                     {
                         "name": "localPosition#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "localPosition#set",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "position#get",
@@ -17688,7 +17737,7 @@
                     },
                     {
                         "name": "localScale#set",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "lossyScale#get",
@@ -17716,7 +17765,7 @@
                     },
                     {
                         "name": "localRotation#set",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "rotation#get",
@@ -17828,7 +17877,7 @@
                     },
                     {
                         "name": "InverseTransformPoint",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "TransformPoint$1",
@@ -17884,7 +17933,7 @@
                     },
                     {
                         "name": "SetParent",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "DetachChildren",
@@ -18424,7 +18473,7 @@
                     },
                     {
                         "name": "nearClipPlane#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "nearClipPlane#set",
@@ -18496,7 +18545,7 @@
                     },
                     {
                         "name": "orthographic#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "orthographic#set",
@@ -18616,11 +18665,11 @@
                     },
                     {
                         "name": "WorldToScreenPoint",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "ScreenToWorldPoint",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "ResetWorldToCameraMatrix",
@@ -18632,7 +18681,7 @@
                     },
                     {
                         "name": "ScreenPointToRay",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "WorldToViewportPoint",
@@ -19060,7 +19109,7 @@
                     },
                     {
                         "name": "sizeDelta#set",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "rect#get",
@@ -19076,7 +19125,7 @@
                     },
                     {
                         "name": "anchoredPosition3D#set",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "ctor",
@@ -19084,11 +19133,11 @@
                     },
                     {
                         "name": "SetSizeWithCurrentAnchors",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "GetParentSize",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "GetWorldCorners",
@@ -19610,7 +19659,7 @@
                     },
                     {
                         "name": "init",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "getItem",
@@ -19626,11 +19675,11 @@
                     },
                     {
                         "name": "AddUnique",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "remove",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "GetEnumerator",
@@ -19662,7 +19711,7 @@
                     },
                     {
                         "name": "removeAt",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "RemoveAll",
@@ -20340,11 +20389,11 @@
                     },
                     {
                         "name": "UpdateCull",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "SetClipRect",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "OnEnable",
@@ -22100,7 +22149,7 @@
                     },
                     {
                         "name": "InsertNewLine",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "SaveWordWrappingState",
@@ -22108,7 +22157,7 @@
                     },
                     {
                         "name": "RestoreWordWrappingState",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "SaveGlyphVertexInfo",
@@ -25332,11 +25381,11 @@
                     },
                     {
                         "name": "DisableRectClipping",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Clear",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "SetTexture",
@@ -25398,7 +25447,7 @@
                     },
                     {
                         "name": "interactable#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "interactable#set",
@@ -25608,7 +25657,7 @@
                 "instanceMethods": [
                     {
                         "name": "Notify2DMaskStateChanged",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "NotifyStencilStateChanged",
@@ -25624,7 +25673,7 @@
                     },
                     {
                         "name": "IsDescendantOrSelf",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "GetRectMaskForClippable",
@@ -25988,19 +26037,19 @@
                     },
                     {
                         "name": "init",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "ctor",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "OnEnable",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "OnDisable",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "IsRaycastLocationValid",
@@ -26012,11 +26061,11 @@
                     },
                     {
                         "name": "AddClippable",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "RemoveClippable",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "OnTransformParentChanged",
@@ -27426,7 +27475,7 @@
                     },
                     {
                         "name": "OnDisable",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Update",
@@ -28488,7 +28537,7 @@
                     },
                     {
                         "name": "xAdvance#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "xAdvance#set",
@@ -28824,7 +28873,7 @@
                     },
                     {
                         "name": "ctor",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "RefreshStyle",
@@ -29452,7 +29501,7 @@
                     },
                     {
                         "name": "UnRegisterTextObjectForUpdate",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "UnRegisterTextElementForRebuild",
@@ -29500,7 +29549,7 @@
                     },
                     {
                         "name": "InternalUnRegisterTextObjectForUpdate",
-                        "excluded": true
+                        "excluded": false
                     }
                 ]
             },
@@ -29736,7 +29785,7 @@
                     },
                     {
                         "name": "sourceFontFile#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "sourceFontFile#set",
@@ -30310,7 +30359,7 @@
                     },
                     {
                         "name": "$ctor2",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "$ctor1",
@@ -30392,7 +30441,7 @@
                     },
                     {
                         "name": "$ctor1",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "ctor",
@@ -30426,7 +30475,7 @@
                     },
                     {
                         "name": "WorldToScreenPoint",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "FlipLayoutOnAxis",
@@ -30454,15 +30503,15 @@
                     },
                     {
                         "name": "ScreenPointToLocalPointInRectangle",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "ScreenPointToWorldPointInRectangle",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "ScreenPointToRay",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "PixelAdjustPoint",
@@ -32118,7 +32167,7 @@
                 "instanceMethods": [
                     {
                         "name": "childAlignment#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "childAlignment#set",
@@ -32276,7 +32325,7 @@
                     },
                     {
                         "name": "childControlWidth#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "childControlWidth#set",
@@ -32284,7 +32333,7 @@
                     },
                     {
                         "name": "childControlHeight#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "childControlHeight#set",
@@ -32365,6 +32414,22 @@
                     {
                         "name": "Clear",
                         "excluded": true
+                    },
+                    {
+                        "name": "RectTransform#get",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnPageWidthChangedEventChannel#get",
+                        "excluded": false
+                    },
+                    {
+                        "name": "AddTile",
+                        "excluded": false
+                    },
+                    {
+                        "name": "CheckWidth",
+                        "excluded": false
                     }
                 ]
             },
@@ -32574,15 +32639,15 @@
                 "instanceMethods": [
                     {
                         "name": "init",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "ctor",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Create",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Spawn",
@@ -32591,6 +32656,510 @@
                     {
                         "name": "Despawn",
                         "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "UnityEngine.TextCore.LowLevel.FontEngine",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "GetInstance",
+                        "excluded": true
+                    },
+                    {
+                        "name": "InitializeFontEngine",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DestroyFontEngine",
+                        "excluded": true
+                    },
+                    {
+                        "name": "SendCancellationRequest",
+                        "excluded": true
+                    },
+                    {
+                        "name": "LoadFontFace$2",
+                        "excluded": true
+                    },
+                    {
+                        "name": "LoadFontFace$3",
+                        "excluded": true
+                    },
+                    {
+                        "name": "LoadFontFace",
+                        "excluded": true
+                    },
+                    {
+                        "name": "LoadFontFace$1",
+                        "excluded": true
+                    },
+                    {
+                        "name": "LoadFontFace$4",
+                        "excluded": true
+                    },
+                    {
+                        "name": "LoadFontFace$5",
+                        "excluded": false
+                    },
+                    {
+                        "name": "SetFaceSize",
+                        "excluded": true
+                    },
+                    {
+                        "name": "GetFaceInfo",
+                        "excluded": true
+                    },
+                    {
+                        "name": "LoadGlyph",
+                        "excluded": true
+                    },
+                    {
+                        "name": "TryGetGlyphWithUnicodeValue",
+                        "excluded": true
+                    },
+                    {
+                        "name": "TryGetGlyphWithIndexValue",
+                        "excluded": true
+                    },
+                    {
+                        "name": "TryPackGlyphInAtlas",
+                        "excluded": true
+                    },
+                    {
+                        "name": "TryPackGlyphsInAtlas",
+                        "excluded": true
+                    },
+                    {
+                        "name": "RenderGlyphToTexture",
+                        "excluded": true
+                    },
+                    {
+                        "name": "RenderGlyphsToTexture$1",
+                        "excluded": true
+                    },
+                    {
+                        "name": "RenderGlyphsToTexture",
+                        "excluded": true
+                    },
+                    {
+                        "name": "RenderGlyphsToSharedTexture",
+                        "excluded": true
+                    },
+                    {
+                        "name": "TryAddGlyphToTexture",
+                        "excluded": true
+                    },
+                    {
+                        "name": "TryAddGlyphsToTexture",
+                        "excluded": true
+                    },
+                    {
+                        "name": "GetGlyphPairAdjustmentTable",
+                        "excluded": true
+                    },
+                    {
+                        "name": "GetGlyphPairAdjustmentRecords",
+                        "excluded": true
+                    },
+                    {
+                        "name": "GetGlyphPairAdjustmentRecords$1",
+                        "excluded": true
+                    },
+                    {
+                        "name": "GetGlyphIndex",
+                        "excluded": true
+                    },
+                    {
+                        "name": "ResetAtlasTexture",
+                        "excluded": true
+                    },
+                    {
+                        "name": "ctor",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "UnityEngine.TextCore.LowLevel.GlyphMarshallingStruct",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "getDefaultValue",
+                        "excluded": true
+                    },
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "$ctor2",
+                        "excluded": true
+                    },
+                    {
+                        "name": "$ctor1",
+                        "excluded": true
+                    },
+                    {
+                        "name": "ctor",
+                        "excluded": false
+                    },
+                    {
+                        "name": "getHashCode",
+                        "excluded": true
+                    },
+                    {
+                        "name": "equals",
+                        "excluded": true
+                    },
+                    {
+                        "name": "$clone",
+                        "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "UnityEngine.UI.ClipperRegistry",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "instance#get",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Register",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Unregister",
+                        "excluded": false
+                    },
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "ctor",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Cull",
+                        "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "UnityEngine.UI.RectangularVertexClipper",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "GetCanvasRect",
+                        "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "DefaultNamespace.Game.Lane",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "RectTransform#get",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Awake",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Update",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "DefaultNamespace.Game.LevelDataSO",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "LevelData#get",
+                        "excluded": false
+                    },
+                    {
+                        "name": "TilesVelocity#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "TapDurationThreshold#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "HeightForTap#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "DistanceFromHitLine",
+                        "excluded": true
+                    },
+                    {
+                        "name": "TileHeight",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "DefaultNamespace.Game.SizeAdapter",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnEnable",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnDisable",
+                        "excluded": true
+                    },
+                    {
+                        "name": "OnWidthChangedEventHandler",
+                        "excluded": false
+                    },
+                    {
+                        "name": "SetWidth",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "DefaultNamespace.Game.SizeEventNotifier",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "OnWidthChangedEventChannel#get",
+                        "excluded": false
+                    },
+                    {
+                        "name": "RectTransform#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "Awake",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Update",
+                        "excluded": false
+                    },
+                    {
+                        "name": "CheckAndRaiseEvent",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "DefaultNamespace.Game.TileSpawner",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Awake",
+                        "excluded": false
+                    },
+                    {
+                        "name": "GetStartTile",
+                        "excluded": false
+                    },
+                    {
+                        "name": "GetTileFromPool",
+                        "excluded": true
+                    },
+                    {
+                        "name": "GetStartTileFromPool",
+                        "excluded": true
+                    },
+                    {
+                        "name": "MoveTileToPool",
+                        "excluded": true
+                    },
+                    {
+                        "name": "SpawnTiles",
+                        "excluded": false
+                    },
+                    {
+                        "name": "AttachToTileParent",
+                        "excluded": false
+                    },
+                    {
+                        "name": "CalculateX",
+                        "excluded": false
+                    },
+                    {
+                        "name": "ResetBackToInitial",
+                        "excluded": true
+                    },
+                    {
+                        "name": "OnEnable",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnDisable",
+                        "excluded": true
+                    },
+                    {
+                        "name": "OnPageRecycleEventHandler",
+                        "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "EventBus.Events.OnValueChangedFromToEventArgs$2",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "$ctor1",
+                        "excluded": false
+                    },
+                    {
+                        "name": "ctor",
+                        "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "DefaultNamespace.Game.Tile",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "RectTransform#get",
+                        "excluded": false
+                    },
+                    {
+                        "name": "UpdateUIWithData",
+                        "excluded": false
+                    },
+                    {
+                        "name": "SetLaneTarget",
+                        "excluded": true
+                    },
+                    {
+                        "name": "SetPageTarget",
+                        "excluded": false
+                    },
+                    {
+                        "name": "RecalculateX",
+                        "excluded": false
+                    },
+                    {
+                        "name": "RecalculateWidth",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnDisable",
+                        "excluded": false
+                    },
+                    {
+                        "name": "SetPositionX",
+                        "excluded": true
+                    },
+                    {
+                        "name": "SetLocalPositionX",
+                        "excluded": true
+                    },
+                    {
+                        "name": "SetWidth",
+                        "excluded": true
+                    },
+                    {
+                        "name": "SetHeight",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnLaneWidthChangedEventHandler",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "DefaultNamespace.Game.HoldTile",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "ResetUI",
+                        "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "DefaultNamespace.Game.StartTile",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "ResetUI",
+                        "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "DefaultNamespace.Game.TapTile",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "ResetUI",
+                        "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "UnityEngine.ContextMenu",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "ctor",
+                        "excluded": false
+                    },
+                    {
+                        "name": "$ctor1",
+                        "excluded": false
+                    },
+                    {
+                        "name": "$ctor2",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "UnityEngine.Serialization.FormerlySerializedAsAttribute",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "oldName#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "ctor",
+                        "excluded": false
                     }
                 ]
             }
@@ -32660,6 +33229,16 @@
                         "script": "",
                         "ext": "",
                         "name": "Assets/GUIPackCartoon/Fonts/LilitaOne - Regular SDF.asset"
+                    },
+                    {
+                        "maxWidth": 512,
+                        "maxHeight": 512,
+                        "format": "png32",
+                        "compression": "none",
+                        "quality": 65,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/Art/Fonts/Cocogoose-Pro-Regular-trial SDF.asset"
                     }
                 ]
             },

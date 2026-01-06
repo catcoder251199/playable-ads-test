@@ -6,7 +6,7 @@ namespace DefaultNamespace.Game
 {
     public class SizeAdapter : MonoBehaviour
     {
-        [SerializeField] private OnWidthValueChangedEventChannel<SizeEventNotifier> onWidthChangedEventChannel;
+        [SerializeField] private OnSizeWidthChangedEventChannel onWidthChangedEventChannel;
 
         [SerializeField] private RectTransform retTransform;
         [SerializeField] private float minWidth = Single.MaxValue;
@@ -26,6 +26,7 @@ namespace DefaultNamespace.Game
 
         private void OnWidthChangedEventHandler(OnValueChangedFromToEventArgs<SizeEventNotifier, float> eventArgs)
         {
+            Debug.Log($"Size Adapter: detect {eventArgs.From} -> {eventArgs.To}" );
             SetWidth(eventArgs.To);
         }
 
