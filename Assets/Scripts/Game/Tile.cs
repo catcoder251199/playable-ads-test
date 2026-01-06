@@ -21,6 +21,28 @@ namespace DefaultNamespace.Game
             noteData = noteDataArg;
         }
 
+        private float YToWall()
+        {
+            var pageY = pageTarget.RectTransform.anchoredPosition.y;
+            return rectTransform.anchoredPosition.y + pageY;
+        }
+
+        public static int hitId = -1;
+        private bool isHit = false;
+        
+        private void Update()
+        {
+            if (!gameObject.activeSelf || noteData.duration == 0)
+                return;
+
+            var yToWall = YToWall();
+            if (yToWall <= 0 && !isHit)
+            {
+                isHit = true;
+                Debug.Log($"Hit the wall {noteData.id}");
+            }
+        }
+
         public void SetLaneTarget(Lane target)
         {
             // if (laneTarget)
@@ -132,6 +154,10 @@ namespace DefaultNamespace.Game
             }
         }
 
-        public abstract void ResetUI();
+        public override void OnDespawn()
+        {
+            base.OnDespawn();
+            isHit = false;
+        }
     }
 }
