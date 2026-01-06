@@ -8,10 +8,34 @@ namespace DefaultNamespace.Game
     [CreateAssetMenu(fileName = "new Level Data", menuName = "Game/ Level Data")]
     public class LevelDataSO: ScriptableObject
     {
+        [SerializeField] private int distanceFromHitLine = 100; // px
+        [SerializeField] private float offsetDurationForTap = 0.02f;
+        [SerializeField, ReadOnly] private float minTileDuration = 0.3f;
         [SerializeField] private List<NoteData> levelData;
+        
         public List<NoteData> LevelData => levelData;
+        public float TilesVelocity => distanceFromHitLine / levelData[1].time; // ignore first start tile
+
+        public float DistanceFromHitLine(int noteIndex) => levelData[noteIndex].time * TilesVelocity;
+        public float TapDurationThreshold => minTileDuration + offsetDurationForTap; // note has duration < TapDurationThreshold -> tap tile
 
 #if UNITY_EDITOR
+        [ContextMenu("Find min tile duration")]
+        private void FindMinTileDurationInEditor()
+        {
+            var min = float.MaxValue;
+            foreach (var noteData in levelData)
+            {
+                if (noteData.duration < min)
+                {
+                    min = noteData.duration;
+                }
+            }
+
+            if (min < float.MaxValue)
+                minTileDuration = min;
+        } 
+        
         [SerializeField, Header("Editor - only")]
         private string midiString;
 

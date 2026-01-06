@@ -8465,6 +8465,110 @@
             {
                 "name": "DG.Tweening.UpdateType",
                 "excluded": false
+            },
+            {
+                "name": "DefaultNamespace.AudioManager.AudioDatabase",
+                "excluded": true
+            },
+            {
+                "name": "DefaultNamespace.Game.LevelDataSO",
+                "excluded": true
+            },
+            {
+                "name": "DefaultNamespace.Game.NoteData",
+                "excluded": true
+            },
+            {
+                "name": "DefaultNamespace.Game.TileSpawner",
+                "excluded": true
+            },
+            {
+                "name": "ServiceLocator",
+                "excluded": true
+            },
+            {
+                "name": "UnitA",
+                "excluded": true
+            },
+            {
+                "name": "UnitB",
+                "excluded": true
+            },
+            {
+                "name": "UnitC",
+                "excluded": true
+            },
+            {
+                "name": "DefaultNamespace.PlayableAdsService.PlayableAdsAdsService",
+                "excluded": true
+            },
+            {
+                "name": "EventBus.Events.OnLayoutChangedEventArgs",
+                "excluded": true
+            },
+            {
+                "name": "EventBus.Events.OnScreenSizeChangedEventArgs",
+                "excluded": true
+            },
+            {
+                "name": "DefaultNamespace.AudioManager.PoolableAudioSource",
+                "excluded": true
+            },
+            {
+                "name": "DefaultNamespace.AudioManager.AudioEntry",
+                "excluded": true
+            },
+            {
+                "name": "DefaultNamespace.PlayableAdsService.IPlayableAdsService",
+                "excluded": true
+            },
+            {
+                "name": "EventBus.Events.OnLayoutChangedEventChannel",
+                "excluded": true
+            },
+            {
+                "name": "EventBus.Events.OnScreenSizeChangedEventChannel",
+                "excluded": true
+            },
+            {
+                "name": "EventBus.Events.OnTilePageRecycledEventChannel",
+                "excluded": true
+            },
+            {
+                "name": "DefaultNamespace.SOSEventChannelListener",
+                "excluded": true
+            },
+            {
+                "name": "DefaultNamespace.AudioManager.IAudioService",
+                "excluded": false
+            },
+            {
+                "name": "DefaultNamespace.Pooling.IPoolable",
+                "excluded": false
+            },
+            {
+                "name": "DefaultNamespace.Game.ScreenLayout",
+                "excluded": false
+            },
+            {
+                "name": "DefaultNamespace.Pooling.IPool",
+                "excluded": false
+            },
+            {
+                "name": "EventBus.IEvent",
+                "excluded": false
+            },
+            {
+                "name": "DefaultNamespace.Game.Tile",
+                "excluded": false
+            },
+            {
+                "name": "DefaultNamespace.Pooling.IPool$1",
+                "excluded": false
+            },
+            {
+                "name": "SOSEventChannel",
+                "excluded": false
             }
         ],
         "unusedMethods": [
@@ -12616,7 +12720,7 @@
                     },
                     {
                         "name": "$ctor2",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "$ctor1",
@@ -32252,6 +32356,240 @@
                     },
                     {
                         "name": "CheckY",
+                        "excluded": true
+                    },
+                    {
+                        "name": "TileStack#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "Clear",
+                        "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "GenericMonoSingleton$1",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "Instance#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Awake",
+                        "excluded": true
+                    },
+                    {
+                        "name": "OnApplicationQuit",
+                        "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "DefaultNamespace.Game.ScreenLayoutWatcher",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Start",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Update",
+                        "excluded": false
+                    },
+                    {
+                        "name": "GetLayout",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "DefaultNamespace.AudioManager.AudioManager",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "inherits",
+                        "excluded": false
+                    },
+                    {
+                        "name": "init",
+                        "excluded": true
+                    },
+                    {
+                        "name": "Awake",
+                        "excluded": true
+                    },
+                    {
+                        "name": "PlaySFX",
+                        "excluded": true
+                    },
+                    {
+                        "name": "ReleaseAfterPlay",
+                        "excluded": true
+                    },
+                    {
+                        "name": "PlayBGM",
+                        "excluded": true
+                    },
+                    {
+                        "name": "StopBGM",
+                        "excluded": true
+                    },
+                    {
+                        "name": "SetSFXVolume",
+                        "excluded": true
+                    },
+                    {
+                        "name": "SetBGMVolume",
+                        "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "DefaultNamespace.Pooling.PoolableMonoBehaviour",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "OnSpawn",
+                        "excluded": true
+                    },
+                    {
+                        "name": "OnDespawn",
+                        "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "DefaultNamespace.Pooling.PoolManager",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "inherits",
+                        "excluded": false
+                    },
+                    {
+                        "name": "init",
+                        "excluded": true
+                    },
+                    {
+                        "name": "GetOrCreatePool",
+                        "excluded": true
+                    },
+                    {
+                        "name": "TryGetPool",
+                        "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "EventBus.GenericEventChannelSO$1",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "RaiseEvent",
+                        "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "EventBus.Bus$1",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "Raise",
+                        "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "EventBus.Events.OnTilePageRecycledEventArgs",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "ctor",
+                        "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "HelpMeEventArgs",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "getDefaultValue",
+                        "excluded": true
+                    },
+                    {
+                        "name": "ctor",
+                        "excluded": true
+                    },
+                    {
+                        "name": "getHashCode",
+                        "excluded": true
+                    },
+                    {
+                        "name": "equals",
+                        "excluded": true
+                    },
+                    {
+                        "name": "$clone",
+                        "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "EventBus.AbstractEventChannelListener$2",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "init",
+                        "excluded": true
+                    },
+                    {
+                        "name": "OnEnable",
+                        "excluded": true
+                    },
+                    {
+                        "name": "OnDisable",
+                        "excluded": true
+                    },
+                    {
+                        "name": "OnEventRaised",
+                        "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "DefaultNamespace.Pooling.GenericGameObjectPool$1",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "init",
+                        "excluded": true
+                    },
+                    {
+                        "name": "ctor",
+                        "excluded": true
+                    },
+                    {
+                        "name": "Create",
+                        "excluded": true
+                    },
+                    {
+                        "name": "Spawn",
+                        "excluded": true
+                    },
+                    {
+                        "name": "Despawn",
                         "excluded": true
                     }
                 ]
