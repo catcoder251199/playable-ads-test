@@ -288,6 +288,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 877da59c41084d96be223001e5f1e812, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelDataSo: {fileID: 11400000, guid: a4c588c7343fee34b8d02cb8e6b77a5c, type: 2}
   onTileTouchDownEventChannel: {fileID: 11400000, guid: eb006ff9baa2b704bb4f81a34a2d6258, type: 2}
   onTileTouchUpEventChannel: {fileID: 11400000, guid: ce93bc94bea750e43bd339c7126b80d1, type: 2}
   noteData:
@@ -302,9 +303,8 @@ MonoBehaviour:
   pageTarget: {fileID: 0}
   rectTransform: {fileID: 7263099107607201873}
   visualRectTransform: {fileID: 3608942170561575316}
-  minWidth: 100
+  minWidth: 30
   maxWidth: 300
-  levelDataSo: {fileID: 11400000, guid: a4c588c7343fee34b8d02cb8e6b77a5c, type: 2}
   onUserGainedScoreEventChannel: {fileID: 11400000, guid: dda71d1e29d54fa45835a980777bf47a, type: 2}
   bodyCanvasGroup: {fileID: 1384844323876878355}
   bodyFadeValue: 0.5
