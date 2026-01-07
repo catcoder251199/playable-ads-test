@@ -1,5 +1,6 @@
-using System;
 using System.Collections.Generic;
+using DefaultNamespace.GameState;
+using DefaultNamespace.GameState.State;
 using EventBus.Events;
 using UnityEngine;
 
@@ -7,18 +8,62 @@ namespace DefaultNamespace.Game
 {
     public class GameplayController : MonoBehaviour
     {
+        [SerializeField] private InitState initState;
+        [SerializeField] private PlayState playState;
+        
+        [SerializeField] private TileSpawner tileSpawner;
+        [SerializeField] private PageMover pageMover;
+        [SerializeField] private AudioManager.AudioManager audioManager;
+        [SerializeField] private RectTransform songUIRectTransform;
+        [SerializeField] private ProgressBarHandler progressBarHandler;
+        
         [SerializeField] private LevelDataSO levelData;
         [SerializeField] private OnLaneTouchUpEventChannel onLaneTouchUpEventChannel;
         [SerializeField] private OnLaneTouchDownEventChannel onLaneTouchDownEventChannel;
         [SerializeField] private OnTileTouchDownEventChannel onTileTouchDownEventChannel;
         [SerializeField] private OnTileTouchUpEventChannel onTileTouchUpEventChannel;
+        [SerializeField] private OnUserGainedScoreEventChannel onUserGainedScoreEventChannel;
+        [SerializeField] private OnUserProgressChangedEventChannel onUserProgressChangedEventChannel;
+        
         private int _currentTileIndex; // use to check targeted tile of user
         private HashSet<int> tappedSet; // set of tile ids
 
         private Queue<int>[] idLanes;
         private Queue<int>[] tappedQueues;
         private bool gameStarted = false;
+
+        public InitState InitState => initState;
+        public PlayState PlayState => playState;
+
+        public TileSpawner TileSpawner => tileSpawner;
+        public PageMover PageMover => pageMover;
+        public AudioManager.AudioManager AudioManager => audioManager;
+        public RectTransform SongUIRectTransform => songUIRectTransform;
+        public ProgressBarHandler ProgressBarHandler => progressBarHandler;
+        
+        public IGameState CurrentState { get; private set; }
+
+        private int _tappedTotal = 0;
+
+        public void ChangeState(IGameState newState)
+        {
+            CurrentState?.Exit();
+            CurrentState = newState;
+            CurrentState.Enter();
+        }
+
+        public void Tick()
+        {
+            CurrentState.Tick();
+        }
+        
         private void Awake()
+        {
+            _tappedTotal = 0;
+            InitQueues();
+        }
+
+        private void InitQueues()
         {
             var laneCount = levelData.LaneCount;
             idLanes = new Queue<int>[laneCount];
@@ -39,15 +84,53 @@ namespace DefaultNamespace.Game
         {
             onLaneTouchUpEventChannel.OnEventRaised += OnUserTouchLaneUpEventHandler;
             onLaneTouchDownEventChannel.OnEventRaised += OnUserTouchLaneDownEventHandler;
+            onUserGainedScoreEventChannel.OnEventRaised += OnUserGainedScoreEventHandler;
         }
         
         private void OnDisable()
         {
             onLaneTouchUpEventChannel.OnEventRaised -= OnUserTouchLaneUpEventHandler;
             onLaneTouchDownEventChannel.OnEventRaised -= OnUserTouchLaneDownEventHandler;
+            onUserGainedScoreEventChannel.OnEventRaised -= OnUserGainedScoreEventHandler;
         }
 
+        private void OnUserGainedScoreEventHandler(OnUserGainedScoreEventArgs eventArgs)
+        {
+           
+        }
+        
+        private void OnUserTouchLaneUpEventHandler(OnLaneTouchUpEventArgs eventArgs)
+        {
+            CurrentState.OnUserTouchLaneUpEventHandler(eventArgs);
+        }
+        
         private void OnUserTouchLaneDownEventHandler(OnLaneTouchDownEventArgs eventArgs)
+        {
+            CurrentState.OnUserTouchLaneDownEventHandler(eventArgs);
+        }
+
+        public void OnUserTouchLaneDownOnInit(OnLaneTouchDownEventArgs eventArgs)
+        {
+            int laneIndex = eventArgs.LaneIndex;
+            var tappedId = idLanes[laneIndex].Peek();
+            
+            if (!gameStarted && tappedId != 0)
+            {
+                Debug.LogError("please touch start tile to start!");
+                return;
+            }
+            
+            if (tappedId == 0)
+            {
+                tappedQueues[laneIndex].Enqueue(idLanes[laneIndex].Dequeue());
+                _tappedTotal += 1;
+                onUserProgressChangedEventChannel.OnEventRaised?.Invoke(new OnUserProgressChangedEventArgs(_tappedTotal, levelData.LevelData.Count));
+                gameStarted = true;
+                ChangeState(PlayState);
+            }
+        }
+
+        public void OnUserTouchLaneDownEventHandlerOnPlay(OnLaneTouchDownEventArgs eventArgs)
         {
             int laneIndex = eventArgs.LaneIndex;
             var tappedId = idLanes[laneIndex].Peek();
@@ -94,14 +177,16 @@ namespace DefaultNamespace.Game
 
             if (!tapWrong)
             {
+                _tappedTotal += 1;
                 tappedQueues[laneIndex].Enqueue(idLanes[laneIndex].Dequeue());
                 Debug.Log($"Touched down {tappedId}");
                 // tap good
                 onTileTouchDownEventChannel.OnEventRaised?.Invoke(new OnTileTouchDownEventArgs(tappedId));
+                onUserProgressChangedEventChannel.OnEventRaised?.Invoke(new OnUserProgressChangedEventArgs(_tappedTotal, levelData.LevelData.Count));
             }
         }
         
-        private void OnUserTouchLaneUpEventHandler(OnLaneTouchUpEventArgs eventArgs)
+        public void OnUserTouchLaneUpEventHandlerOnPlay(OnLaneTouchUpEventArgs eventArgs)
         {
             int laneIndex = eventArgs.LaneIndex;
             while (tappedQueues[laneIndex].Count != 0)
@@ -126,56 +211,6 @@ namespace DefaultNamespace.Game
             }
 
             return parallelTileCount;
-        }
-        
-        
-        
-        private void OnUserTouchLaneDownEventHandler2(int laneIndex)
-        {
-            var noteList = levelData.LevelData.AsReadOnly();
-
-            while (_currentTileIndex < noteList.Count)
-            {
-                var noteData = noteList[_currentTileIndex];
-                if (laneIndex == noteData.lane)
-                {
-                    if (tappedSet.Contains(noteData.id)) // reclick a tapped tile
-                    {
-                        // ignore
-                    }
-                    else
-                    {
-                        // tap to untapped tile
-                        tappedSet.Add(laneIndex);
-                        onTileTouchDownEventChannel.OnEventRaised?.Invoke(new OnTileTouchDownEventArgs(noteData.id));
-
-                        // check if click all front tiles
-                        var parallelTileCount = CountParallelsFrom(_currentTileIndex);
-                        if (parallelTileCount == tappedSet.Count)
-                        {
-                            _currentTileIndex += parallelTileCount; // Move to next front tiles
-                        }
-                    }
-                }
-                else
-                {
-                    bool canMoveToNextTile = _currentTileIndex + 1 < noteList.Count &&
-                                             Mathf.Approximately(noteList[_currentTileIndex + 1].delta, 0);
-
-                    if (canMoveToNextTile)
-                        _currentTileIndex++;
-                    else
-                    {
-                        break;
-                    }
-                }
-            }
-        }
-        
-        private void OnUserTouchLaneUpEventHandler2(int laneIndex)
-        {
-            var noteList = levelData.LevelData.AsReadOnly();
-            
         }
     }
 }

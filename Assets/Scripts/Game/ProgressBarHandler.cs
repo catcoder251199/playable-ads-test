@@ -27,6 +27,7 @@ namespace DefaultNamespace.Game
             slider.maxValue = 1;
             reachedFirstStar = false;
             _starGained = 0;
+            onUserProgressChangedEventChannel.OnEventRaised += OnUserProgressChangedEventHandler;
         }
         
         #if UNITY_EDITOR
@@ -44,7 +45,8 @@ namespace DefaultNamespace.Game
 
         private void OnEnable()
         {
-            onUserProgressChangedEventChannel.OnEventRaised += OnUserProgressChangedEventHandler;
+            //onUserProgressChangedEventChannel.OnEventRaised -= OnUserProgressChangedEventHandler;
+            //onUserProgressChangedEventChannel.OnEventRaised += OnUserProgressChangedEventHandler;
             // handle.localScale = Vector3.one;
             // handle.DOScale(1.1f, 0.25f)
             //     .SetEase(Ease.InOutSine)
@@ -53,7 +55,7 @@ namespace DefaultNamespace.Game
         
         private void OnDisable()
         {
-            onUserProgressChangedEventChannel.OnEventRaised -= OnUserProgressChangedEventHandler;
+            //onUserProgressChangedEventChannel.OnEventRaised -= OnUserProgressChangedEventHandler;
             // handle.DOKill();
         }
 
@@ -64,7 +66,7 @@ namespace DefaultNamespace.Game
             
             if (reachedFirstStar)
             {
-                borderHandler.OnScoreGained();
+                //borderHandler.OnScoreGained();
             }
             
             if (t > oldT)

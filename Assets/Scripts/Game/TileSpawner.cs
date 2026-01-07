@@ -43,11 +43,6 @@ namespace DefaultNamespace.Game
                 pageQueue.Enqueue(page);
         }
 
-        private void Start()
-        {
-            SpawnTiles();
-        }
-
         private Tile GetStartTile()
         {
             if (!cachedStartTile)
@@ -79,7 +74,7 @@ namespace DefaultNamespace.Game
 
         private float GetYHitLine() => hitLineRectTransform.anchoredPosition.y;
         
-        private void SpawnTiles()
+        public void SpawnTiles()
         {
             var noteList = levelDataSO.LevelData.AsReadOnly();
             var n = noteList.Count;
@@ -105,6 +100,7 @@ namespace DefaultNamespace.Game
                 {
                     AttachToTileParent(tile.RectTransform, pageParent.RectTransform);
                     
+                    tile.SetYHitLine(GetYHitLine());
                     tile.UpdateUIWithData(noteData); // Update Visual
                     tile.SetPageTarget(pageParent);
                     
@@ -235,6 +231,7 @@ namespace DefaultNamespace.Game
                 {
                     AttachToTileParent(tile.RectTransform, pageParent.RectTransform);
                     
+                    tile.SetYHitLine(GetYHitLine());
                     tile.UpdateUIWithData(noteData); // Update Visual
                     tile.SetPageTarget(pageParent);
                     

@@ -20,13 +20,14 @@ namespace DefaultNamespace.Game
         [SerializeField] private float holdScorePerSecond = 10f;
         [SerializeField] private float minDistanceYTappable = 300f;
         [SerializeField] private List<NoteData> levelData;
+        [SerializeField] private float timeScale = 1f;
         
         
         public List<NoteData> LevelData => levelData;
         public float TilesVelocity => distanceFromHitLine / delayFromStart; // ignore first start tile
         public int LaneCount => laneCount;
         public float DistanceFromHitLine(int noteIndex) => GetDelayedTimeHit(noteIndex) * TilesVelocity;
-        public float GetDelayedTimeHit(int noteIndex) => levelData[noteIndex].time + delayFromStart;
+        public float GetDelayedTimeHit(int noteIndex) => (levelData[noteIndex].time + delayFromStart) * timeScale;
         public float TapDurationThreshold => minTileDuration + offsetDurationForTap; // note has duration < TapDurationThreshold -> tap tile
         public float ScaledDuration(int noteIndex) => levelData[noteIndex].duration * scaleHoldTileLengthFactor;
         public int HoldScore(float holdTime) => Mathf.FloorToInt(holdTime * holdScorePerSecond);
@@ -36,7 +37,7 @@ namespace DefaultNamespace.Game
                 return heightForTap;
             return Mathf.Max(heightForTap / minTileDuration * levelData[noteIndex].duration * scaleHoldTileLengthFactor, heightForTap);
         }
-        
+
         public float HeightForTap => heightForTap;
         public float MinDistanceYTappable => minDistanceYTappable;
 

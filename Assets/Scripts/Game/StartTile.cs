@@ -10,6 +10,7 @@ namespace DefaultNamespace.Game
         [SerializeField] private float bodyFadeValue = 0.5f;
         [SerializeField] private float bodyFadeDuration = 0.25f;
         [SerializeField] private HeadAnimator headAnimator;
+        [SerializeField] private RectTransform handGuide;
 
         private bool isTapped = false;
         
@@ -20,7 +21,7 @@ namespace DefaultNamespace.Game
 
             if (isTapped || eventArgs.Id != noteData.id)
                 return;
-            
+            handGuide.gameObject.SetActive(false);
             isTapped = true;
             UpdateUIOnTapped();
         }

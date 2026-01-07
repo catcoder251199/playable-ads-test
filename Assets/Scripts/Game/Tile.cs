@@ -35,11 +35,13 @@ namespace DefaultNamespace.Game
             onTileTouchDownEventChannel.OnEventRaised -= OnTileTouchDownEventHandler;
             onTileTouchUpEventChannel.OnEventRaised -= OnTileTouchUpEventHandler;
         }
-
+        
         public virtual void UpdateUIWithData(NoteData noteDataArg)
         {
             noteData = noteDataArg;
         }
+
+        public void SetYHitLine(float y) => yHitLine = y;
 
         protected float YToWall()
         {
@@ -86,21 +88,6 @@ namespace DefaultNamespace.Game
             }
         }
 
-        public void SetLaneTarget(Lane target)
-        {
-            // if (laneTarget)
-            //     laneTarget.OnLaneWidthChangedEventChannel.OnEventRaised -= OnLaneWidthChangedEventHandler;
-            //
-            // laneTarget = target;
-            //
-            // if (laneTarget)
-            // {
-            //     laneTarget.OnLaneWidthChangedEventChannel.OnEventRaised += OnLaneWidthChangedEventHandler;
-            //     SetWidth(laneTarget.RectTransform.rect.width);
-            //     SetPositionX(laneTarget.RectTransform.anchoredPosition.x);
-            // }
-        }
-
         public void SetPageTarget(TilePage target)
         {
             if (pageTarget)
@@ -111,8 +98,6 @@ namespace DefaultNamespace.Game
             if (pageTarget)
             {
                 pageTarget.OnPageWidthChangedEventChannel.OnEventRaised += OnLaneWidthChangedEventHandler;
-                //SetWidth(pageTarget.RectTransform.rect.width);
-                //SetPositionX(pageTarget.RectTransform.anchoredPosition.x);
                 RecalculateWidth();
                 RecalculateX();
             }

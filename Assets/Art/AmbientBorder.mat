@@ -30,7 +30,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _Intensity: 1
-    - _PulseSpeed: 5
+    - _PulseSpeed: 9.19
     - _PulseStrength: 1
     m_Colors:
     - _Color: {r: 0.32039872, g: 0.9056604, b: 0.35408345, a: 1}

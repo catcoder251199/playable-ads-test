@@ -1,6 +1,6 @@
 namespace DefaultNamespace.GameState
 {
-    public abstract class GameStateBase : IGameState
+    public abstract class GameStateBase /*: IGameState*/
     {
         protected GameStateMachine machine;
 

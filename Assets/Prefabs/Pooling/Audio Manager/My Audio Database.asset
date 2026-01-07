@@ -12,5 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ca612a88e8d4db680b709ba4dd839f2, type: 3}
   m_Name: My Audio Database
   m_EditorClassIdentifier: 
-  sfx: []
-  bgm: []
+  sfx:
+  - id: Lose
+    clip: {fileID: 8300000, guid: 117dbda623dfabf4f81c7657a93d6bfb, type: 3}
+  bgm:
+  - id: RoundAndRound
+    clip: {fileID: 8300000, guid: 44ddf1391ca3e5b4eb0ee447cf3b56e2, type: 3}
