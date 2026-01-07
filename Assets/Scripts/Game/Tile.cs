@@ -1,4 +1,5 @@
 using System;
+using DefaultNamespace.Game.Enum;
 using DefaultNamespace.Pooling;
 using EventBus.Events;
 using UnityEngine;
@@ -7,6 +8,8 @@ namespace DefaultNamespace.Game
 {
     public abstract class Tile : PoolableMonoBehaviour
     {
+        [SerializeField] protected LevelDataSO levelDataSo;
+        
         [SerializeField] protected OnTileTouchDownEventChannel onTileTouchDownEventChannel;
         [SerializeField] protected OnTileTouchUpEventChannel onTileTouchUpEventChannel;
         
@@ -18,6 +21,8 @@ namespace DefaultNamespace.Game
         [SerializeField] protected float minWidth;
         [SerializeField] protected float maxWidth;
         public RectTransform RectTransform => rectTransform;
+
+        protected float yHitLine = 0;
 
         private void OnEnable()
         {
@@ -36,10 +41,33 @@ namespace DefaultNamespace.Game
             noteData = noteDataArg;
         }
 
-        private float YToWall()
+        protected float YToWall()
         {
             var pageY = pageTarget.RectTransform.anchoredPosition.y;
             return rectTransform.anchoredPosition.y + pageY;
+        }
+        
+        protected RateLevel CalculateRateLevel()
+        {
+            var yToWall = YToWall();
+            if (yToWall > yHitLine)
+            {
+                float d = yToWall - yHitLine;
+                float minD = levelDataSo.MinDistanceYTappable;
+                if (d > minD)
+                {
+                    return RateLevel.Good;
+                }
+
+                if (d > minD / 2f)
+                {
+                    return RateLevel.Great;
+                }
+                
+                return RateLevel.Perfect;
+            }
+
+            return RateLevel.Good;
         }
 
         public static int hitId = -1;

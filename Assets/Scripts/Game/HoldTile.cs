@@ -1,3 +1,4 @@
+using DefaultNamespace.Game.Enum;
 using DG.Tweening;
 using EventBus.Events;
 using TMPro;
@@ -8,7 +9,6 @@ namespace DefaultNamespace.Game
 {
     public class HoldTile : Tile
     {
-        [SerializeField] private LevelDataSO levelDataSo;
         [SerializeField] private OnUserGainedScoreEventChannel onUserGainedScoreEventChannel;
         [SerializeField] private CanvasGroup bodyCanvasGroup;
         [SerializeField] private float bodyFadeValue = 0.5f;
@@ -17,10 +17,10 @@ namespace DefaultNamespace.Game
         [SerializeField] private HeadAnimator headAnimator;
         [SerializeField] private ScoreAnimator scoreAnimator;
         
-
         private bool isTapped = false;
         private float holdTapTime = 0f;
         private int tappedScore = 0;
+        private RateLevel _rateLevel = RateLevel.None;
 
         private void Update()
         {
@@ -56,7 +56,7 @@ namespace DefaultNamespace.Game
         private void OnPlayerGainedScore(int fromScore, int toScore, bool isMaxed)
         {
             Debug.Log($"User gained score + {toScore - fromScore}");
-            onUserGainedScoreEventChannel.RaiseEvent(new OnUserGainedScoreEventArgs(toScore - fromScore));
+            onUserGainedScoreEventChannel.RaiseEvent(new OnUserGainedScoreEventArgs(toScore - fromScore, _rateLevel));
             scoreAnimator.SetScore(toScore, isMaxed);
         }
 
@@ -79,7 +79,9 @@ namespace DefaultNamespace.Game
                 return;
             
             isTapped = true;
+            _rateLevel = CalculateRateLevel();
             holdTapTime = 0;
+            _rateLevel = RateLevel.None;
             UpdateUIOnTapped();
         }
 
@@ -91,6 +93,7 @@ namespace DefaultNamespace.Game
         public override void OnSpawn()
         {
             base.OnSpawn();
+            _rateLevel = RateLevel.None;
             isTapped = false;
             
             // reset slider

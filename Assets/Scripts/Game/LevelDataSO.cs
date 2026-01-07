@@ -18,6 +18,7 @@ namespace DefaultNamespace.Game
         [SerializeField] private float delayFromStart = 1f; // seconds
         [SerializeField] private float scaleHoldTileLengthFactor = 1f;
         [SerializeField] private float holdScorePerSecond = 10f;
+        [SerializeField] private float minDistanceYTappable = 300f;
         [SerializeField] private List<NoteData> levelData;
         
         
@@ -37,6 +38,7 @@ namespace DefaultNamespace.Game
         }
         
         public float HeightForTap => heightForTap;
+        public float MinDistanceYTappable => minDistanceYTappable;
 
 #if UNITY_EDITOR
         [ContextMenu("Initialize config from midi")]

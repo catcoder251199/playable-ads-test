@@ -24,7 +24,8 @@ namespace DefaultNamespace.Game
                 return;
             
             isTapped = true;
-            onUserGainedScoreEventChannel.RaiseEvent(new OnUserGainedScoreEventArgs(1));
+            var rateLevel = CalculateRateLevel();
+            onUserGainedScoreEventChannel.RaiseEvent(new OnUserGainedScoreEventArgs(1, rateLevel));
             UpdateUIOnTapped();
         }
 

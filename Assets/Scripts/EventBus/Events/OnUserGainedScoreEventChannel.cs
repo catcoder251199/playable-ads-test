@@ -1,3 +1,4 @@
+using DefaultNamespace.Game.Enum;
 using UnityEngine;
 
 namespace EventBus.Events
@@ -5,10 +6,12 @@ namespace EventBus.Events
     public class OnUserGainedScoreEventArgs : IEvent
     {
         public int Score { get; }
+        public RateLevel RateLevel { get; } 
 
-        public OnUserGainedScoreEventArgs(int score)
+        public OnUserGainedScoreEventArgs(int score, RateLevel rateLevel)
         {
             Score = score;
+            RateLevel = rateLevel;
         }
     }
     
