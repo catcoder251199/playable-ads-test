@@ -19,10 +19,14 @@ namespace DefaultNamespace.Game
         [SerializeField] private float maxPulseBoost = 3f;
         [SerializeField] private float returnDuration = 0.4f;
 
+        [Header("Colors")] [SerializeField] private Color[] colors;
+        private int _currentColorIndex = 0;
+        
         private Material runtimeMat;
         private Tween pulseTween;
 
         private float currentPulseSpeed;
+
 
         void Awake()
         {
@@ -36,7 +40,22 @@ namespace DefaultNamespace.Game
         public void OnReachFirstStar()
         {
             gameObject.SetActive(true);
+            ChangeColor();
             borderCanvasGroup.DOFade(1f, 0.5f);
+        }
+
+        public void OnReachStar()
+        {
+            ChangeColor();
+        }
+        
+        private void ChangeColor()
+        {
+            if (colors == null || colors.Length == 0) return;
+
+            runtimeMat.color = colors[_currentColorIndex];
+
+            _currentColorIndex = (_currentColorIndex + 1) % colors.Length;
         }
 
         public void OnScoreGained()

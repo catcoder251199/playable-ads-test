@@ -33,5 +33,5 @@ Material:
     - _PulseSpeed: 9.19
     - _PulseStrength: 1
     m_Colors:
-    - _Color: {r: 0.32039872, g: 0.9056604, b: 0.35408345, a: 1}
+    - _Color: {r: 0.8807378, g: 0.90588236, b: 0.3215686, a: 1}
   m_BuildTextureStacks: []

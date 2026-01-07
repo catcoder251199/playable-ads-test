@@ -64,11 +64,6 @@ namespace DefaultNamespace.Game
             var oldT = slider.value;
             var t = (float) eventArgs.TappedTotal / eventArgs.TileTotal;
             
-            if (reachedFirstStar)
-            {
-                //borderHandler.OnScoreGained();
-            }
-            
             if (t > oldT)
             {
                 slider.value = t;
@@ -84,6 +79,7 @@ namespace DefaultNamespace.Game
                     }
                     
                     _starGained += 1;
+                    borderHandler.OnReachStar();
                 }
             }
         }

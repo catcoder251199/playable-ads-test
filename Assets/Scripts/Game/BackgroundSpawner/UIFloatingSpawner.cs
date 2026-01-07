@@ -15,8 +15,8 @@ namespace DefaultNamespace.Game.BackgroundSpawner
         [SerializeField] private float spawnInterval = 0.4f;
         [SerializeField] private int maxSpawned = 10;
 
-        private readonly Queue<UIFloatingItem> pool = new();
-        private readonly HashSet<UIFloatingItem> active = new();
+        private readonly Queue<UIFloatingItem> pool = new Queue<UIFloatingItem> ();
+        private readonly HashSet<UIFloatingItem> active = new HashSet<UIFloatingItem>();
 
         float timer;
 

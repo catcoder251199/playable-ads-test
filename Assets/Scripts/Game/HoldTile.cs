@@ -80,6 +80,7 @@ namespace DefaultNamespace.Game
         private void OnReachedMaxScore(int maxScore)
         {
             headAnimator.AnimateOnDead();
+            scoreAnimator.SetScore(maxScore, true);
         }
 
         private void UpdateSlider(float t)

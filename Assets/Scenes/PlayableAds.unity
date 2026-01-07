@@ -230,6 +230,10 @@ MonoBehaviour:
   impulsePulse: 0.6
   maxPulseBoost: 3
   returnDuration: 0.4
+  colors:
+  - {r: 0.32156864, g: 0.90588236, b: 0.3529412, a: 1}
+  - {r: 0.88235295, g: 0.90588236, b: 0.32156864, a: 1}
+  - {r: 1, g: 0.48584908, b: 0.74009705, a: 1}
 --- !u!1 &139168828
 GameObject:
   m_ObjectHideFlags: 0

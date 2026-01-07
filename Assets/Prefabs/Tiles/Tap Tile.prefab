@@ -183,7 +183,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreTMPRectTransform: {fileID: 4761587272884889856}
   scoreTMP: {fileID: 2802757220656759330}
-  maxScoreColor: {r: 0.8862745, g: 0.64705884, b: 0.047058824, a: 1}
+  maxScoreColor: {r: 0.9716981, g: 0.7796417, b: 0.2979263, a: 1}
 --- !u!225 &5990642671097752680
 CanvasGroup:
   m_ObjectHideFlags: 0
