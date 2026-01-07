@@ -244,10 +244,6 @@
                 "excluded": true
             },
             {
-                "name": "System.Type",
-                "excluded": true
-            },
-            {
                 "name": "System.Text.StringBuilder",
                 "excluded": true
             },
@@ -1724,10 +1720,6 @@
                 "excluded": true
             },
             {
-                "name": "UnityEngine.Random",
-                "excluded": true
-            },
-            {
                 "name": "UnityEngine.RangeAttribute",
                 "excluded": true
             },
@@ -2048,19 +2040,11 @@
                 "excluded": true
             },
             {
-                "name": "UnityEngine.WaitForSeconds",
-                "excluded": true
-            },
-            {
                 "name": "UnityEngine.WaitForSecondsRealtime",
                 "excluded": true
             },
             {
                 "name": "UnityEngine.WaitUntil",
-                "excluded": true
-            },
-            {
-                "name": "UnityEngine.WaitWhile",
                 "excluded": true
             },
             {
@@ -2125,10 +2109,6 @@
             },
             {
                 "name": "UnityEngine.AssetBundleRequest",
-                "excluded": true
-            },
-            {
-                "name": "UnityEngine.AudioClip",
                 "excluded": true
             },
             {
@@ -6420,10 +6400,6 @@
                 "excluded": true
             },
             {
-                "name": "UnityEngine.UI.SetPropertyUtility",
-                "excluded": true
-            },
-            {
                 "name": "UnityEngine.UI.AspectRatioFitter",
                 "excluded": true
             },
@@ -6485,10 +6461,6 @@
             },
             {
                 "name": "UnityEngine.UI.Toggle",
-                "excluded": true
-            },
-            {
-                "name": "UnityEngine.UI.VerticalLayoutGroup",
                 "excluded": true
             },
             {
@@ -6953,11 +6925,11 @@
             },
             {
                 "name": "TMPro.TagUnitType",
-                "excluded": true
+                "excluded": false
             },
             {
                 "name": "TMPro.TagValueType",
-                "excluded": true
+                "excluded": false
             },
             {
                 "name": "TMPro.TextAlignmentOptions",
@@ -8132,10 +8104,6 @@
                 "excluded": true
             },
             {
-                "name": "DG.Tweening.ShortcutExtensions",
-                "excluded": true
-            },
-            {
                 "name": "DG.Tweening.TweenParams",
                 "excluded": true
             },
@@ -8168,10 +8136,6 @@
                 "excluded": true
             },
             {
-                "name": "DG.Tweening.Plugins.QuaternionPlugin",
-                "excluded": true
-            },
-            {
                 "name": "DG.Tweening.Plugins.RectPlugin",
                 "excluded": true
             },
@@ -8192,10 +8156,6 @@
                 "excluded": true
             },
             {
-                "name": "DG.Tweening.Plugins.Vector3Plugin",
-                "excluded": true
-            },
-            {
                 "name": "DG.Tweening.Plugins.Vector4Plugin",
                 "excluded": true
             },
@@ -8205,10 +8165,6 @@
             },
             {
                 "name": "DG.Tweening.Plugins.Color2Plugin",
-                "excluded": true
-            },
-            {
-                "name": "DG.Tweening.Plugins.ColorPlugin",
                 "excluded": true
             },
             {
@@ -8241,11 +8197,11 @@
             },
             {
                 "name": "DG.Tweening.Core.Enums.FilterType",
-                "excluded": true
+                "excluded": false
             },
             {
                 "name": "DG.Tweening.Core.Enums.OperationType",
-                "excluded": true
+                "excluded": false
             },
             {
                 "name": "DG.Tweening.Core.Enums.SpecialStartupMode",
@@ -8325,7 +8281,7 @@
             },
             {
                 "name": "DG.Tweening.RotateMode",
-                "excluded": true
+                "excluded": false
             },
             {
                 "name": "DG.Tweening.ScrambleMode",
@@ -8444,18 +8400,6 @@
                 "excluded": false
             },
             {
-                "name": "DefaultNamespace.AudioManager.AudioDatabase",
-                "excluded": true
-            },
-            {
-                "name": "DefaultNamespace.Game.NoteData",
-                "excluded": false
-            },
-            {
-                "name": "ServiceLocator",
-                "excluded": true
-            },
-            {
                 "name": "UnitA",
                 "excluded": true
             },
@@ -8472,20 +8416,8 @@
                 "excluded": true
             },
             {
-                "name": "EventBus.Events.OnLayoutChangedEventArgs",
-                "excluded": true
-            },
-            {
-                "name": "EventBus.Events.OnScreenSizeChangedEventArgs",
-                "excluded": true
-            },
-            {
-                "name": "DefaultNamespace.AudioManager.PoolableAudioSource",
-                "excluded": true
-            },
-            {
                 "name": "DefaultNamespace.AudioManager.AudioEntry",
-                "excluded": true
+                "excluded": false
             },
             {
                 "name": "DefaultNamespace.PlayableAdsService.IPlayableAdsService",
@@ -8493,11 +8425,11 @@
             },
             {
                 "name": "EventBus.Events.OnLayoutChangedEventChannel",
-                "excluded": true
+                "excluded": false
             },
             {
                 "name": "EventBus.Events.OnScreenSizeChangedEventChannel",
-                "excluded": true
+                "excluded": false
             },
             {
                 "name": "EventBus.Events.OnTilePageRecycledEventChannel",
@@ -8536,14 +8468,6 @@
                 "excluded": false
             },
             {
-                "name": "VPopup.VCanvas",
-                "excluded": true
-            },
-            {
-                "name": "VPopup.VPopup",
-                "excluded": true
-            },
-            {
                 "name": "SimpleTweenAnimationHandler",
                 "excluded": true
             },
@@ -8564,18 +8488,6 @@
                 "excluded": true
             },
             {
-                "name": "VPopup.Tween_Animation_Handler.MoveFromEdgeTweenConfig",
-                "excluded": true
-            },
-            {
-                "name": "VPopup.Tween_Animation_Handler.MoveToEdgeTweenConfig",
-                "excluded": true
-            },
-            {
-                "name": "VPopup.Tween_Animation_Handler.PopupTweenAnimationHandler",
-                "excluded": true
-            },
-            {
                 "name": "VPopup.Tween_Animation_Handler.ScaleFromTweenConfig",
                 "excluded": true
             },
@@ -8589,15 +8501,15 @@
             },
             {
                 "name": "VPopup.IPopupAnimationHandler",
-                "excluded": true
+                "excluded": false
             },
             {
                 "name": "VPopup.Tween_Animation_Handler.AbstractPopupTweenConfig",
-                "excluded": true
+                "excluded": false
             },
             {
                 "name": "VPopup.Tween_Animation_Handler.ScreenEdge",
-                "excluded": true
+                "excluded": false
             },
             {
                 "name": "EventBus.Listeners.OnWidthChangedListener",
@@ -8620,15 +8532,63 @@
                 "excluded": false
             },
             {
-                "name": "DefaultNamespace.Game.HoldTile",
+                "name": "DefaultNamespace.GameState.GameStateBase",
+                "excluded": true
+            },
+            {
+                "name": "DefaultNamespace.GameState.GameStateMachine",
+                "excluded": true
+            },
+            {
+                "name": "DefaultNamespace.Game.Enum.LoseReason",
                 "excluded": false
             },
             {
-                "name": "DefaultNamespace.Game.StartTile",
+                "name": "DefaultNamespace.Game.Enum.RateLevel",
                 "excluded": false
             },
             {
-                "name": "DefaultNamespace.Game.TapTile",
+                "name": "DefaultNamespace.GameState.IGameState",
+                "excluded": false
+            },
+            {
+                "name": "EventBus.Events.OnLaneTouchDownEventChannel",
+                "excluded": false
+            },
+            {
+                "name": "EventBus.Events.OnLaneTouchUpEventChannel",
+                "excluded": false
+            },
+            {
+                "name": "EventBus.Events.OnScreenOrientationChangedEventChannel",
+                "excluded": true
+            },
+            {
+                "name": "EventBus.Events.OnTileTouchDownEventChannel",
+                "excluded": false
+            },
+            {
+                "name": "EventBus.Events.OnTileTouchUpEventChannel",
+                "excluded": false
+            },
+            {
+                "name": "EventBus.Events.OnUserGainedScoreEventChannel",
+                "excluded": false
+            },
+            {
+                "name": "EventBus.Events.OnUserLoseEventChannel",
+                "excluded": false
+            },
+            {
+                "name": "EventBus.Events.OnUserProgressChangedEventChannel",
+                "excluded": false
+            },
+            {
+                "name": "EventBus.Events.OnUserWinEventChannel",
+                "excluded": false
+            },
+            {
+                "name": "EventBus.Events.OnUserWinEventArgs",
                 "excluded": false
             }
         ],
@@ -8781,11 +8741,11 @@
                     },
                     {
                         "name": "isSeparator",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "isPunctuation",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "isNumber",
@@ -9129,11 +9089,11 @@
                     },
                     {
                         "name": "trunc",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "div",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "mod",
@@ -12219,7 +12179,7 @@
                     },
                     {
                         "name": "Count#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "IsReadOnly#get",
@@ -12347,11 +12307,11 @@
                     },
                     {
                         "name": "IncreaseCapacity",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "SetCapacity",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "AddIfNotPresent",
@@ -12509,7 +12469,7 @@
                     },
                     {
                         "name": "$clone",
-                        "excluded": true
+                        "excluded": false
                     }
                 ]
             },
@@ -12657,7 +12617,7 @@
                     },
                     {
                         "name": "SetCapacity",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "MoveNext",
@@ -14465,7 +14425,7 @@
                     },
                     {
                         "name": "Sample",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "InternalSample",
@@ -14489,7 +14449,7 @@
                     },
                     {
                         "name": "NextDouble",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "NextBytes",
@@ -15037,7 +14997,7 @@
                     },
                     {
                         "name": "Reset",
-                        "excluded": true
+                        "excluded": false
                     }
                 ]
             },
@@ -15787,7 +15747,7 @@
                     },
                     {
                         "name": "xMin#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "xMin#set",
@@ -15811,7 +15771,7 @@
                     },
                     {
                         "name": "yMin#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "yMin#set",
@@ -15827,7 +15787,7 @@
                     },
                     {
                         "name": "$ctor1",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "ctor",
@@ -17337,7 +17297,7 @@
                     },
                     {
                         "name": "color#set",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "shader#get",
@@ -17389,7 +17349,7 @@
                     },
                     {
                         "name": "$ctor1",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "$ctor2",
@@ -17465,7 +17425,7 @@
                     },
                     {
                         "name": "SetColor$1",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "SetColor",
@@ -17741,7 +17701,7 @@
                     },
                     {
                         "name": "position#set",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "localScale#get",
@@ -17773,7 +17733,7 @@
                     },
                     {
                         "name": "localRotation#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "localRotation#set",
@@ -17785,7 +17745,7 @@
                     },
                     {
                         "name": "rotation#set",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "forward#get",
@@ -19089,7 +19049,7 @@
                     },
                     {
                         "name": "offsetMin#set",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "offsetMax#get",
@@ -19097,7 +19057,7 @@
                     },
                     {
                         "name": "offsetMax#set",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "pivot#get",
@@ -20005,7 +19965,7 @@
                     },
                     {
                         "name": "disabledSprite#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "disabledSprite#set",
@@ -20179,7 +20139,7 @@
                     },
                     {
                         "name": "material#set",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "raycastTarget#get",
@@ -20195,7 +20155,7 @@
                     },
                     {
                         "name": "color#set",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "ctor",
@@ -20335,7 +20295,7 @@
                     },
                     {
                         "name": "OnTransformParentChanged",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "OnEnable",
@@ -20417,7 +20377,7 @@
                     },
                     {
                         "name": "OnTransformParentChanged",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "ParentMaskStateChanged",
@@ -20451,7 +20411,7 @@
                     },
                     {
                         "name": "sprite#set",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "overrideSprite#get",
@@ -20527,7 +20487,7 @@
                     },
                     {
                         "name": "material#set",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "enabled#get",
@@ -21087,7 +21047,7 @@
                     },
                     {
                         "name": "$clone",
-                        "excluded": true
+                        "excluded": false
                     }
                 ]
             },
@@ -21177,7 +21137,7 @@
                     },
                     {
                         "name": "text#set",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "textPreprocessor#get",
@@ -21237,11 +21197,11 @@
                     },
                     {
                         "name": "color#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "color#set",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "alpha#get",
@@ -21249,7 +21209,7 @@
                     },
                     {
                         "name": "alpha#set",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "enableVertexGradient#get",
@@ -21741,19 +21701,19 @@
                     },
                     {
                         "name": "flexibleHeight#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "flexibleWidth#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "minWidth#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "minHeight#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "maxWidth#get",
@@ -21769,11 +21729,11 @@
                     },
                     {
                         "name": "preferredWidth#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "preferredHeight#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "renderedWidth#get",
@@ -22033,7 +21993,7 @@
                     },
                     {
                         "name": "GetMarkupTagHashCode$1",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "GetStyleHashCode",
@@ -22049,7 +22009,7 @@
                     },
                     {
                         "name": "ResizeInternalArray$1",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "AddFloatToInternalTextBackingArray",
@@ -22085,7 +22045,7 @@
                     },
                     {
                         "name": "GetPreferredWidth",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "GetPreferredWidth$1",
@@ -22093,7 +22053,7 @@
                     },
                     {
                         "name": "GetPreferredHeight",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "GetPreferredHeight$1",
@@ -22125,7 +22085,7 @@
                     },
                     {
                         "name": "CalculatePreferredValues",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "GetCompoundBounds",
@@ -22269,7 +22229,7 @@
                     },
                     {
                         "name": "HexToInt",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "GetUTF16$2",
@@ -22313,7 +22273,7 @@
                     },
                     {
                         "name": "HexCharsToColor",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "HexCharsToColor$1",
@@ -22333,7 +22293,7 @@
                     },
                     {
                         "name": "ValidateHtmlTag",
-                        "excluded": true
+                        "excluded": false
                     }
                 ]
             },
@@ -22873,11 +22833,11 @@
                     },
                     {
                         "name": "Add",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Remove",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Push",
@@ -23589,7 +23549,7 @@
                     },
                     {
                         "name": "rect#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "border#get",
@@ -23949,7 +23909,7 @@
                     },
                     {
                         "name": "DespawnAll",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Despawn",
@@ -23993,11 +23953,11 @@
                     },
                     {
                         "name": "FilteredOperation",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Complete",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Flip",
@@ -24005,7 +23965,7 @@
                     },
                     {
                         "name": "ForceInit",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Goto",
@@ -24097,7 +24057,7 @@
                     },
                     {
                         "name": "ClearTweenArray",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "IncreaseCapacities",
@@ -24179,7 +24139,7 @@
                     },
                     {
                         "name": "To$12",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "To$13",
@@ -24187,7 +24147,7 @@
                     },
                     {
                         "name": "To$9",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "To$8",
@@ -24227,7 +24187,7 @@
                     },
                     {
                         "name": "AutoInit",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "SetTweensCapacity",
@@ -24259,7 +24219,7 @@
                     },
                     {
                         "name": "ToAlpha",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Punch",
@@ -24299,7 +24259,7 @@
                     },
                     {
                         "name": "CompleteAndReturnKilledTot",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "CompleteAndReturnKilledTot$1",
@@ -24331,7 +24291,7 @@
                     },
                     {
                         "name": "KillAll",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "KillAll$1",
@@ -24749,19 +24709,19 @@
                 "instanceMethods": [
                     {
                         "name": "getDefaultValue",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "init",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "ctor",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Reset",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "getHashCode",
@@ -24773,7 +24733,7 @@
                     },
                     {
                         "name": "$clone",
-                        "excluded": true
+                        "excluded": false
                     }
                 ]
             },
@@ -25035,15 +24995,15 @@
                 "instanceMethods": [
                     {
                         "name": "getDefaultValue",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "ctor",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Reset",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "getHashCode",
@@ -25055,7 +25015,7 @@
                     },
                     {
                         "name": "$clone",
-                        "excluded": true
+                        "excluded": false
                     }
                 ]
             },
@@ -26447,7 +26407,7 @@
                     },
                     {
                         "name": "GetLastTimingAmongEvents",
-                        "excluded": true
+                        "excluded": false
                     }
                 ]
             },
@@ -27357,7 +27317,7 @@
                     },
                     {
                         "name": "disabledTrigger#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "disabledTrigger#set",
@@ -27407,7 +27367,7 @@
                     },
                     {
                         "name": "maxValue#set",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "wholeNumbers#get",
@@ -27423,7 +27383,7 @@
                     },
                     {
                         "name": "value#set",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "normalizedValue#get",
@@ -28299,7 +28259,7 @@
                     },
                     {
                         "name": "scale#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "scale#set",
@@ -28313,7 +28273,7 @@
                 "instanceMethods": [
                     {
                         "name": "getDefaultValue",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "init",
@@ -28333,7 +28293,7 @@
                     },
                     {
                         "name": "$clone",
-                        "excluded": true
+                        "excluded": false
                     }
                 ]
             },
@@ -29241,7 +29201,7 @@
                 "instanceMethods": [
                     {
                         "name": "getDefaultValue",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "ctor",
@@ -29257,7 +29217,7 @@
                     },
                     {
                         "name": "$clone",
-                        "excluded": true
+                        "excluded": false
                     }
                 ]
             },
@@ -29275,7 +29235,7 @@
                     },
                     {
                         "name": "Resize$1",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "ctor",
@@ -29463,7 +29423,7 @@
                     },
                     {
                         "name": "ToUpperASCIIFast",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "GetHashCode",
@@ -29595,7 +29555,7 @@
                     },
                     {
                         "name": "$clone",
-                        "excluded": true
+                        "excluded": false
                     }
                 ]
             },
@@ -30689,7 +30649,7 @@
                     },
                     {
                         "name": "Kill",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "ManualUpdate",
@@ -30929,7 +30889,7 @@
                     },
                     {
                         "name": "SetLoops$1",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "SetEase$2",
@@ -31037,7 +30997,7 @@
                     },
                     {
                         "name": "Insert",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "AppendInterval",
@@ -31125,7 +31085,7 @@
                     },
                     {
                         "name": "SetOptions$8",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "SetOptions$13",
@@ -31149,7 +31109,7 @@
                     },
                     {
                         "name": "SetOptions$4",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "SetOptions$6",
@@ -31377,7 +31337,7 @@
                     },
                     {
                         "name": "DOFade$1",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "DOFade$2",
@@ -31441,7 +31401,7 @@
                     },
                     {
                         "name": "DOAnchorPosY",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "DOAnchorPos3D",
@@ -32243,7 +32203,7 @@
                     },
                     {
                         "name": "OnDisable",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "CalculateLayoutInputHorizontal",
@@ -32467,7 +32427,7 @@
                     },
                     {
                         "name": "Awake",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "OnApplicationQuit",
@@ -32507,23 +32467,23 @@
                     },
                     {
                         "name": "init",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Awake",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "PlaySFX",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "ReleaseAfterPlay",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "PlayBGM",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "StopBGM",
@@ -32535,6 +32495,14 @@
                     },
                     {
                         "name": "SetBGMVolume",
+                        "excluded": true
+                    },
+                    {
+                        "name": "FadeOut",
+                        "excluded": false
+                    },
+                    {
+                        "name": "FadeOutAfter",
                         "excluded": true
                     }
                 ]
@@ -32940,6 +32908,22 @@
                     {
                         "name": "GetDelayedTimeHit",
                         "excluded": false
+                    },
+                    {
+                        "name": "LaneCount#get",
+                        "excluded": false
+                    },
+                    {
+                        "name": "MinDistanceYTappable#get",
+                        "excluded": false
+                    },
+                    {
+                        "name": "ScaledDuration",
+                        "excluded": false
+                    },
+                    {
+                        "name": "HoldScore",
+                        "excluded": false
                     }
                 ]
             },
@@ -33044,10 +33028,6 @@
                         "excluded": false
                     },
                     {
-                        "name": "Start",
-                        "excluded": false
-                    },
-                    {
                         "name": "IsTilePositionYInPage",
                         "excluded": false
                     },
@@ -33065,6 +33045,10 @@
                     },
                     {
                         "name": "SpawnTilesAfterRecyclePage",
+                        "excluded": false
+                    },
+                    {
+                        "name": "GetYHitLine",
                         "excluded": false
                     }
                 ]
@@ -33100,10 +33084,6 @@
                         "excluded": false
                     },
                     {
-                        "name": "SetLaneTarget",
-                        "excluded": true
-                    },
-                    {
                         "name": "SetPageTarget",
                         "excluded": false
                     },
@@ -33118,18 +33098,6 @@
                     {
                         "name": "OnDisable",
                         "excluded": false
-                    },
-                    {
-                        "name": "SetPositionX",
-                        "excluded": true
-                    },
-                    {
-                        "name": "SetLocalPositionX",
-                        "excluded": true
-                    },
-                    {
-                        "name": "SetWidth",
-                        "excluded": true
                     },
                     {
                         "name": "SetHeight",
@@ -33148,11 +33116,23 @@
                         "excluded": false
                     },
                     {
-                        "name": "Update",
+                        "name": "OnDespawn",
                         "excluded": false
                     },
                     {
-                        "name": "OnDespawn",
+                        "name": "OnEnable",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnUserLoseEventHandler",
+                        "excluded": false
+                    },
+                    {
+                        "name": "SetYHitLine",
+                        "excluded": false
+                    },
+                    {
+                        "name": "CalculateRateLevel",
                         "excluded": false
                     }
                 ]
@@ -33199,11 +33179,1761 @@
                     },
                     {
                         "name": "SetMoveable",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Update",
                         "excluded": false
+                    },
+                    {
+                        "name": "OnEnable",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnDisable",
+                        "excluded": true
+                    },
+                    {
+                        "name": "OnUserLoseHandler",
+                        "excluded": false
+                    },
+                    {
+                        "name": "JumpBack",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "EventBus.Events.OnLaneTouchDownEventArgs",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "LaneIndex#get",
+                        "excluded": false
+                    },
+                    {
+                        "name": "ctor",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "EventBus.Events.OnLaneTouchUpEventArgs",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "LaneIndex#get",
+                        "excluded": false
+                    },
+                    {
+                        "name": "ctor",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "EventBus.Events.OnLayoutChangedEventArgs",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "ctor",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "EventBus.Events.OnScreenOrientationChangedEventArgs",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "ctor",
+                        "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "EventBus.Events.OnTileTouchDownEventArgs",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "Id#get",
+                        "excluded": false
+                    },
+                    {
+                        "name": "ctor",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "EventBus.Events.OnTileTouchUpEventArgs",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "ctor",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "EventBus.Events.OnUserGainedScoreEventArgs",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "ctor",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "EventBus.Events.OnUserLoseEventArgs",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "ctor",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "EventBus.Events.OnUserProgressChangedEventArgs",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "ctor",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "DefaultNamespace.Game.NoteData",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "init",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "DefaultNamespace.Game.HoldTile",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnUserLoseEventHandler",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Update",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnPlayerGainedScore",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnReachedMaxScore",
+                        "excluded": false
+                    },
+                    {
+                        "name": "UpdateSlider",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnTileTouchDownEventHandler",
+                        "excluded": false
+                    },
+                    {
+                        "name": "UpdateUIOnTapped",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnSpawn",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnDespawn",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnTileTouchUpEventHandler",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "DefaultNamespace.Game.StartTile",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnTileTouchDownEventHandler",
+                        "excluded": false
+                    },
+                    {
+                        "name": "UpdateUIOnTapped",
+                        "excluded": true
+                    },
+                    {
+                        "name": "OnSpawn",
+                        "excluded": true
+                    },
+                    {
+                        "name": "OnDespawn",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnTileTouchUpEventHandler",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "DefaultNamespace.Game.TapTile",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Update",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnUserLoseEventHandler",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnTileTouchDownEventHandler",
+                        "excluded": false
+                    },
+                    {
+                        "name": "UpdateUIOnTapped",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnSpawn",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnDespawn",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnTileTouchUpEventHandler",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "System.Type",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "$is",
+                        "excluded": true
+                    },
+                    {
+                        "name": "getTypeCode",
+                        "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "UnityEngine.AudioClip",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "name#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "name#set",
+                        "excluded": true
+                    },
+                    {
+                        "name": "length#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "ctor",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "UnityEngine.UI.SetPropertyUtility",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "SetColor",
+                        "excluded": true
+                    },
+                    {
+                        "name": "SetStruct",
+                        "excluded": false
+                    },
+                    {
+                        "name": "SetClass",
+                        "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "UnityEngine.UI.VerticalLayoutGroup",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "ctor",
+                        "excluded": false
+                    },
+                    {
+                        "name": "CalculateLayoutInputHorizontal",
+                        "excluded": false
+                    },
+                    {
+                        "name": "CalculateLayoutInputVertical",
+                        "excluded": false
+                    },
+                    {
+                        "name": "SetLayoutHorizontal",
+                        "excluded": false
+                    },
+                    {
+                        "name": "SetLayoutVertical",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "DefaultNamespace.AudioManager.AudioDatabase",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "Init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "GetSFX",
+                        "excluded": false
+                    },
+                    {
+                        "name": "GetBGM",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "DefaultNamespace.Game.BackgroundSpawner.UIFloatingItem",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "DoPlay",
+                        "excluded": true
+                    },
+                    {
+                        "name": "Play",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Despawn",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "DefaultNamespace.Game.BackgroundSpawner.UIFloatingSpawner",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Update",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Spawn",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Get",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Release",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "DefaultNamespace.Game.Boot",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "Awake",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Start",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Init",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "DefaultNamespace.Game.BorderHandler",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Awake",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnReachFirstStar",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnReachStar",
+                        "excluded": false
+                    },
+                    {
+                        "name": "ChangeColor",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnScoreGained",
+                        "excluded": true
+                    },
+                    {
+                        "name": "PushPulse",
+                        "excluded": true
+                    },
+                    {
+                        "name": "EnsureReturnTween",
+                        "excluded": true
+                    },
+                    {
+                        "name": "OnDestroy",
+                        "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "DefaultNamespace.Game.Enum.BackgroundHandler",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "OnEnable",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnDisable",
+                        "excluded": false
+                    },
+                    {
+                        "name": "onScreenOrientationChangedEventHandler",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "DefaultNamespace.Game.GameplayController",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "InitState#get",
+                        "excluded": false
+                    },
+                    {
+                        "name": "PlayState#get",
+                        "excluded": false
+                    },
+                    {
+                        "name": "TileSpawner#get",
+                        "excluded": false
+                    },
+                    {
+                        "name": "PageMover#get",
+                        "excluded": false
+                    },
+                    {
+                        "name": "AudioManager#get",
+                        "excluded": false
+                    },
+                    {
+                        "name": "SongUIRectTransform#get",
+                        "excluded": false
+                    },
+                    {
+                        "name": "ProgressBarHandler#get",
+                        "excluded": false
+                    },
+                    {
+                        "name": "ECPopup#get",
+                        "excluded": false
+                    },
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "ChangeState",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Tick",
+                        "excluded": true
+                    },
+                    {
+                        "name": "Awake",
+                        "excluded": false
+                    },
+                    {
+                        "name": "InitQueues",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnEnable",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnDisable",
+                        "excluded": true
+                    },
+                    {
+                        "name": "OnUserGainedScoreEventHandler",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnUserWinEventHandler",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnUserLoseEventHandler",
+                        "excluded": false
+                    },
+                    {
+                        "name": "WaitAndToEnd",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnUserTouchLaneUpEventHandler",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnUserTouchLaneDownEventHandler",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnUserTouchLaneDownOnInit",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnUserTouchLaneDownEventHandlerOnPlay",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnUserTouchLaneUpEventHandlerOnPlay",
+                        "excluded": false
+                    },
+                    {
+                        "name": "CountParallelsFrom",
+                        "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "DefaultNamespace.Game.HeadAnimator",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "ResetUI",
+                        "excluded": false
+                    },
+                    {
+                        "name": "AnimateOnDead",
+                        "excluded": false
+                    },
+                    {
+                        "name": "AnimateOnUserLose",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "DefaultNamespace.Game.LaneInputHandler",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnPointerDown",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnPointerUp",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "DefaultNamespace.Game.MessageHandler",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Awake",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnEnable",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnDisable",
+                        "excluded": true
+                    },
+                    {
+                        "name": "OnUserWinEventHandler",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnUseLoseEventHandler",
+                        "excluded": false
+                    },
+                    {
+                        "name": "ShowLoseReason",
+                        "excluded": false
+                    },
+                    {
+                        "name": "GetLoseMessage",
+                        "excluded": false
+                    },
+                    {
+                        "name": "GetSuccessMessage",
+                        "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "DefaultNamespace.Game.ProgressBarHandler",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Awake",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnEnable",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnDisable",
+                        "excluded": true
+                    },
+                    {
+                        "name": "OnUserProgressChangedEventHandler",
+                        "excluded": false
+                    },
+                    {
+                        "name": "DoAnimateStar",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "DefaultNamespace.Game.RatePlayerAnimator",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Awake",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnEnable",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnDisable",
+                        "excluded": true
+                    },
+                    {
+                        "name": "OnUserGainedScoreEventHandler",
+                        "excluded": false
+                    },
+                    {
+                        "name": "DoAnimate",
+                        "excluded": false
+                    },
+                    {
+                        "name": "UpdateRateImage",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "DefaultNamespace.Game.ScoreAnimator",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "ResetUI",
+                        "excluded": false
+                    },
+                    {
+                        "name": "SetScore",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "ServiceLocator",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Register",
+                        "excluded": false
+                    },
+                    {
+                        "name": "GetService",
+                        "excluded": true
+                    },
+                    {
+                        "name": "TryGetService",
+                        "excluded": true
+                    },
+                    {
+                        "name": "Clear",
+                        "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "VPopup.VCanvas",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "RectTransform#get",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "VPopup.VPopup",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "AnimationHandler#get",
+                        "excluded": false
+                    },
+                    {
+                        "name": "DisablePopupGameObjectOnAnimationOnHidden#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "CanvasParent#get",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OverlayCanvasGroup#get",
+                        "excluded": false
+                    },
+                    {
+                        "name": "EnableOverlay#get",
+                        "excluded": false
+                    },
+                    {
+                        "name": "ContentRectTransform#get",
+                        "excluded": false
+                    },
+                    {
+                        "name": "ContentInitialAnchorPos#get",
+                        "excluded": false
+                    },
+                    {
+                        "name": "ContentInitialScale#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "ContentInitialAlpha#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "ContentCanvasGroup#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "IsAnimating#get",
+                        "excluded": false
+                    },
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Awake",
+                        "excluded": false
+                    },
+                    {
+                        "name": "PrintMessage",
+                        "excluded": true
+                    },
+                    {
+                        "name": "Open",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Hide",
+                        "excluded": true
+                    },
+                    {
+                        "name": "OnOpenedInternal",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnClosedInternal",
+                        "excluded": true
+                    },
+                    {
+                        "name": "OnOpen",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnOpened",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnClose",
+                        "excluded": true
+                    },
+                    {
+                        "name": "OnClosed",
+                        "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "DefaultNamespace.GameState.State.EndState",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Enter",
+                        "excluded": false
+                    },
+                    {
+                        "name": "WaitAndShowEC",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnCTAClicked",
+                        "excluded": true
+                    },
+                    {
+                        "name": "Exit",
+                        "excluded": true
+                    },
+                    {
+                        "name": "Tick",
+                        "excluded": true
+                    },
+                    {
+                        "name": "OnUserTouchLaneDownEventHandler",
+                        "excluded": true
+                    },
+                    {
+                        "name": "OnUserTouchLaneUpEventHandler",
+                        "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "DefaultNamespace.GameState.State.InitState",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "Enter",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Exit",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Tick",
+                        "excluded": true
+                    },
+                    {
+                        "name": "OnUserTouchLaneDownEventHandler",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnUserTouchLaneUpEventHandler",
+                        "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "DefaultNamespace.GameState.State.PlayState",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Enter",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Exit",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Tick",
+                        "excluded": true
+                    },
+                    {
+                        "name": "OnUserTouchLaneDownEventHandler",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnUserTouchLaneUpEventHandler",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "VPopup.Tween_Animation_Handler.MoveFromEdgeTweenConfig",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "CreateTween",
+                        "excluded": false
+                    },
+                    {
+                        "name": "CalculateStartPosition",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "VPopup.Tween_Animation_Handler.MoveToEdgeTweenConfig",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "CreateTween",
+                        "excluded": true
+                    },
+                    {
+                        "name": "CalculateEndPosition",
+                        "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "VPopup.Tween_Animation_Handler.PopupTweenAnimationHandler",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "TweenShowAnimationConfig#get",
+                        "excluded": false
+                    },
+                    {
+                        "name": "TweenHideAnimationConfig#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "IsAnimating",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Show",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Hide",
+                        "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "DefaultNamespace.AudioManager.PoolableAudioSource",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "Awake",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnSpawn",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnDespawn",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "UnityEngine.Random",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "value#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "onUnitSphere#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "insideUnitSphere#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "state#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "state#set",
+                        "excluded": true
+                    },
+                    {
+                        "name": "insideUnitCircle#get",
+                        "excluded": false
+                    },
+                    {
+                        "name": "rotation#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "SpherePoint",
+                        "excluded": true
+                    },
+                    {
+                        "name": "Range$1",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Range",
+                        "excluded": true
+                    },
+                    {
+                        "name": "InitState",
+                        "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "DG.Tweening.ShortcutExtensions",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "DOColor$5",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOColor",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOColor$1",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOColor$3",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOColor$4",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOColor$2",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOTimeScale",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOAspect",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOFarClipPlane",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOFieldOfView",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DONearClipPlane",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOOrthoSize",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOPixelRect",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DORect",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOShakePosition",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOShakePosition$1",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOShakePosition$2",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOShakePosition$3",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOShakeRotation",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOShakeRotation$1",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOShakeRotation$2",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOShakeRotation$3",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOIntensity",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOShadowStrength",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOFade$1",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOFade$2",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOFade",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOFloat$1",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOFloat",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOOffset",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOOffset$1",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOTiling",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOTiling$1",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOVector$1",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOVector",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOResize",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOTime",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOMove",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOMoveX",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOMoveY",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOMoveZ",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOLocalMove",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOLocalMoveX",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOLocalMoveY",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOLocalMoveZ",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DORotate",
+                        "excluded": false
+                    },
+                    {
+                        "name": "DORotateQuaternion",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOLocalRotate",
+                        "excluded": false
+                    },
+                    {
+                        "name": "DOLocalRotateQuaternion",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOScale$1",
+                        "excluded": false
+                    },
+                    {
+                        "name": "DOScale",
+                        "excluded": false
+                    },
+                    {
+                        "name": "DOScaleX",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOScaleY",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOScaleZ",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOLookAt",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DODynamicLookAt",
+                        "excluded": true
+                    },
+                    {
+                        "name": "LookAt",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOPunchPosition",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOPunchScale",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOPunchRotation",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOShakeScale",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOShakeScale$1",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOJump",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOLocalJump",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOPath$1",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOPath",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOLocalPath$1",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOLocalPath",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOBlendableColor",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOBlendableColor$2",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOBlendableColor$3",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOBlendableColor$1",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOBlendableMoveBy",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOBlendableLocalMoveBy",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOBlendableRotateBy",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOBlendableLocalRotateBy",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOBlendablePunchRotation",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOBlendableScaleBy",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOComplete",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOComplete$1",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOKill",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOKill$1",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOFlip",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOFlip$1",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOGoto",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOGoto$1",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOPause",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOPause$1",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOPlay",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOPlay$1",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOPlayBackwards",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOPlayBackwards$1",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOPlayForward",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOPlayForward$1",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DORestart",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DORestart$1",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DORewind",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DORewind$1",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOSmoothRewind",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOSmoothRewind$1",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOTogglePause",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOTogglePause$1",
+                        "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "DG.Tweening.Plugins.Vector3Plugin",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "Reset",
+                        "excluded": false
+                    },
+                    {
+                        "name": "SetFrom$1",
+                        "excluded": true
+                    },
+                    {
+                        "name": "SetFrom",
+                        "excluded": true
+                    },
+                    {
+                        "name": "ConvertToStartValue",
+                        "excluded": false
+                    },
+                    {
+                        "name": "SetRelativeEndValue",
+                        "excluded": true
+                    },
+                    {
+                        "name": "SetChangeValue",
+                        "excluded": false
+                    },
+                    {
+                        "name": "GetSpeedBasedDuration",
+                        "excluded": true
+                    },
+                    {
+                        "name": "EvaluateAndApply",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "EventBus.Events.OnScreenSizeChangedEventArgs",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "ctor",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "DG.Tweening.Plugins.QuaternionPlugin",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "Reset",
+                        "excluded": false
+                    },
+                    {
+                        "name": "SetFrom$1",
+                        "excluded": true
+                    },
+                    {
+                        "name": "SetFrom",
+                        "excluded": true
+                    },
+                    {
+                        "name": "ConvertToStartValue",
+                        "excluded": false
+                    },
+                    {
+                        "name": "SetRelativeEndValue",
+                        "excluded": true
+                    },
+                    {
+                        "name": "SetChangeValue",
+                        "excluded": false
+                    },
+                    {
+                        "name": "GetSpeedBasedDuration",
+                        "excluded": true
+                    },
+                    {
+                        "name": "EvaluateAndApply",
+                        "excluded": false
+                    },
+                    {
+                        "name": "GetEulerValForCalculations",
+                        "excluded": false
+                    },
+                    {
+                        "name": "FlipEulerAngles",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "UnityEngine.WaitForSeconds",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "ctor",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Update",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Reset",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "UnityEngine.WaitWhile",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "keepWaiting#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "ctor",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Update",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "DG.Tweening.Plugins.ColorPlugin",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "Reset",
+                        "excluded": false
+                    },
+                    {
+                        "name": "SetFrom$1",
+                        "excluded": true
+                    },
+                    {
+                        "name": "SetFrom",
+                        "excluded": true
+                    },
+                    {
+                        "name": "ConvertToStartValue",
+                        "excluded": false
+                    },
+                    {
+                        "name": "SetRelativeEndValue",
+                        "excluded": true
+                    },
+                    {
+                        "name": "SetChangeValue",
+                        "excluded": false
+                    },
+                    {
+                        "name": "GetSpeedBasedDuration",
+                        "excluded": true
+                    },
+                    {
+                        "name": "EvaluateAndApply",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "DG.Tweening.DOTweenModuleAudio",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "DOFade",
+                        "excluded": false
+                    },
+                    {
+                        "name": "DOPitch",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOSetFloat",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOComplete",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOKill",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOFlip",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOGoto",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOPause",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOPlay",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOPlayBackwards",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOPlayForward",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DORestart",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DORewind",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOSmoothRewind",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOTogglePause",
+                        "excluded": true
                     }
                 ]
             }
