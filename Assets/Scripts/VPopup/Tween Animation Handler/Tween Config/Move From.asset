@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30b84212c11a4ac3858fc74befb61a73, type: 3}
   m_Name: Move From
   m_EditorClassIdentifier: 
-  fromEdge: 0
+  fromEdge: 2
   startDelay: 0
   duration: 0.5
   additionalFromOffset: {x: 0, y: 0}

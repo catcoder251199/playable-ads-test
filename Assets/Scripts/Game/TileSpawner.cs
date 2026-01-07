@@ -76,6 +76,8 @@ namespace DefaultNamespace.Game
         {
             return startTilePool.Spawn();
         }
+
+        private float GetYHitLine() => hitLineRectTransform.anchoredPosition.y;
         
         private void SpawnTiles()
         {
