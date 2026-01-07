@@ -2,7 +2,7 @@
     "version": "7.0.0",
     "projectId": "619f95f871277aa4cbb7e08521bcb88f",
     "applicationID": 35844,
-    "creativeName": "VyConcept",
+    "creativeName": "PianoMagicStar4Concept",
     "pgServer": "EU",
     "window": {
         "‐⁏": true
@@ -122,13 +122,18 @@
                 "Stubs/AppsFlyer",
                 "Stubs/IronSource",
                 "Stubs/Vungle",
-                "Stubs/MoreMountains.NiceVibrations"
+                "Stubs/MoreMountains.NiceVibrations",
+                "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset",
+                "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset",
+                "Assets/TextMesh Pro/Sprites/EmojiOne.png",
+                "Assets/TextMesh Pro/Fonts/LiberationSans.ttf"
             ],
             "includes": [
-                "Assets/Art/UI Atlas.spriteatlasv2",
+                "Assets/Art/MEP/circle_glowing.png",
                 "Assets/Game/Events/On Game Area Changed Event Channel.asset",
                 "Assets/Resources/DOTweenSettings.asset",
-                "Assets/TextMesh Pro/Resources/TMP Settings.asset"
+                "Assets/TextMesh Pro/Resources/TMP Settings.asset",
+                "Assets/Art/UI Atlas.spriteatlasv2"
             ]
         },
         "scenes": [
@@ -8633,7 +8638,7 @@
                 "instanceMethods": [
                     {
                         "name": "$is",
-                        "excluded": true
+                        "excluded": false
                     }
                 ]
             },
@@ -17777,7 +17782,7 @@
                     },
                     {
                         "name": "name#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "name#set",
@@ -22615,7 +22620,7 @@
                     },
                     {
                         "name": "missingGlyphCharacter#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "missingGlyphCharacter#set",
@@ -22623,11 +22628,11 @@
                     },
                     {
                         "name": "warningsDisabled#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "defaultFontAsset#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "defaultFontAssetPath#get",
@@ -22667,7 +22672,7 @@
                     },
                     {
                         "name": "fallbackFontAssets#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "matchMaterialPreset#get",
@@ -22675,7 +22680,7 @@
                     },
                     {
                         "name": "defaultSpriteAsset#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "defaultSpriteAssetPath#get",
@@ -22957,7 +22962,7 @@
                     },
                     {
                         "name": "spriteCharacterLookupTable#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "spriteCharacterLookupTable#set",
@@ -22985,7 +22990,7 @@
                     },
                     {
                         "name": "UpdateLookupTables",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "GetSpriteIndexFromHashcode",
@@ -28327,7 +28332,7 @@
                     },
                     {
                         "name": "GetSpriteCharacterFromSpriteAsset",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "GetSpriteCharacterFromSpriteAsset_Internal",
@@ -29765,7 +29770,7 @@
                     },
                     {
                         "name": "atlasPopulationMode#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "atlasPopulationMode#set",
@@ -29897,7 +29902,7 @@
                     },
                     {
                         "name": "fallbackFontAssetTable#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "fallbackFontAssetTable#set",
@@ -30123,7 +30128,7 @@
                     },
                     {
                         "name": "hashCode#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "ctor",
@@ -33598,48 +33603,6 @@
                 ]
             },
             {
-                "className": "DefaultNamespace.Game.BorderHandler",
-                "staticMethods": [],
-                "instanceMethods": [
-                    {
-                        "name": "init",
-                        "excluded": false
-                    },
-                    {
-                        "name": "Awake",
-                        "excluded": false
-                    },
-                    {
-                        "name": "OnReachFirstStar",
-                        "excluded": false
-                    },
-                    {
-                        "name": "OnReachStar",
-                        "excluded": false
-                    },
-                    {
-                        "name": "ChangeColor",
-                        "excluded": false
-                    },
-                    {
-                        "name": "OnScoreGained",
-                        "excluded": true
-                    },
-                    {
-                        "name": "PushPulse",
-                        "excluded": true
-                    },
-                    {
-                        "name": "EnsureReturnTween",
-                        "excluded": true
-                    },
-                    {
-                        "name": "OnDestroy",
-                        "excluded": true
-                    }
-                ]
-            },
-            {
                 "className": "DefaultNamespace.Game.Enum.BackgroundHandler",
                 "staticMethods": [],
                 "instanceMethods": [
@@ -34075,11 +34038,11 @@
                     },
                     {
                         "name": "OnCTAClicked",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Exit",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Tick",
@@ -34091,7 +34054,7 @@
                     },
                     {
                         "name": "OnUserTouchLaneUpEventHandler",
-                        "excluded": true
+                        "excluded": false
                     }
                 ]
             },
@@ -34936,6 +34899,36 @@
                         "excluded": true
                     }
                 ]
+            },
+            {
+                "className": "DefaultNamespace.Game.BorderHandler2",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnReachFirstStar",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnReachStar",
+                        "excluded": false
+                    },
+                    {
+                        "name": "ChangeColor",
+                        "excluded": false
+                    },
+                    {
+                        "name": "StartBlink",
+                        "excluded": false
+                    },
+                    {
+                        "name": "StopBlink",
+                        "excluded": false
+                    }
+                ]
             }
         ],
         "stubberDataList": [],
@@ -35026,7 +35019,28 @@
                     "script": "",
                     "ext": ""
                 },
-                "overrides": []
+                "overrides": [
+                    {
+                        "channels": 1,
+                        "startTime": "00:00.000",
+                        "endTime": "01:05.223",
+                        "lengthInSeconds": 65.2229995727539,
+                        "bitrate": 128,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/Art/Sounds/Round And Round.mp3"
+                    },
+                    {
+                        "channels": 1,
+                        "startTime": "00:00.000",
+                        "endTime": "00:30.000",
+                        "lengthInSeconds": 30.0,
+                        "bitrate": 128,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/Art/Sounds/Close.wav"
+                    }
+                ]
             },
             "font": {
                 "default": {

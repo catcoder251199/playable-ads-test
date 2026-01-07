@@ -10,8 +10,10 @@ namespace DefaultNamespace.GameState.State
         [SerializeField] private string BGMSongName = "RoundAndRound";
         [SerializeField] private GameplayController gameStateMachine;
         [SerializeField] private float ecWaitTime = 1f;
+        [SerializeField] private BorderHandler2 borderHandler2;
         public void Enter()
         {
+            borderHandler2.StopBlink();
             StartCoroutine(WaitAndShowEC());
         }
 
@@ -21,8 +23,9 @@ namespace DefaultNamespace.GameState.State
             gameStateMachine.ECPopup.Open();
         }
 
-        private void OnCTAClicked()
+        public void OnCTAClicked()
         {
+            Debug.Log("CTA Clicked!");
             Luna.Unity.Playable.InstallFullGame();
         }
 

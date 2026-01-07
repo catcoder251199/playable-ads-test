@@ -42,21 +42,21 @@ MonoBehaviour:
     note: 98
     time: 0.190476
     delta: 0.190476
-    duration: 0.57143
+    duration: 0.285715
     volume: 32
     lane: 2
   - id: 3
     note: 97
     time: 0.380953
     delta: 0.190477
-    duration: 0.57143
+    duration: 0.285715
     volume: 32
     lane: 1
   - id: 4
     note: 96
     time: 0.571429
     delta: 0.190476
-    duration: 0.57143
+    duration: 0.285715
     volume: 32
     lane: 0
   - id: 5

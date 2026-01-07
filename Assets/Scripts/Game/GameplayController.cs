@@ -214,7 +214,7 @@ namespace DefaultNamespace.Game
             {
                 _tappedTotal += 1;
                 tappedQueues[laneIndex].Enqueue(idLanes[laneIndex].Dequeue());
-                Debug.Log($"Touched down {tappedId}");
+                //Debug.Log($"Touched down {tappedId}");
                 // tap good
                 onTileTouchDownEventChannel.OnEventRaised?.Invoke(new OnTileTouchDownEventArgs(tappedId));
                 onUserProgressChangedEventChannel.OnEventRaised?.Invoke(new OnUserProgressChangedEventArgs(_tappedTotal, levelData.LevelData.Count));
@@ -229,7 +229,7 @@ namespace DefaultNamespace.Game
             while (tappedQueues[laneIndex].Count != 0)
             {
                 var tappedId = tappedQueues[laneIndex].Dequeue();
-                Debug.Log($"Touched up {tappedId}");
+                //Debug.Log($"Touched up {tappedId}");
                 onTileTouchUpEventChannel.OnEventRaised?.Invoke(new OnTileTouchUpEventArgs(tappedId));
             }
 

@@ -14,7 +14,7 @@ namespace DefaultNamespace.Game
         [SerializeField] private int starAmount = 6;
         [SerializeField] private RectTransform[] startRects;
         [SerializeField] private Image[] StarImages;
-        [SerializeField] private BorderHandler borderHandler;
+        [SerializeField] private BorderHandler2 borderHandler;
         [SerializeField] private Color starColor = Color.yellow;
         //[SerializeField] private RectTransform handle;
 

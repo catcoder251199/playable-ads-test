@@ -60,7 +60,6 @@ namespace VPopup.Tween_Animation_Handler
             if (overlayIsAnimatable)
             {
                 var overlayDuration = createdTween.Duration();
-                Debug.Log($"overlay show duration {overlayDuration}!");
                 sequence.Join(vPopup.OverlayCanvasGroup.DOFade(1f, overlayDuration));
             }
             
