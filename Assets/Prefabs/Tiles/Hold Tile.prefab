@@ -31,7 +31,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 867585598106081440}
-  m_Father: {fileID: 6678316868609322998}
+  m_Father: {fileID: 4448566983316000879}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -103,6 +103,42 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &1731703844086928168
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4448566983316000879}
+  m_Layer: 5
+  m_Name: Body2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &4448566983316000879
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1731703844086928168}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6316194407004580992}
+  m_Father: {fileID: 3608942170561575316}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2263157162393240263
 GameObject:
   m_ObjectHideFlags: 0
@@ -292,6 +328,7 @@ MonoBehaviour:
   levelDataSo: {fileID: 11400000, guid: a4c588c7343fee34b8d02cb8e6b77a5c, type: 2}
   onTileTouchDownEventChannel: {fileID: 11400000, guid: eb006ff9baa2b704bb4f81a34a2d6258, type: 2}
   onTileTouchUpEventChannel: {fileID: 11400000, guid: ce93bc94bea750e43bd339c7126b80d1, type: 2}
+  onUserLoseEventChannel: {fileID: 11400000, guid: 4578a3f8dfdd7284c88e31480e6467af, type: 2}
   noteData:
     id: 0
     note: 0
@@ -573,6 +610,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6678316868609322998}
+  - {fileID: 4448566983316000879}
   - {fileID: 5606130767850874991}
   - {fileID: 1355773367378387530}
   m_Father: {fileID: 7263099107607201873}
@@ -705,7 +743,6 @@ RectTransform:
   m_Children:
   - {fileID: 1415577229544895626}
   - {fileID: 4186951164091912253}
-  - {fileID: 6316194407004580992}
   m_Father: {fileID: 3608942170561575316}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}

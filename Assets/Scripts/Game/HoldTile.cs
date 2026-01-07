@@ -21,8 +21,13 @@ namespace DefaultNamespace.Game
         private float holdTapTime = 0f;
         private int tappedScore = 0;
         private RateLevel _rateLevel = RateLevel.None;
+        
+        protected override void OnUserLoseEventHandler(OnUserLoseEventArgs eventArgs)
+        {
+            headAnimator.AnimateOnUserLose();
+        }
 
-        private void Update()
+        protected void Update()
         {
             var scaledDuration = levelDataSo.ScaledDuration(noteData.id);
             if (isTapped && holdTapTime < scaledDuration)
@@ -51,6 +56,18 @@ namespace DefaultNamespace.Game
                     }
                 }
             }
+            
+            if (!gameObject.activeSelf || noteData.duration == 0 || isDead)
+                return;
+
+            var yToWall = YToWall();
+            if (yToWall <= 0 && !isHit)
+            {
+                isHit = true;
+                Debug.Log($"Hit the wall {noteData.id}");
+                onUserLoseEventChannel.OnEventRaised?.Invoke(new OnUserLoseEventArgs(LoseReason.TileHitWall));
+                return;
+            }
         }
 
         private void OnPlayerGainedScore(int fromScore, int toScore, bool isMaxed)
@@ -78,6 +95,7 @@ namespace DefaultNamespace.Game
             if (isTapped || eventArgs.Id != noteData.id)
                 return;
             
+            isDead = true;
             isTapped = true;
             _rateLevel = CalculateRateLevel();
             holdTapTime = 0;
@@ -95,7 +113,7 @@ namespace DefaultNamespace.Game
             base.OnSpawn();
             _rateLevel = RateLevel.None;
             isTapped = false;
-            
+            isDead = false;
             // reset slider
             slider.value = 0;
             // reset body

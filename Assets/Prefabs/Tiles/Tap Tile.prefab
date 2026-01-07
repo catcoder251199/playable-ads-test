@@ -130,6 +130,7 @@ MonoBehaviour:
   levelDataSo: {fileID: 11400000, guid: a4c588c7343fee34b8d02cb8e6b77a5c, type: 2}
   onTileTouchDownEventChannel: {fileID: 11400000, guid: eb006ff9baa2b704bb4f81a34a2d6258, type: 2}
   onTileTouchUpEventChannel: {fileID: 11400000, guid: ce93bc94bea750e43bd339c7126b80d1, type: 2}
+  onUserLoseEventChannel: {fileID: 11400000, guid: 4578a3f8dfdd7284c88e31480e6467af, type: 2}
   noteData:
     id: 0
     note: 0

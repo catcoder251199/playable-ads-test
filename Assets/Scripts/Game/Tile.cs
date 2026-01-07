@@ -12,6 +12,7 @@ namespace DefaultNamespace.Game
         
         [SerializeField] protected OnTileTouchDownEventChannel onTileTouchDownEventChannel;
         [SerializeField] protected OnTileTouchUpEventChannel onTileTouchUpEventChannel;
+        [SerializeField] protected OnUserLoseEventChannel onUserLoseEventChannel;
         
         [SerializeField] protected NoteData noteData;
         [SerializeField, ReadOnly] protected Lane laneTarget;
@@ -21,20 +22,26 @@ namespace DefaultNamespace.Game
         [SerializeField] protected float minWidth;
         [SerializeField] protected float maxWidth;
         public RectTransform RectTransform => rectTransform;
+        protected bool isDead = false;
 
         protected float yHitLine = 0;
 
-        private void OnEnable()
+        protected void OnEnable()
         {
             onTileTouchDownEventChannel.OnEventRaised += OnTileTouchDownEventHandler;
             onTileTouchUpEventChannel.OnEventRaised += OnTileTouchUpEventHandler;
+            onUserLoseEventChannel.OnEventRaised += OnUserLoseEventHandler;
         }
         
         private void OnDisable()
         {
             onTileTouchDownEventChannel.OnEventRaised -= OnTileTouchDownEventHandler;
             onTileTouchUpEventChannel.OnEventRaised -= OnTileTouchUpEventHandler;
+            onUserLoseEventChannel.OnEventRaised -= OnUserLoseEventHandler;
+            
         }
+
+        protected virtual void OnUserLoseEventHandler(OnUserLoseEventArgs eventArgs){}
         
         public virtual void UpdateUIWithData(NoteData noteDataArg)
         {
@@ -73,21 +80,8 @@ namespace DefaultNamespace.Game
         }
 
         public static int hitId = -1;
-        private bool isHit = false;
+        protected bool isHit = false;
         
-        private void Update()
-        {
-            if (!gameObject.activeSelf || noteData.duration == 0)
-                return;
-
-            var yToWall = YToWall();
-            if (yToWall <= 0 && !isHit)
-            {
-                isHit = true;
-                Debug.Log($"Hit the wall {noteData.id}");
-            }
-        }
-
         public void SetPageTarget(TilePage target)
         {
             if (pageTarget)

@@ -1,102 +1,130 @@
 using System.Collections;
 using DefaultNamespace.Pooling;
+using DG.Tweening;
 using UnityEngine;
 
 namespace DefaultNamespace.AudioManager
 {
-    public class AudioManager 
-    : GenericMonoSingleton<AudioManager>, IAudioService
-{
-    [Header("Config")]
-    [SerializeField] AudioDatabase database;
-
-    [Header("Audio Sources")]
-    [SerializeField] AudioSource bgmSource;
-    [SerializeField] PoolableAudioSource sfxSourcePrefab;
-
-    [Header("Settings")]
-    [SerializeField] int sfxPoolSize = 10;
-
-    float bgmVolume = 1f;
-    float sfxVolume = 1f;
-
-    GenericGameObjectPool<PoolableAudioSource> sfxPool;
-
-    protected override void Awake()
+    public class AudioManager : GenericMonoSingleton<AudioManager>, IAudioService
     {
-        base.Awake();
+        [Header("Config")]
+        [SerializeField] AudioDatabase database;
 
-        database.Init();
+        [Header("Audio Sources")]
+        [SerializeField] AudioSource bgmSource;
+        [SerializeField] PoolableAudioSource sfxSourcePrefab;
 
-        // Pool SFX AudioSource
-        sfxPool = new GenericGameObjectPool<PoolableAudioSource>(
-            sfxSourcePrefab,
-            sfxPoolSize,
-            transform
-        );
+        [Header("Settings")]
+        [SerializeField] int sfxPoolSize = 10;
 
-        ServiceLocator.Register<IAudioService>(this);
-    }
+        [SerializeField] float bgmVolume = 1f;
+        [SerializeField] float sfxVolume = 1f;
 
-    // -------------------
-    // SFX
-    // -------------------
-    public void PlaySFX(string id)
-    {
-        var clip = database.GetSFX(id);
-        if (clip == null) return;
+        GenericGameObjectPool<PoolableAudioSource> sfxPool;
 
-        var pooled = sfxPool.Spawn();
-        var source = pooled.Source;
+        protected override void Awake()
+        {
+            base.Awake();
 
-        source.clip = clip;
-        source.volume = sfxVolume;
-        source.Play();
+            database.Init();
 
-        StartCoroutine(ReleaseAfterPlay(pooled));
-    }
+            // Pool SFX AudioSource
+            sfxPool = new GenericGameObjectPool<PoolableAudioSource>(
+                sfxSourcePrefab,
+                sfxPoolSize,
+                transform
+            );
 
-    IEnumerator ReleaseAfterPlay(PoolableAudioSource pooled)
-    {
-        yield return new WaitWhile(() => pooled.Source.isPlaying);
-        sfxPool.Despawn(pooled);
-    }
+            ServiceLocator.Register<IAudioService>(this);
+        }
 
-    // -------------------
-    // BGM
-    // -------------------
-    public void PlayBGM(string id, bool loop = true)
-    {
-        var clip = database.GetBGM(id);
-        if (clip == null) return;
+        // -------------------
+        // SFX
+        // -------------------
+        public void PlaySFX(string id)
+        {
+            var clip = database.GetSFX(id);
+            if (clip == null) return;
 
-        if (bgmSource.clip == clip && bgmSource.isPlaying)
-            return;
+            var pooled = sfxPool.Spawn();
+            var source = pooled.Source;
 
-        bgmSource.clip = clip;
-        bgmSource.loop = loop;
-        bgmSource.volume = bgmVolume;
-        bgmSource.Play();
-    }
+            source.clip = clip;
+            source.volume = sfxVolume;
+            source.Play();
 
-    public void StopBGM()
-    {
-        bgmSource.Stop();
-        bgmSource.clip = null;
-    }
+            StartCoroutine(ReleaseAfterPlay(pooled));
+        }
 
-    // -------------------
-    // Volume
-    // -------------------
-    public void SetSFXVolume(float volume)
-    {
-        sfxVolume = Mathf.Clamp01(volume);
-    }
+        IEnumerator ReleaseAfterPlay(PoolableAudioSource pooled)
+        {
+            yield return new WaitWhile(() => pooled.Source.isPlaying);
+            sfxPool.Despawn(pooled);
+        }
 
-    public void SetBGMVolume(float volume)
-    {
-        bgmVolume = Mathf.Clamp01(volume);
-        bgmSource.volume = bgmVolume;
-    }
-}
+        // -------------------
+        // BGM
+        // -------------------
+        public void PlayBGM(string id, bool loop = true)
+        {
+            var clip = database.GetBGM(id);
+            if (clip == null) return;
+
+            if (bgmSource.clip == clip && bgmSource.isPlaying)
+                return;
+
+            bgmSource.clip = clip;
+            bgmSource.loop = loop;
+            bgmSource.volume = bgmVolume;
+            bgmSource.Play();
+        }
+
+        public void StopBGM()
+        {
+            bgmSource.Stop();
+            bgmSource.clip = null;
+        }
+
+        // -------------------
+        // Volume
+        // -------------------
+        public void SetSFXVolume(float volume)
+        {
+            sfxVolume = Mathf.Clamp01(volume);
+        }
+
+        public void SetBGMVolume(float volume)
+        {
+            bgmVolume = Mathf.Clamp01(volume);
+            bgmSource.volume = bgmVolume;
+        }
+        
+        private Tween volumeTween;
+        public void FadeOut(float duration)
+        {
+            volumeTween?.Kill();
+            volumeTween = bgmSource.DOFade(0f, duration)
+                .SetEase(Ease.OutQuad)
+                .OnComplete(() =>
+                {
+                    bgmSource.Stop();
+                });
+        }
+        
+        public void FadeOutAfter(float delay, float fadeDuration)
+        {
+            volumeTween?.Kill();
+
+            volumeTween = DOTween.Sequence()
+                .AppendInterval(delay)
+                .Append(
+                    bgmSource.DOFade(0f, fadeDuration)
+                        .SetEase(Ease.OutQuad)
+                )
+                .OnComplete(() =>
+                {
+                    bgmSource.Stop();
+                });
+        }
+    } 
 }

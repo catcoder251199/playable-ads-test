@@ -1,3 +1,5 @@
+using System;
+using DefaultNamespace.Game.Enum;
 using DG.Tweening;
 using EventBus.Events;
 using UnityEngine;
@@ -14,6 +16,26 @@ namespace DefaultNamespace.Game
         [SerializeField] private ScoreAnimator scoreAnimator;
         
         private bool isTapped = false;
+        private void Update()
+        {
+            if (!gameObject.activeSelf || noteData.duration == 0 || isDead)
+                return;
+
+            var yToWall = YToWall();
+            if (yToWall <= 0 && !isHit)
+            {
+                isHit = true;
+                Debug.Log($"Hit the wall {noteData.id}");
+                onUserLoseEventChannel.OnEventRaised?.Invoke(new OnUserLoseEventArgs(LoseReason.TileHitWall));
+                return;
+            }
+        }
+
+        protected override void OnUserLoseEventHandler(OnUserLoseEventArgs eventArgs)
+        {
+            headAnimator.AnimateOnUserLose();
+        }
+
         
         protected override void OnTileTouchDownEventHandler(OnTileTouchDownEventArgs eventArgs)
         {
@@ -22,7 +44,8 @@ namespace DefaultNamespace.Game
 
             if (isTapped || eventArgs.Id != noteData.id)
                 return;
-            
+
+            isDead = true;
             isTapped = true;
             var rateLevel = CalculateRateLevel();
             onUserGainedScoreEventChannel.RaiseEvent(new OnUserGainedScoreEventArgs(1, rateLevel));
@@ -40,6 +63,7 @@ namespace DefaultNamespace.Game
         {
             base.OnSpawn();
             isTapped = false;
+            isDead = false;
             DOTween.KillAll(bodyCanvasGroup);
             headAnimator.ResetUI();
             scoreAnimator.ResetUI();

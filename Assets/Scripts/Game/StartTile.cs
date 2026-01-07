@@ -16,12 +16,14 @@ namespace DefaultNamespace.Game
         
         protected override void OnTileTouchDownEventHandler(OnTileTouchDownEventArgs eventArgs)
         {
+            handGuide.gameObject.SetActive(false);
+            
             if (noteData == null || noteData.id < 0)
                 return;
 
             if (isTapped || eventArgs.Id != noteData.id)
                 return;
-            handGuide.gameObject.SetActive(false);
+            isDead = true;
             isTapped = true;
             UpdateUIOnTapped();
         }
@@ -35,6 +37,7 @@ namespace DefaultNamespace.Game
         public override void OnSpawn()
         {
             base.OnSpawn();
+            isDead = false;
             isTapped = false;
             DOTween.KillAll(bodyCanvasGroup);
             headAnimator.ResetUI();

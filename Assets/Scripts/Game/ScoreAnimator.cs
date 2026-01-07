@@ -34,8 +34,8 @@ namespace DefaultNamespace.Game
         {
             if (!scoreTMP.gameObject.activeSelf)
                 scoreTMP.gameObject.SetActive(true);
-            
-            scoreTMP.text = score.ToString();
+
+            scoreTMP.text = $"+{score.ToString()}";
             
             if (isMax)
                 scoreTMP.color = maxScoreColor;

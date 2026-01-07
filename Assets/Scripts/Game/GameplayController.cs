@@ -1,4 +1,6 @@
+using System.Collections;
 using System.Collections.Generic;
+using DefaultNamespace.Game.Enum;
 using DefaultNamespace.GameState;
 using DefaultNamespace.GameState.State;
 using EventBus.Events;
@@ -10,12 +12,15 @@ namespace DefaultNamespace.Game
     {
         [SerializeField] private InitState initState;
         [SerializeField] private PlayState playState;
+        [SerializeField] private EndState endState;
         
         [SerializeField] private TileSpawner tileSpawner;
         [SerializeField] private PageMover pageMover;
         [SerializeField] private AudioManager.AudioManager audioManager;
         [SerializeField] private RectTransform songUIRectTransform;
         [SerializeField] private ProgressBarHandler progressBarHandler;
+        [SerializeField] private VPopup.VPopup ecPopup;
+        [SerializeField] private string loseSound;
         
         [SerializeField] private LevelDataSO levelData;
         [SerializeField] private OnLaneTouchUpEventChannel onLaneTouchUpEventChannel;
@@ -24,6 +29,8 @@ namespace DefaultNamespace.Game
         [SerializeField] private OnTileTouchUpEventChannel onTileTouchUpEventChannel;
         [SerializeField] private OnUserGainedScoreEventChannel onUserGainedScoreEventChannel;
         [SerializeField] private OnUserProgressChangedEventChannel onUserProgressChangedEventChannel;
+        [SerializeField] private OnUserWinEventChannel onUserWinEventChannel;
+        [SerializeField] private OnUserLoseEventChannel onUserLoseEventChannel;
         
         private int _currentTileIndex; // use to check targeted tile of user
         private HashSet<int> tappedSet; // set of tile ids
@@ -40,10 +47,12 @@ namespace DefaultNamespace.Game
         public AudioManager.AudioManager AudioManager => audioManager;
         public RectTransform SongUIRectTransform => songUIRectTransform;
         public ProgressBarHandler ProgressBarHandler => progressBarHandler;
+        public VPopup.VPopup ECPopup => ecPopup;
         
         public IGameState CurrentState { get; private set; }
 
         private int _tappedTotal = 0;
+        private bool isEnded = false;
 
         public void ChangeState(IGameState newState)
         {
@@ -85,6 +94,8 @@ namespace DefaultNamespace.Game
             onLaneTouchUpEventChannel.OnEventRaised += OnUserTouchLaneUpEventHandler;
             onLaneTouchDownEventChannel.OnEventRaised += OnUserTouchLaneDownEventHandler;
             onUserGainedScoreEventChannel.OnEventRaised += OnUserGainedScoreEventHandler;
+            onUserLoseEventChannel.OnEventRaised += OnUserLoseEventHandler;
+            onUserWinEventChannel.OnEventRaised += OnUserWinEventHandler;
         }
         
         private void OnDisable()
@@ -92,11 +103,32 @@ namespace DefaultNamespace.Game
             onLaneTouchUpEventChannel.OnEventRaised -= OnUserTouchLaneUpEventHandler;
             onLaneTouchDownEventChannel.OnEventRaised -= OnUserTouchLaneDownEventHandler;
             onUserGainedScoreEventChannel.OnEventRaised -= OnUserGainedScoreEventHandler;
+            onUserLoseEventChannel.OnEventRaised -= OnUserLoseEventHandler;
+            onUserWinEventChannel.OnEventRaised -= OnUserWinEventHandler;
         }
 
         private void OnUserGainedScoreEventHandler(OnUserGainedScoreEventArgs eventArgs)
         {
-           
+        }
+
+        private void OnUserWinEventHandler(OnUserWinEventArgs eventArgs)
+        {
+            isEnded = true;
+            StartCoroutine(WaitAndToEnd());
+        }
+        
+        private void OnUserLoseEventHandler(OnUserLoseEventArgs eventArgs)
+        {
+            isEnded = true;
+            AudioManager.PlaySFX(loseSound);
+            StartCoroutine(WaitAndToEnd());
+        }
+
+        private IEnumerator WaitAndToEnd()
+        {
+            yield return new WaitForSeconds(2f);
+            AudioManager.FadeOut(2f);
+            ChangeState(endState);
         }
         
         private void OnUserTouchLaneUpEventHandler(OnLaneTouchUpEventArgs eventArgs)
@@ -132,6 +164,8 @@ namespace DefaultNamespace.Game
 
         public void OnUserTouchLaneDownEventHandlerOnPlay(OnLaneTouchDownEventArgs eventArgs)
         {
+            if (isEnded)
+                return;
             int laneIndex = eventArgs.LaneIndex;
             var tappedId = idLanes[laneIndex].Peek();
             
@@ -170,6 +204,7 @@ namespace DefaultNamespace.Game
                         // tap wrong front note
                         tapWrong = true;
                         Debug.LogError("wrong front node -> You lose!");
+                        onUserLoseEventChannel.OnEventRaised(new OnUserLoseEventArgs(LoseReason.WrongTile));
                         break;
                     }
                 }
@@ -188,12 +223,19 @@ namespace DefaultNamespace.Game
         
         public void OnUserTouchLaneUpEventHandlerOnPlay(OnLaneTouchUpEventArgs eventArgs)
         {
+            if (isEnded)
+                return;
             int laneIndex = eventArgs.LaneIndex;
             while (tappedQueues[laneIndex].Count != 0)
             {
                 var tappedId = tappedQueues[laneIndex].Dequeue();
                 Debug.Log($"Touched up {tappedId}");
                 onTileTouchUpEventChannel.OnEventRaised?.Invoke(new OnTileTouchUpEventArgs(tappedId));
+            }
+
+            if (_tappedTotal >= levelData.LevelData.Count)
+            {
+                onUserWinEventChannel.OnEventRaised?.Invoke(new OnUserWinEventArgs());
             }
         }
 
