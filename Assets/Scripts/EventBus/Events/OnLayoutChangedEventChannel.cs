@@ -16,6 +16,6 @@ namespace EventBus.Events
     }
     
     [CreateAssetMenu(fileName = "new OnLayoutChangedEventChannel", menuName = "EvenChannels/ OnLayoutChangedEventChannel")]
-    public class OnLayoutChangedEventChannel : GenericEventChannelSO<IEvent>
+    public class OnLayoutChangedEventChannel : GenericEventChannelSO<OnLayoutChangedEventArgs>
     {}
 }

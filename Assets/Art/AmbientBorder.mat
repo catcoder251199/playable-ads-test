@@ -24,14 +24,14 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 5dd4a77774ac13b4e83114a85e5f8af2, type: 3}
+        m_Texture: {fileID: 2800000, guid: 82cfd45220033a645868b60228c4327a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Intensity: 0.6
-    - _PulseSpeed: 14.26
-    - _PulseStrength: 1.34
+    - _Intensity: 1
+    - _PulseSpeed: 5
+    - _PulseStrength: 1
     m_Colors:
-    - _Color: {r: 1, g: 0.13927613, b: 0, a: 1}
+    - _Color: {r: 0.32039872, g: 0.9056604, b: 0.35408345, a: 1}
   m_BuildTextureStacks: []
