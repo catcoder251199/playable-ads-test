@@ -6,7 +6,7 @@ namespace DefaultNamespace.Game
     [Serializable]
     public class NoteData
     {
-        public int id;
+        public int id = -1;
         public int note;        // n
         public float time;      // ta (absolute time)
         public float delta;     // ts

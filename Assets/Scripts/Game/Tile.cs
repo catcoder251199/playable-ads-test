@@ -7,6 +7,9 @@ namespace DefaultNamespace.Game
 {
     public abstract class Tile : PoolableMonoBehaviour
     {
+        [SerializeField] protected OnTileTouchDownEventChannel onTileTouchDownEventChannel;
+        [SerializeField] protected OnTileTouchUpEventChannel onTileTouchUpEventChannel;
+        
         [SerializeField] protected NoteData noteData;
         [SerializeField, ReadOnly] protected Lane laneTarget;
         [SerializeField, ReadOnly] protected TilePage pageTarget;
@@ -15,6 +18,18 @@ namespace DefaultNamespace.Game
         [SerializeField] protected float minWidth;
         [SerializeField] protected float maxWidth;
         public RectTransform RectTransform => rectTransform;
+
+        private void OnEnable()
+        {
+            onTileTouchDownEventChannel.OnEventRaised += OnTileTouchDownEventHandler;
+            onTileTouchUpEventChannel.OnEventRaised += OnTileTouchUpEventHandler;
+        }
+        
+        private void OnDisable()
+        {
+            onTileTouchDownEventChannel.OnEventRaised -= OnTileTouchDownEventHandler;
+            onTileTouchUpEventChannel.OnEventRaised -= OnTileTouchUpEventHandler;
+        }
 
         public virtual void UpdateUIWithData(NoteData noteDataArg)
         {
@@ -98,34 +113,6 @@ namespace DefaultNamespace.Game
             );
         }
 
-        public void OnDisable()
-        {
-            // if (laneTarget)
-            //     laneTarget.OnLaneWidthChangedEventChannel.OnEventRaised -= OnLaneWidthChangedEventHandler;
-        }
-
-        private void SetPositionX(float x)
-        {
-            //var rect = rectTransform.anchoredPosition;
-            //rectTransform.anchoredPosition = new Vector2(x, rect.y);
-        }
-
-        private void SetLocalPositionX(float x)
-        {
-            Vector2 localPos;
-            
-        }
-        
-        public void SetWidth(float width)
-        {
-            width = Mathf.Max(minWidth, Mathf.Min(width, maxWidth));
-            ;
-            visualRectTransform.SetSizeWithCurrentAnchors(
-                RectTransform.Axis.Horizontal,
-                width
-            );
-        }
-        
         public void SetHeight(float height)
         {
             visualRectTransform.SetSizeWithCurrentAnchors(
@@ -143,10 +130,6 @@ namespace DefaultNamespace.Game
             if (broadcaster != pageTarget)
                 return;
             
-            //SetWidth(eventArgs.To); // Change tile width
-            //var x = broadcaster.RectTransform.anchoredPosition.x;
-            //SetPositionX(broadcaster.RectTransform.anchoredPosition.x); // Change tile x
-            
             if (pageTarget == eventArgs.BroadCaster)
             {
                 RecalculateWidth();
@@ -159,5 +142,7 @@ namespace DefaultNamespace.Game
             base.OnDespawn();
             isHit = false;
         }
+        protected abstract void OnTileTouchDownEventHandler(OnTileTouchDownEventArgs eventArgs);
+        protected abstract void OnTileTouchUpEventHandler(OnTileTouchUpEventArgs eventArgs);
     }
 }

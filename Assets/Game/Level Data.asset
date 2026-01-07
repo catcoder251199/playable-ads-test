@@ -17,9 +17,11 @@ MonoBehaviour:
   distanceFromHitLine: 600
   offsetDurationForTap: 0.02
   minTileDuration: 0.285715
-  heightForTap: 240
+  laneCount: 4
+  heightForTap: 200
   delayFromStart: 1
   scaleHoldTileLengthFactor: 0.6
+  holdScorePerSecond: 10
   levelData:
   - id: 0
     note: 0
@@ -39,21 +41,21 @@ MonoBehaviour:
     note: 98
     time: 0.190476
     delta: 0.190476
-    duration: 0.285715
+    duration: 0.57143
     volume: 32
     lane: 2
   - id: 3
     note: 97
     time: 0.380953
     delta: 0.190477
-    duration: 0.285715
+    duration: 0.57143
     volume: 32
     lane: 1
   - id: 4
     note: 96
     time: 0.571429
     delta: 0.190476
-    duration: 0.285715
+    duration: 0.57143
     volume: 32
     lane: 0
   - id: 5
