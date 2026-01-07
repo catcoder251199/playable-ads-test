@@ -8618,6 +8618,18 @@
             {
                 "name": "EventBus.Events.OnSizeWidthChangedEventChannel",
                 "excluded": false
+            },
+            {
+                "name": "DefaultNamespace.Game.HoldTile",
+                "excluded": false
+            },
+            {
+                "name": "DefaultNamespace.Game.StartTile",
+                "excluded": false
+            },
+            {
+                "name": "DefaultNamespace.Game.TapTile",
+                "excluded": false
             }
         ],
         "unusedMethods": [
@@ -12589,7 +12601,7 @@
                     },
                     {
                         "name": "$ctor2",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "$ctor1",
@@ -12609,7 +12621,7 @@
                     },
                     {
                         "name": "Enqueue",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "GetEnumerator",
@@ -12625,11 +12637,11 @@
                     },
                     {
                         "name": "Dequeue",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Peek",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Contains",
@@ -12649,7 +12661,7 @@
                     },
                     {
                         "name": "MoveNext",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "TrimExcess",
@@ -12777,7 +12789,7 @@
                     },
                     {
                         "name": "Clear",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Contains",
@@ -12793,7 +12805,7 @@
                     },
                     {
                         "name": "GetEnumerator",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "System$Collections$Generic$IEnumerable$1$GetEnumerator",
@@ -12835,7 +12847,7 @@
                     },
                     {
                         "name": "Current#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "System$Collections$IEnumerator$Current#get",
@@ -12843,11 +12855,11 @@
                     },
                     {
                         "name": "init",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "$ctor1",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "ctor",
@@ -12855,11 +12867,11 @@
                     },
                     {
                         "name": "Dispose",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "moveNext",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "System$Collections$IEnumerator$reset",
@@ -15257,7 +15269,7 @@
                     },
                     {
                         "name": "InternalErrorShaderMaterial#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Blit",
@@ -17309,7 +17321,7 @@
                     },
                     {
                         "name": "name#set",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "mainTexture#get",
@@ -17333,7 +17345,7 @@
                     },
                     {
                         "name": "shader#set",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "passCount#get",
@@ -17381,7 +17393,7 @@
                     },
                     {
                         "name": "$ctor2",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "CopyPropertiesFromMaterial",
@@ -18489,7 +18501,7 @@
                     },
                     {
                         "name": "farClipPlane#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "farClipPlane#set",
@@ -18625,7 +18637,7 @@
                     },
                     {
                         "name": "targetDisplay#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "targetDisplay#set",
@@ -18689,7 +18701,7 @@
                     },
                     {
                         "name": "ScreenToViewportPoint",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "ViewportToScreenPoint",
@@ -27499,7 +27511,7 @@
                     },
                     {
                         "name": "OnRectTransformDimensionsChange",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "UpdateVisuals",
@@ -32409,11 +32421,11 @@
                     },
                     {
                         "name": "TileStack#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Clear",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "RectTransform#get",
@@ -32429,6 +32441,14 @@
                     },
                     {
                         "name": "CheckWidth",
+                        "excluded": false
+                    },
+                    {
+                        "name": "PageIndex#get",
+                        "excluded": false
+                    },
+                    {
+                        "name": "UpdateY",
                         "excluded": false
                     }
                 ]
@@ -32525,11 +32545,11 @@
                 "instanceMethods": [
                     {
                         "name": "OnSpawn",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "OnDespawn",
-                        "excluded": true
+                        "excluded": false
                     }
                 ]
             },
@@ -32561,7 +32581,7 @@
                 "instanceMethods": [
                     {
                         "name": "RaiseEvent",
-                        "excluded": true
+                        "excluded": false
                     }
                 ]
             },
@@ -32581,7 +32601,7 @@
                 "instanceMethods": [
                     {
                         "name": "ctor",
-                        "excluded": true
+                        "excluded": false
                     }
                 ]
             },
@@ -32651,11 +32671,11 @@
                     },
                     {
                         "name": "Spawn",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Despawn",
-                        "excluded": true
+                        "excluded": false
                     }
                 ]
             },
@@ -32895,11 +32915,11 @@
                     },
                     {
                         "name": "TilesVelocity#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "TapDurationThreshold#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "HeightForTap#get",
@@ -32911,10 +32931,14 @@
                     },
                     {
                         "name": "DistanceFromHitLine",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "TileHeight",
+                        "excluded": false
+                    },
+                    {
+                        "name": "GetDelayedTimeHit",
                         "excluded": false
                     }
                 ]
@@ -32989,14 +33013,10 @@
                     },
                     {
                         "name": "GetTileFromPool",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "GetStartTileFromPool",
-                        "excluded": true
-                    },
-                    {
-                        "name": "MoveTileToPool",
                         "excluded": true
                     },
                     {
@@ -33005,10 +33025,6 @@
                     },
                     {
                         "name": "AttachToTileParent",
-                        "excluded": false
-                    },
-                    {
-                        "name": "CalculateX",
                         "excluded": false
                     },
                     {
@@ -33025,7 +33041,31 @@
                     },
                     {
                         "name": "OnPageRecycleEventHandler",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Start",
+                        "excluded": false
+                    },
+                    {
+                        "name": "IsTilePositionYInPage",
+                        "excluded": false
+                    },
+                    {
+                        "name": "GetTilePositionYInPage",
+                        "excluded": false
+                    },
+                    {
+                        "name": "CheckSize",
                         "excluded": true
+                    },
+                    {
+                        "name": "ReturnTileToPool",
+                        "excluded": false
+                    },
+                    {
+                        "name": "SpawnTilesAfterRecyclePage",
+                        "excluded": false
                     }
                 ]
             },
@@ -33098,36 +33138,22 @@
                     {
                         "name": "OnLaneWidthChangedEventHandler",
                         "excluded": false
-                    }
-                ]
-            },
-            {
-                "className": "DefaultNamespace.Game.HoldTile",
-                "staticMethods": [],
-                "instanceMethods": [
+                    },
                     {
-                        "name": "ResetUI",
-                        "excluded": true
-                    }
-                ]
-            },
-            {
-                "className": "DefaultNamespace.Game.StartTile",
-                "staticMethods": [],
-                "instanceMethods": [
+                        "name": "init",
+                        "excluded": false
+                    },
                     {
-                        "name": "ResetUI",
-                        "excluded": true
-                    }
-                ]
-            },
-            {
-                "className": "DefaultNamespace.Game.TapTile",
-                "staticMethods": [],
-                "instanceMethods": [
+                        "name": "YToWall",
+                        "excluded": false
+                    },
                     {
-                        "name": "ResetUI",
-                        "excluded": true
+                        "name": "Update",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnDespawn",
+                        "excluded": false
                     }
                 ]
             },
@@ -33159,6 +33185,24 @@
                     },
                     {
                         "name": "ctor",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "DefaultNamespace.Game.PageMover",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "SetMoveable",
+                        "excluded": true
+                    },
+                    {
+                        "name": "Update",
                         "excluded": false
                     }
                 ]

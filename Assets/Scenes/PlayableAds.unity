@@ -628,7 +628,7 @@ MonoBehaviour:
   - {fileID: 965205610}
   - {fileID: 1305325267}
   - {fileID: 1869938770}
-  _updatable: 0
+  _updatable: 1
 --- !u!4 &867034683
 Transform:
   m_ObjectHideFlags: 0
